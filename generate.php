@@ -1,16 +1,15 @@
 <?php
 
-// set your language (en/ja/zh_cn)
 $lang = 'en';
 $ver  = '3.6';
 
-// exec("rm -rf fat-free-framework.docset/Contents/Resources/");
-// exec("mkdir -p fat-free-framework.docset/Contents/Resources/");
-// exec("wget -rkl1 https://fatfreeframework.com/3.6/user-guide");
-// exec("mv " . __DIR__ . "/fat-free-framework.de/manual/current/ " . __DIR__ . "/fat-free-framework.docset/Contents/Resources/Documents/");
-// exec("rm -r " . __DIR__ . "/fat-free-framework.de/");
+exec("rm -rf fat-free-framework.docset");
+exec("mkdir -p fat-free-framework.docset/Contents/Resources/Documents/");
+//exec("wget -rkl1 https://fatfreeframework.com/3.6/user-guide");
+exec("cp -a " . __DIR__ . "/html/. " . __DIR__ . "/fat-free-framework.docset/Contents/Resources/Documents/");
 
-/*file_put_contents(__DIR__ . "/fat-free-framework.docset/Contents/Info.plist", <<<ENDE
+
+file_put_contents(__DIR__ . "/fat-free-framework.docset/Contents/Info.plist", <<<ENDE
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -29,7 +28,6 @@ $ver  = '3.6';
 </plist>
 ENDE
 );
-*/
 copy(__DIR__ . "/icon.png", __DIR__ . "/fat-free-framework.docset/icon.png");
 
 $dom = new DomDocument;
