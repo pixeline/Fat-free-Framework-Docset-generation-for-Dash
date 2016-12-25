@@ -1,0 +1,376 @@
+\hypertarget{class_basket}{}\section{Basket Class Reference}
+\label{class_basket}\index{Basket@{Basket}}
+
+
+Session-\/based pseudo-\/mapper.  
+
+
+Inheritance diagram for Basket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_basket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_basket_ace1ae5be37bf26c172cc7ea4e1a65e26}{exists} (\$key)
+\item 
+\hyperlink{class_basket_ac8d8012023e560c81f55a629022cb65a}{set} (\$key, \$val)
+\item 
+\& \hyperlink{class_basket_ac3695923790b06917410e205068b8376}{get} (\$key)
+\item 
+\hyperlink{class_basket_a10a949ef75de6c82c98ac555f371ba83}{clear} (\$key)
+\item 
+\hyperlink{class_basket_ae24293a6c7fb1d109eb000b7f9db35c1}{find} (\$key=N\+U\+LL, \$val=N\+U\+LL)
+\item 
+\hyperlink{class_basket_ad9ce70d0a094124bff4adcec3df5e30f}{findone} (\$key, \$val)
+\item 
+\hyperlink{class_basket_abc7666f1c00ea27802ea7f19bdec2d17}{load} (\$key, \$val)
+\item 
+\hyperlink{class_basket_acc3a900450447c51540aaa9dec5959a4}{dry} ()
+\item 
+\hyperlink{class_basket_ac751e87b3d4c4bf2feb03bee8b092755}{count} ()
+\item 
+\hyperlink{class_basket_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\item 
+\hyperlink{class_basket_ae25b1f24d58b7b7e6cd08fc07183fae5}{erase} (\$key, \$val)
+\item 
+\hyperlink{class_basket_a4a20559544fdf4dcb457e258dc976cf8}{reset} ()
+\item 
+\hyperlink{class_basket_aeb639e5b2b713ed87ab8f2033af98ae8}{drop} ()
+\item 
+\hyperlink{class_basket_a462833da5009a82b31e39d3b5db38abd}{copyfrom} (\$var)
+\item 
+\hyperlink{class_basket_a4bcf54f913758fb093c35ea81fc29615}{copyto} (\$key)
+\item 
+\hyperlink{class_basket_ac41b8e359a8eb81494e030062e7b4bad}{checkout} ()
+\item 
+\hyperlink{class_basket_ae34d667a85d03b5da0154d74ae414768}{\+\_\+\+\_\+construct} (\$key=\textquotesingle{}basket\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_basket_ae97941710d863131c700f069b109991e}{}\label{class_basket_ae97941710d863131c700f069b109991e} 
+\hyperlink{class_basket_ae97941710d863131c700f069b109991e}{\$id}
+\begin{DoxyCompactList}\small\item\em Current item identifier. \end{DoxyCompactList}\item 
+\hypertarget{class_basket_aa61b415cee119a7511e05c405ecd0b32}{}\label{class_basket_aa61b415cee119a7511e05c405ecd0b32} 
+\hyperlink{class_basket_aa61b415cee119a7511e05c405ecd0b32}{\$item} =\mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Current item contents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_basket_aa2e3f553fd1f1c2053bc084118c10396}{}\label{class_basket_aa2e3f553fd1f1c2053bc084118c10396} 
+const {\bfseries E\+\_\+\+Field} =\textquotesingle{}Undefined field \%s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_basket_aa60b0284e0dfa2463495481cf11e3cf4}{}\label{class_basket_aa60b0284e0dfa2463495481cf11e3cf4} 
+\hyperlink{class_basket_aa60b0284e0dfa2463495481cf11e3cf4}{\$key}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_session}{Session} key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Session-\/based pseudo-\/mapper. 
+
+Definition at line 24 of file basket.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_basket_ae34d667a85d03b5da0154d74ae414768}{}\label{class_basket_ae34d667a85d03b5da0154d74ae414768} 
+\index{Basket@{Basket}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily \textquotesingle{}basket\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Instantiate class \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 230 of file basket.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_basket_ac41b8e359a8eb81494e030062e7b4bad}{}\label{class_basket_ac41b8e359a8eb81494e030062e7b4bad} 
+\index{Basket@{Basket}!checkout@{checkout}}
+\index{checkout@{checkout}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{checkout()}{checkout()}}
+{\footnotesize\ttfamily checkout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check out basket contents \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 216 of file basket.\+php.
+
+\hypertarget{class_basket_a10a949ef75de6c82c98ac555f371ba83}{}\label{class_basket_a10a949ef75de6c82c98ac555f371ba83} 
+\index{Basket@{Basket}!clear@{clear}}
+\index{clear@{clear}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily clear (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Delete field \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file basket.\+php.
+
+\hypertarget{class_basket_a462833da5009a82b31e39d3b5db38abd}{}\label{class_basket_a462833da5009a82b31e39d3b5db38abd} 
+\index{Basket@{Basket}!copyfrom@{copyfrom}}
+\index{copyfrom@{copyfrom}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{copyfrom()}{copyfrom()}}
+{\footnotesize\ttfamily copyfrom (\begin{DoxyParamCaption}\item[{}]{\$var }\end{DoxyParamCaption})}
+
+Hydrate item using hive array variable \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$var} & array$\vert$string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 194 of file basket.\+php.
+
+\hypertarget{class_basket_a4bcf54f913758fb093c35ea81fc29615}{}\label{class_basket_a4bcf54f913758fb093c35ea81fc29615} 
+\index{Basket@{Basket}!copyto@{copyto}}
+\index{copyto@{copyto}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{copyto()}{copyto()}}
+{\footnotesize\ttfamily copyto (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Populate hive array variable with item contents \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 206 of file basket.\+php.
+
+\hypertarget{class_basket_ac751e87b3d4c4bf2feb03bee8b092755}{}\label{class_basket_ac751e87b3d4c4bf2feb03bee8b092755} 
+\index{Basket@{Basket}!count@{count}}
+\index{count@{count}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return number of items in basket \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file basket.\+php.
+
+\hypertarget{class_basket_aeb639e5b2b713ed87ab8f2033af98ae8}{}\label{class_basket_aeb639e5b2b713ed87ab8f2033af98ae8} 
+\index{Basket@{Basket}!drop@{drop}}
+\index{drop@{drop}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily drop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty basket \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file basket.\+php.
+
+\hypertarget{class_basket_acc3a900450447c51540aaa9dec5959a4}{}\label{class_basket_acc3a900450447c51540aaa9dec5959a4} 
+\index{Basket@{Basket}!dry@{dry}}
+\index{dry@{dry}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{dry()}{dry()}}
+{\footnotesize\ttfamily dry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if current item is empty/undefined \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file basket.\+php.
+
+\hypertarget{class_basket_ae25b1f24d58b7b7e6cd08fc07183fae5}{}\label{class_basket_ae25b1f24d58b7b7e6cd08fc07183fae5} 
+\index{Basket@{Basket}!erase@{erase}}
+\index{erase@{erase}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily erase (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$val }\end{DoxyParamCaption})}
+
+Erase item matching key/value pair \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & mixed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 161 of file basket.\+php.
+
+\hypertarget{class_basket_ace1ae5be37bf26c172cc7ea4e1a65e26}{}\label{class_basket_ace1ae5be37bf26c172cc7ea4e1a65e26} 
+\index{Basket@{Basket}!exists@{exists}}
+\index{exists@{exists}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily exists (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if field is defined \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file basket.\+php.
+
+\hypertarget{class_basket_ae24293a6c7fb1d109eb000b7f9db35c1}{}\label{class_basket_ae24293a6c7fb1d109eb000b7f9db35c1} 
+\index{Basket@{Basket}!find@{find}}
+\index{find@{find}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily find (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$val = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Return items that match key/value pair; If no key/value pair specified, return all items \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & mixed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 88 of file basket.\+php.
+
+\hypertarget{class_basket_ad9ce70d0a094124bff4adcec3df5e30f}{}\label{class_basket_ad9ce70d0a094124bff4adcec3df5e30f} 
+\index{Basket@{Basket}!findone@{findone}}
+\index{findone@{findone}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{findone()}{findone()}}
+{\footnotesize\ttfamily findone (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$val }\end{DoxyParamCaption})}
+
+Return first item that matches key/value pair \begin{DoxyReturn}{Returns}
+object$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & mixed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file basket.\+php.
+
+\hypertarget{class_basket_ac3695923790b06917410e205068b8376}{}\label{class_basket_ac3695923790b06917410e205068b8376} 
+\index{Basket@{Basket}!get@{get}}
+\index{get@{get}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \& get (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Retrieve value of field \begin{DoxyReturn}{Returns}
+scalar$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file basket.\+php.
+
+\hypertarget{class_basket_abc7666f1c00ea27802ea7f19bdec2d17}{}\label{class_basket_abc7666f1c00ea27802ea7f19bdec2d17} 
+\index{Basket@{Basket}!load@{load}}
+\index{load@{load}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily load (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$val }\end{DoxyParamCaption})}
+
+Map current item to matching key/value pair \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & mixed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file basket.\+php.
+
+\hypertarget{class_basket_a4a20559544fdf4dcb457e258dc976cf8}{}\label{class_basket_a4a20559544fdf4dcb457e258dc976cf8} 
+\index{Basket@{Basket}!reset@{reset}}
+\index{reset@{reset}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset cursor \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file basket.\+php.
+
+\hypertarget{class_basket_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_basket_afc8a3c62679cf00ade9f15fb2a6d6132} 
+\index{Basket@{Basket}!save@{save}}
+\index{save@{save}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save current item \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file basket.\+php.
+
+\hypertarget{class_basket_ac8d8012023e560c81f55a629022cb65a}{}\label{class_basket_ac8d8012023e560c81f55a629022cb65a} 
+\index{Basket@{Basket}!set@{set}}
+\index{set@{set}!Basket@{Basket}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$val }\end{DoxyParamCaption})}
+
+Assign value to field \begin{DoxyReturn}{Returns}
+scalar$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & scalar \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file basket.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/basket.\+php\end{DoxyCompactItemize}

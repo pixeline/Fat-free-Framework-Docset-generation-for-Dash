@@ -1,0 +1,275 @@
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session}{}\section{Session Class Reference}
+\label{class_d_b_1_1_s_q_l_1_1_session}\index{Session@{Session}}
+
+
+S\+Q\+L-\/managed session handler.  
+
+
+Inheritance diagram for Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_d_b_1_1_s_q_l_1_1_session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a037c59224bcb347b69ca61df88ef7230}{open} (\$path, \$\hyperlink{class_d_b_1_1_s_q_l_a4b516aaa5fa38da4fed24ab6001627e2}{name})
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_afa59bebedda70c37b94c2efc35da83f3}{read} (\$id)
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a5f277b5f0e4e2154cddc9a3a0d2bf57d}{write} (\$id, \$data)
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a726fa8a4b4b187b9ca32ba427aac8137}{destroy} (\$id)
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a60b027eb0df6d42b8fe2ec8c93cfbbae}{cleanup} (\$max)
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a30b416c35150ab6bdde364f527f612bd}{sid} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a048d24aa22a28f92f1f3a7e3d323f45e}{csrf} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a197bae3714812901860bd006b00f91de}{ip} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_ab0b8b94527259f4aacdf1fd45411abfe}{stamp} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a77f6a261d70e66c7b7273774832482dc}{agent} ()
+\item 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_acfaeaa649a2bb634903b84ebbb1515f3}{\+\_\+\+\_\+construct} (\textbackslash{}\hyperlink{class_d_b_1_1_s_q_l}{D\+B\textbackslash{}\+S\+QL} \$db, \$\hyperlink{class_d_b_1_1_s_q_l_1_1_mapper_a5aa7b43c8ec77df216a71a27da0a321c}{table}=\textquotesingle{}sessions\textquotesingle{}, \$force=T\+R\+UE, \$onsuspect=N\+U\+LL, \$key=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a871411a78a77c508569c380dd06fdd51}{}\label{class_d_b_1_1_s_q_l_1_1_session_a871411a78a77c508569c380dd06fdd51} 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a871411a78a77c508569c380dd06fdd51}{\$\+\_\+csrf}
+\begin{DoxyCompactList}\small\item\em Anti-\/\+C\+S\+RF token. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a7e43e09863a494197e0cdbf3f98c2ff5}{}\label{class_d_b_1_1_s_q_l_1_1_session_a7e43e09863a494197e0cdbf3f98c2ff5} 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a7e43e09863a494197e0cdbf3f98c2ff5}{\$\+\_\+agent}
+\begin{DoxyCompactList}\small\item\em User agent. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_ac275a475a83ee8de16cf9c9f928fbe77}{}\label{class_d_b_1_1_s_q_l_1_1_session_ac275a475a83ee8de16cf9c9f928fbe77} 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_ac275a475a83ee8de16cf9c9f928fbe77}{\$\+\_\+ip}
+\begin{DoxyCompactList}\small\item\em IP,. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_ad96efa4953d3355e4c1aabc5cebad482}{}\label{class_d_b_1_1_s_q_l_1_1_session_ad96efa4953d3355e4c1aabc5cebad482} 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_ad96efa4953d3355e4c1aabc5cebad482}{\$onsuspect}
+\begin{DoxyCompactList}\small\item\em Suspect callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a3b4e4b29ac1d6699dd65f8f0d6fa4133}{}\label{class_d_b_1_1_s_q_l_1_1_session_a3b4e4b29ac1d6699dd65f8f0d6fa4133} 
+\hyperlink{class_d_b_1_1_s_q_l_1_1_session_a3b4e4b29ac1d6699dd65f8f0d6fa4133}{\$sid}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_d_b_1_1_s_q_l_1_1_session}{Session} ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+S\+Q\+L-\/managed session handler. 
+
+Definition at line 26 of file session.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_acfaeaa649a2bb634903b84ebbb1515f3}{}\label{class_d_b_1_1_s_q_l_1_1_session_acfaeaa649a2bb634903b84ebbb1515f3} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbackslash{}\hyperlink{class_d_b_1_1_s_q_l}{D\+B\textbackslash{}\+S\+QL}}]{\$db,  }\item[{}]{\$table = {\ttfamily \textquotesingle{}sessions\textquotesingle{}},  }\item[{}]{\$force = {\ttfamily TRUE},  }\item[{}]{\$onsuspect = {\ttfamily NULL},  }\item[{}]{\$key = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Instantiate class 
+\begin{DoxyParams}{Parameters}
+{\em \$db} & \\
+\hline
+{\em \$table} & string \\
+\hline
+{\em \$force} & bool \\
+\hline
+{\em \$onsuspect} & callback \\
+\hline
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file session.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a77f6a261d70e66c7b7273774832482dc}{}\label{class_d_b_1_1_s_q_l_1_1_session_a77f6a261d70e66c7b7273774832482dc} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!agent@{agent}}
+\index{agent@{agent}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{agent()}{agent()}}
+{\footnotesize\ttfamily agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return H\+T\+TP user agent \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a60b027eb0df6d42b8fe2ec8c93cfbbae}{}\label{class_d_b_1_1_s_q_l_1_1_session_a60b027eb0df6d42b8fe2ec8c93cfbbae} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily cleanup (\begin{DoxyParamCaption}\item[{}]{\$max }\end{DoxyParamCaption})}
+
+Garbage collector \begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$max} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_aa69c8bf1f1dcf4e72552efff1fe3e87e}{}\label{class_d_b_1_1_s_q_l_1_1_session_aa69c8bf1f1dcf4e72552efff1fe3e87e} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!close@{close}}
+\index{close@{close}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close session \begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a048d24aa22a28f92f1f3a7e3d323f45e}{}\label{class_d_b_1_1_s_q_l_1_1_session_a048d24aa22a28f92f1f3a7e3d323f45e} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!csrf@{csrf}}
+\index{csrf@{csrf}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{csrf()}{csrf()}}
+{\footnotesize\ttfamily csrf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return anti-\/\+C\+S\+RF token \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a726fa8a4b4b187b9ca32ba427aac8137}{}\label{class_d_b_1_1_s_q_l_1_1_session_a726fa8a4b4b187b9ca32ba427aac8137} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!destroy@{destroy}}
+\index{destroy@{destroy}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily destroy (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Destroy session \begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a197bae3714812901860bd006b00f91de}{}\label{class_d_b_1_1_s_q_l_1_1_session_a197bae3714812901860bd006b00f91de} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!ip@{ip}}
+\index{ip@{ip}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{ip()}{ip()}}
+{\footnotesize\ttfamily ip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return IP address \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a037c59224bcb347b69ca61df88ef7230}{}\label{class_d_b_1_1_s_q_l_1_1_session_a037c59224bcb347b69ca61df88ef7230} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!open@{open}}
+\index{open@{open}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily open (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Open session \begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$path} & string \\
+\hline
+{\em \$name} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_afa59bebedda70c37b94c2efc35da83f3}{}\label{class_d_b_1_1_s_q_l_1_1_session_afa59bebedda70c37b94c2efc35da83f3} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!read@{read}}
+\index{read@{read}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily read (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Return session data in serialized format \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a30b416c35150ab6bdde364f527f612bd}{}\label{class_d_b_1_1_s_q_l_1_1_session_a30b416c35150ab6bdde364f527f612bd} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!sid@{sid}}
+\index{sid@{sid}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{sid()}{sid()}}
+{\footnotesize\ttfamily sid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return session id (if session has started) \begin{DoxyReturn}{Returns}
+string$\vert$\+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_ab0b8b94527259f4aacdf1fd45411abfe}{}\label{class_d_b_1_1_s_q_l_1_1_session_ab0b8b94527259f4aacdf1fd45411abfe} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!stamp@{stamp}}
+\index{stamp@{stamp}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{stamp()}{stamp()}}
+{\footnotesize\ttfamily stamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return Unix timestamp \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file session.\+php.
+
+\hypertarget{class_d_b_1_1_s_q_l_1_1_session_a5f277b5f0e4e2154cddc9a3a0d2bf57d}{}\label{class_d_b_1_1_s_q_l_1_1_session_a5f277b5f0e4e2154cddc9a3a0d2bf57d} 
+\index{D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}!write@{write}}
+\index{write@{write}!D\+B\+::\+S\+Q\+L\+::\+Session@{D\+B\+::\+S\+Q\+L\+::\+Session}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Write session data \begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & string \\
+\hline
+{\em \$data} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file session.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/db/sql/session.\+php\end{DoxyCompactItemize}

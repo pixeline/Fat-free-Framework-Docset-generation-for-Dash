@@ -1,0 +1,333 @@
+\hypertarget{class_u_t_f}{}\section{U\+TF Class Reference}
+\label{class_u_t_f}\index{U\+TF@{U\+TF}}
+
+
+Unicode string manager.  
+
+
+Inheritance diagram for U\+TF\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_t_f}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_u_t_f_a6379e4105bda35d62738418b43d6c214}{strlen} (\$str)
+\item 
+\hyperlink{class_u_t_f_aee5290955ede3ffc95e03032792d6cef}{strrev} (\$str)
+\item 
+\hyperlink{class_u_t_f_a091781748220e04bdfb81119c2d215ab}{stripos} (\$stack, \$needle, \$ofs=0)
+\item 
+\hyperlink{class_u_t_f_a3ac4e2d27df237cef0d1d7f5b5858841}{strpos} (\$stack, \$needle, \$ofs=0, \$case=F\+A\+L\+SE)
+\item 
+\hyperlink{class_u_t_f_ae5a935ae0460ac0723be7eb4c677ae4f}{stristr} (\$stack, \$needle, \$before=F\+A\+L\+SE)
+\item 
+\hyperlink{class_u_t_f_aede414417475770b5dea3c6975c2e3dd}{strstr} (\$stack, \$needle, \$before=F\+A\+L\+SE, \$case=F\+A\+L\+SE)
+\item 
+\hyperlink{class_u_t_f_ab012fe0920f5e9be4a09e01bfb81b867}{substr} (\$str, \$start, \$len=0)
+\item 
+\hyperlink{class_u_t_f_a1ed9fae3a0627f5fc1adbafed4adab86}{substr\+\_\+count} (\$stack, \$needle)
+\item 
+\hyperlink{class_u_t_f_a36a0151237d3480734de64933f769843}{ltrim} (\$str)
+\item 
+\hyperlink{class_u_t_f_afa81b944f8aed770a266a9884e3e5049}{rtrim} (\$str)
+\item 
+\hyperlink{class_u_t_f_a432e7b973a6e6bfa55cced21e75ee29e}{trim} (\$str)
+\item 
+\hyperlink{class_u_t_f_a5cb12f35229a81f7a869171b000573b8}{bom} ()
+\item 
+\hyperlink{class_u_t_f_a798f9e9997b8a6f34ff111df63531c08}{translate} (\$str)
+\item 
+\hyperlink{class_u_t_f_aaf95120818560ee5ba86d5f4efba6671}{emojify} (\$str)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Unicode string manager. 
+
+Definition at line 24 of file utf.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_u_t_f_a5cb12f35229a81f7a869171b000573b8}{}\label{class_u_t_f_a5cb12f35229a81f7a869171b000573b8} 
+\index{U\+TF@{U\+TF}!bom@{bom}}
+\index{bom@{bom}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{bom()}{bom()}}
+{\footnotesize\ttfamily bom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return U\+T\+F-\/8 byte order mark \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file utf.\+php.
+
+\hypertarget{class_u_t_f_aaf95120818560ee5ba86d5f4efba6671}{}\label{class_u_t_f_aaf95120818560ee5ba86d5f4efba6671} 
+\index{U\+TF@{U\+TF}!emojify@{emojify}}
+\index{emojify@{emojify}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{emojify()}{emojify()}}
+{\footnotesize\ttfamily emojify (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Translate emoji tokens to Unicode font-\/supported symbols \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a36a0151237d3480734de64933f769843}{}\label{class_u_t_f_a36a0151237d3480734de64933f769843} 
+\index{U\+TF@{U\+TF}!ltrim@{ltrim}}
+\index{ltrim@{ltrim}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{ltrim()}{ltrim()}}
+{\footnotesize\ttfamily ltrim (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Strip whitespaces from the beginning of a string \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file utf.\+php.
+
+\hypertarget{class_u_t_f_afa81b944f8aed770a266a9884e3e5049}{}\label{class_u_t_f_afa81b944f8aed770a266a9884e3e5049} 
+\index{U\+TF@{U\+TF}!rtrim@{rtrim}}
+\index{rtrim@{rtrim}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{rtrim()}{rtrim()}}
+{\footnotesize\ttfamily rtrim (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Strip whitespaces from the end of a string \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a091781748220e04bdfb81119c2d215ab}{}\label{class_u_t_f_a091781748220e04bdfb81119c2d215ab} 
+\index{U\+TF@{U\+TF}!stripos@{stripos}}
+\index{stripos@{stripos}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{stripos()}{stripos()}}
+{\footnotesize\ttfamily stripos (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{}]{\$needle,  }\item[{}]{\$ofs = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Find position of first occurrence of a string (case-\/insensitive) \begin{DoxyReturn}{Returns}
+int$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$stack} & string \\
+\hline
+{\em \$needle} & string \\
+\hline
+{\em \$ofs} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file utf.\+php.
+
+\hypertarget{class_u_t_f_ae5a935ae0460ac0723be7eb4c677ae4f}{}\label{class_u_t_f_ae5a935ae0460ac0723be7eb4c677ae4f} 
+\index{U\+TF@{U\+TF}!stristr@{stristr}}
+\index{stristr@{stristr}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{stristr()}{stristr()}}
+{\footnotesize\ttfamily stristr (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{}]{\$needle,  }\item[{}]{\$before = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Returns part of haystack string from the first occurrence of needle to the end of haystack (case-\/insensitive) \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$stack} & string \\
+\hline
+{\em \$needle} & string \\
+\hline
+{\em \$before} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a6379e4105bda35d62738418b43d6c214}{}\label{class_u_t_f_a6379e4105bda35d62738418b43d6c214} 
+\index{U\+TF@{U\+TF}!strlen@{strlen}}
+\index{strlen@{strlen}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily strlen (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Get string length \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a3ac4e2d27df237cef0d1d7f5b5858841}{}\label{class_u_t_f_a3ac4e2d27df237cef0d1d7f5b5858841} 
+\index{U\+TF@{U\+TF}!strpos@{strpos}}
+\index{strpos@{strpos}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{strpos()}{strpos()}}
+{\footnotesize\ttfamily strpos (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{}]{\$needle,  }\item[{}]{\$ofs = {\ttfamily 0},  }\item[{}]{\$case = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Find position of first occurrence of a string \begin{DoxyReturn}{Returns}
+int$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$stack} & string \\
+\hline
+{\em \$needle} & string \\
+\hline
+{\em \$ofs} & int \\
+\hline
+{\em \$case} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file utf.\+php.
+
+\hypertarget{class_u_t_f_aee5290955ede3ffc95e03032792d6cef}{}\label{class_u_t_f_aee5290955ede3ffc95e03032792d6cef} 
+\index{U\+TF@{U\+TF}!strrev@{strrev}}
+\index{strrev@{strrev}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{strrev()}{strrev()}}
+{\footnotesize\ttfamily strrev (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Reverse a string \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file utf.\+php.
+
+\hypertarget{class_u_t_f_aede414417475770b5dea3c6975c2e3dd}{}\label{class_u_t_f_aede414417475770b5dea3c6975c2e3dd} 
+\index{U\+TF@{U\+TF}!strstr@{strstr}}
+\index{strstr@{strstr}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{strstr()}{strstr()}}
+{\footnotesize\ttfamily strstr (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{}]{\$needle,  }\item[{}]{\$before = {\ttfamily FALSE},  }\item[{}]{\$case = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Returns part of haystack string from the first occurrence of needle to the end of haystack \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$stack} & string \\
+\hline
+{\em \$needle} & string \\
+\hline
+{\em \$before} & bool \\
+\hline
+{\em \$case} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file utf.\+php.
+
+\hypertarget{class_u_t_f_ab012fe0920f5e9be4a09e01bfb81b867}{}\label{class_u_t_f_ab012fe0920f5e9be4a09e01bfb81b867} 
+\index{U\+TF@{U\+TF}!substr@{substr}}
+\index{substr@{substr}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily substr (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$start,  }\item[{}]{\$len = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Return part of a string \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+{\em \$start} & int \\
+\hline
+{\em \$len} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a1ed9fae3a0627f5fc1adbafed4adab86}{}\label{class_u_t_f_a1ed9fae3a0627f5fc1adbafed4adab86} 
+\index{U\+TF@{U\+TF}!substr\+\_\+count@{substr\+\_\+count}}
+\index{substr\+\_\+count@{substr\+\_\+count}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{substr\+\_\+count()}{substr\_count()}}
+{\footnotesize\ttfamily substr\+\_\+count (\begin{DoxyParamCaption}\item[{}]{\$stack,  }\item[{}]{\$needle }\end{DoxyParamCaption})}
+
+Count the number of substring occurrences \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$stack} & string \\
+\hline
+{\em \$needle} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a798f9e9997b8a6f34ff111df63531c08}{}\label{class_u_t_f_a798f9e9997b8a6f34ff111df63531c08} 
+\index{U\+TF@{U\+TF}!translate@{translate}}
+\index{translate@{translate}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily translate (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Convert code points to Unicode symbols \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 172 of file utf.\+php.
+
+\hypertarget{class_u_t_f_a432e7b973a6e6bfa55cced21e75ee29e}{}\label{class_u_t_f_a432e7b973a6e6bfa55cced21e75ee29e} 
+\index{U\+TF@{U\+TF}!trim@{trim}}
+\index{trim@{trim}!U\+TF@{U\+TF}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily trim (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Strip whitespaces from the beginning and end of a string \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 155 of file utf.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/utf.\+php\end{DoxyCompactItemize}

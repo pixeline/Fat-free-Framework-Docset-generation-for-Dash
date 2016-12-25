@@ -1,0 +1,308 @@
+\hypertarget{class_c_l_i_1_1_w_s}{}\section{WS Class Reference}
+\label{class_c_l_i_1_1_w_s}\index{WS@{WS}}
+
+
+R\+F\+C6455 Web\+Socket server.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a201f40e4b8683b5e569b4c1e8add9fcd}{alloc} (\$socket)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_aa3a3bd26af1b767091f521a6c9041e56}{close} (\$socket)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a6b8891e0c2b12c863512071111b9aa07}{free} (\$socket)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a845d775219b4327eb7cb626ffb1c2af3}{read} (\$socket)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_ac95ce2fb30c44bae1927b0107756f7e3}{write} (\$socket, \$str)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a5c3b4aef24eacefe766d9e34fd5791de}{agents} (\$uri=N\+U\+LL)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_ade509b07f1df45730d31589b81a26efb}{events} ()
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a65a51fe8cfc1c6b4d04178b209b50e23}{on} (\$event, \$func)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a2e5652a68528b58bda9e63311cd473bd}{kill} (\$signal)
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_afb0fafe7e02a3ae1993c01c19fad2bae}{run} ()
+\item 
+\hyperlink{class_c_l_i_1_1_w_s_a19dbb10de3a82395f1c941e3f37fe8c7}{\+\_\+\+\_\+construct} (\$addr, \$ctx=N\+U\+LL, \$wait=60)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a0f8417d2e128a6f19f2b5e0a0a883de0}{}\label{class_c_l_i_1_1_w_s_a0f8417d2e128a6f19f2b5e0a0a883de0} 
+const \hyperlink{class_c_l_i_1_1_w_s_a0f8417d2e128a6f19f2b5e0a0a883de0}{Magic} =\textquotesingle{}258\+E\+A\+F\+A5-\/\+E914-\/47\+D\+A-\/95\+C\+A-\/\+C5\+A\+B0\+D\+C85\+B11\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em U\+U\+ID magic string. \end{DoxyCompactList}\item 
+\hypertarget{class_c_l_i_1_1_w_s_adbc81c45b48c6cdfffe9fc4752007493}{}\label{class_c_l_i_1_1_w_s_adbc81c45b48c6cdfffe9fc4752007493} 
+const \hyperlink{class_c_l_i_1_1_w_s_adbc81c45b48c6cdfffe9fc4752007493}{Packet} =65536
+\begin{DoxyCompactList}\small\item\em Max packet size. \end{DoxyCompactList}\item 
+\hypertarget{class_c_l_i_1_1_w_s_aa0f7bf6b5a60518284ef88fa33e264f2}{}\label{class_c_l_i_1_1_w_s_aa0f7bf6b5a60518284ef88fa33e264f2} 
+{\bfseries \$ctx}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a165566db3c2de8a5e20d0957ed606e46}{}\label{class_c_l_i_1_1_w_s_a165566db3c2de8a5e20d0957ed606e46} 
+{\bfseries \$wait}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a4faf536a5ff25a28adb9891716556dc6}{}\label{class_c_l_i_1_1_w_s_a4faf536a5ff25a28adb9891716556dc6} 
+{\bfseries \$sockets}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_af8624bfcd6ccf58a6906baf72ec078df}{}\label{class_c_l_i_1_1_w_s_af8624bfcd6ccf58a6906baf72ec078df} 
+{\bfseries \$agents} =\mbox{[}$\,$\mbox{]}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a1bcec9bbd34255927faaf155bf3a940a}{}\label{class_c_l_i_1_1_w_s_a1bcec9bbd34255927faaf155bf3a940a} 
+{\bfseries \$events} =\mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_aa9141b93fff959a11eb401b7100b7a90}{}\label{class_c_l_i_1_1_w_s_aa9141b93fff959a11eb401b7100b7a90} 
+const {\bfseries Text} =0x01
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a03a9c4aa0f0905b7512a268997cbe41f}{}\label{class_c_l_i_1_1_w_s_a03a9c4aa0f0905b7512a268997cbe41f} 
+const {\bfseries Binary} =0x02
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a12592aa7eb9f1570fc962867a7fcc904}{}\label{class_c_l_i_1_1_w_s_a12592aa7eb9f1570fc962867a7fcc904} 
+const {\bfseries Close} =0x08
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_ad953baab1d22f9595927e18f6ac8ec16}{}\label{class_c_l_i_1_1_w_s_ad953baab1d22f9595927e18f6ac8ec16} 
+const {\bfseries Ping} =0x09
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a969c5d07e26af01d3523ec69379a4df5}{}\label{class_c_l_i_1_1_w_s_a969c5d07e26af01d3523ec69379a4df5} 
+const {\bfseries Pong} =0x0a
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_af8603b6923a1a089b57cb849bc062148}{}\label{class_c_l_i_1_1_w_s_af8603b6923a1a089b57cb849bc062148} 
+const {\bfseries Op\+Code} =0x0f
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_afa14d696444a689a5be47c64ce568983}{}\label{class_c_l_i_1_1_w_s_afa14d696444a689a5be47c64ce568983} 
+const {\bfseries Finale} =0x80
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a62a38e46cf476443cf933907fe86e684}{}\label{class_c_l_i_1_1_w_s_a62a38e46cf476443cf933907fe86e684} 
+const {\bfseries Length} =0x7f
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_l_i_1_1_w_s_a80e1c53e5ae106ed41bc69db8cdcdf78}{}\label{class_c_l_i_1_1_w_s_a80e1c53e5ae106ed41bc69db8cdcdf78} 
+{\bfseries \$addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\+F\+C6455 Web\+Socket server. 
+
+Definition at line 26 of file ws.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_l_i_1_1_w_s_a19dbb10de3a82395f1c941e3f37fe8c7}{}\label{class_c_l_i_1_1_w_s_a19dbb10de3a82395f1c941e3f37fe8c7} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$addr,  }\item[{}]{\$ctx = {\ttfamily NULL},  }\item[{}]{\$wait = {\ttfamily 60} }\end{DoxyParamCaption})}
+
+Instantiate object \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+{\em \$ctx} & resource \\
+\hline
+{\em \$wait} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 345 of file ws.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_l_i_1_1_w_s_a5c3b4aef24eacefe766d9e34fd5791de}{}\label{class_c_l_i_1_1_w_s_a5c3b4aef24eacefe766d9e34fd5791de} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!agents@{agents}}
+\index{agents@{agents}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{agents()}{agents()}}
+{\footnotesize\ttfamily agents (\begin{DoxyParamCaption}\item[{}]{\$uri = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Return socket agents \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$uri} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_a201f40e4b8683b5e569b4c1e8add9fcd}{}\label{class_c_l_i_1_1_w_s_a201f40e4b8683b5e569b4c1e8add9fcd} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!alloc@{alloc}}
+\index{alloc@{alloc}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{alloc()}{alloc()}}
+{\footnotesize\ttfamily alloc (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Allocate stream socket \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & resource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_aa3a3bd26af1b767091f521a6c9041e56}{}\label{class_c_l_i_1_1_w_s_aa3a3bd26af1b767091f521a6c9041e56} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!close@{close}}
+\index{close@{close}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily close (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Close stream socket \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & resource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_ade509b07f1df45730d31589b81a26efb}{}\label{class_c_l_i_1_1_w_s_ade509b07f1df45730d31589b81a26efb} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!events@{events}}
+\index{events@{events}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return event handlers \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 206 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_a6b8891e0c2b12c863512071111b9aa07}{}\label{class_c_l_i_1_1_w_s_a6b8891e0c2b12c863512071111b9aa07} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!free@{free}}
+\index{free@{free}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily free (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Free stream socket \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & resource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_a2e5652a68528b58bda9e63311cd473bd}{}\label{class_c_l_i_1_1_w_s_a2e5652a68528b58bda9e63311cd473bd} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!kill@{kill}}
+\index{kill@{kill}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily kill (\begin{DoxyParamCaption}\item[{}]{\$signal }\end{DoxyParamCaption})}
+
+Terminate server \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$signal} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 226 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_a65a51fe8cfc1c6b4d04178b209b50e23}{}\label{class_c_l_i_1_1_w_s_a65a51fe8cfc1c6b4d04178b209b50e23} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!on@{on}}
+\index{on@{on}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily on (\begin{DoxyParamCaption}\item[{}]{\$event,  }\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Bind function to event handler \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$event} & string \\
+\hline
+{\em \$func} & callable \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_a845d775219b4327eb7cb626ffb1c2af3}{}\label{class_c_l_i_1_1_w_s_a845d775219b4327eb7cb626ffb1c2af3} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!read@{read}}
+\index{read@{read}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily read (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Read from stream socket \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & resource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_afb0fafe7e02a3ae1993c01c19fad2bae}{}\label{class_c_l_i_1_1_w_s_afb0fafe7e02a3ae1993c01c19fad2bae} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!run@{run}}
+\index{run@{run}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Execute the server process \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 234 of file ws.\+php.
+
+\hypertarget{class_c_l_i_1_1_w_s_ac95ce2fb30c44bae1927b0107756f7e3}{}\label{class_c_l_i_1_1_w_s_ac95ce2fb30c44bae1927b0107756f7e3} 
+\index{C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}!write@{write}}
+\index{write@{write}!C\+L\+I\+::\+WS@{C\+L\+I\+::\+WS}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Write to stream socket \begin{DoxyReturn}{Returns}
+int$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & resource \\
+\hline
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file ws.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/cli/ws.\+php\end{DoxyCompactItemize}

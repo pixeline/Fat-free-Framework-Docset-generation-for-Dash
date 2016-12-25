@@ -1,0 +1,696 @@
+\hypertarget{class_d_b_1_1_cursor}{}\section{Cursor Class Reference}
+\label{class_d_b_1_1_cursor}\index{Cursor@{Cursor}}
+
+
+Simple cursor implementation.  
+
+
+Inheritance diagram for Cursor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_d_b_1_1_cursor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_b_1_1_cursor_a38948c2fb1711f49b72f123cbd91e611}{dbtype} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_a9dfc1601eaf8348bed6ba5622f725971}{fields} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_aa33294a722f17e6e4946223bb73f13ab}{cast} (\$obj=N\+U\+LL)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a45e70f55799839fc0286bc94000924a7}{find} (\$filter=N\+U\+LL, array \$options=N\+U\+LL, \$ttl=0)
+\item 
+\hyperlink{class_d_b_1_1_cursor_ab1f3a3bd85dca49dceaea57f2fe21abf}{count} (\$filter=N\+U\+LL, \$ttl=0)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a473241246338cfccc4709ba896749019}{insert} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_a842e4774e3b3601a005b995c02f7e883}{update} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_adffe904ab38af888d9b033647ec6d935}{copyfrom} (\$var, \$func=N\+U\+LL)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a4bcf54f913758fb093c35ea81fc29615}{copyto} (\$key)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a7f835c25df4cb49d02328644722656da}{getiterator} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_acc3a900450447c51540aaa9dec5959a4}{dry} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_abf73a1aa82ad1233b41388c0a4711c86}{findone} (\$filter=N\+U\+LL, array \$options=N\+U\+LL, \$ttl=0)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a51889c022407cdc6cc565afa5ffe2715}{paginate} ( \$pos=0, \$size=10, \$filter=N\+U\+LL, array \$options=N\+U\+LL, \$ttl=0)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a4db66c122e6274a3d653eff639e8476f}{load} (\$filter=N\+U\+LL, array \$options=N\+U\+LL, \$ttl=0)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a3f07a4aa73e71d525744db933bc2aff4}{loaded} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_ac73eef9ff76ea330c0dab36ca448b90d}{first} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_ac90cadb327363232bb2d83a4f8ebd613}{last} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_aad399d205074eaeed711d5e0157b3c0a}{skip} (\$ofs=1)
+\item 
+\hyperlink{class_d_b_1_1_cursor_acea62048bfee7b3cd80ed446c86fb78a}{next} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_a190535b88008d474b610585a5d9eb84c}{prev} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_abb9f0d6adf1eb9b3b55712056861a247}{valid} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_a933f3fa1037c8b797bdd237d811edf82}{erase} ()
+\item 
+\hyperlink{class_d_b_1_1_cursor_a7615e052068ed5e2c78a87f9b562f98e}{onload} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_ae34d64fef3b7e4de2eede65ca67751d7}{beforeinsert} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a192a31bc101b9aafb4e1300883d33dc6}{afterinsert} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_ab3ebd70359a4d0916e07bc3523099fff}{oninsert} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a9f11326bbf4cdec47ac4f1d143f1dfba}{beforeupdate} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a2b621278d4f2ed751338a1d1bfb60e70}{afterupdate} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a6af536a479e72aff418c5965eff20320}{onupdate} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a9d837ab7aea1a740986d5f6c0258b395}{beforesave} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a4b19070ae7f1fc2edeee8e0252f8ebb2}{aftersave} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a507f285ea3bb622446f79e07e838e147}{onsave} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a50acd223a47511be7b2e92dd1d504268}{beforeerase} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_aa8c748ed4bf2cba7c84ce360e00dbe2a}{aftererase} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_aebef85c8e2c1ece8cb36a60dc332595f}{onerase} (\$func)
+\item 
+\hyperlink{class_d_b_1_1_cursor_a4a20559544fdf4dcb457e258dc976cf8}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_cursor_a18682bea3799d50bb3a0cc3d049dca07}{}\label{class_d_b_1_1_cursor_a18682bea3799d50bb3a0cc3d049dca07} 
+\hyperlink{class_d_b_1_1_cursor_a18682bea3799d50bb3a0cc3d049dca07}{\$ptr} =0
+\begin{DoxyCompactList}\small\item\em Current position. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_cursor_ae4c540bb943eedf48dbc7d06b2994a05}{}\label{class_d_b_1_1_cursor_ae4c540bb943eedf48dbc7d06b2994a05} 
+\hyperlink{class_d_b_1_1_cursor_ae4c540bb943eedf48dbc7d06b2994a05}{\$trigger} =\mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Event listeners. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_cursor_aa2e3f553fd1f1c2053bc084118c10396}{}\label{class_d_b_1_1_cursor_aa2e3f553fd1f1c2053bc084118c10396} 
+const {\bfseries E\+\_\+\+Field} =\textquotesingle{}Undefined field \%s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_cursor_af59a5f7cd609e592c41dc3643efd3c98}{}\label{class_d_b_1_1_cursor_af59a5f7cd609e592c41dc3643efd3c98} 
+\hyperlink{class_d_b_1_1_cursor_af59a5f7cd609e592c41dc3643efd3c98}{\$query} =\mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Query results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple cursor implementation. 
+
+Definition at line 26 of file cursor.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_b_1_1_cursor_aa8c748ed4bf2cba7c84ce360e00dbe2a}{}\label{class_d_b_1_1_cursor_aa8c748ed4bf2cba7c84ce360e00dbe2a} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!aftererase@{aftererase}}
+\index{aftererase@{aftererase}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{aftererase()}{aftererase()}}
+{\footnotesize\ttfamily aftererase (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define aftererase trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 363 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a192a31bc101b9aafb4e1300883d33dc6}{}\label{class_d_b_1_1_cursor_a192a31bc101b9aafb4e1300883d33dc6} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!afterinsert@{afterinsert}}
+\index{afterinsert@{afterinsert}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{afterinsert()}{afterinsert()}}
+{\footnotesize\ttfamily afterinsert (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define afterinsert trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 278 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a4b19070ae7f1fc2edeee8e0252f8ebb2}{}\label{class_d_b_1_1_cursor_a4b19070ae7f1fc2edeee8e0252f8ebb2} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!aftersave@{aftersave}}
+\index{aftersave@{aftersave}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{aftersave()}{aftersave()}}
+{\footnotesize\ttfamily aftersave (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define aftersave trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 334 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a2b621278d4f2ed751338a1d1bfb60e70}{}\label{class_d_b_1_1_cursor_a2b621278d4f2ed751338a1d1bfb60e70} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!afterupdate@{afterupdate}}
+\index{afterupdate@{afterupdate}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{afterupdate()}{afterupdate()}}
+{\footnotesize\ttfamily afterupdate (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define afterupdate trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 305 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a50acd223a47511be7b2e92dd1d504268}{}\label{class_d_b_1_1_cursor_a50acd223a47511be7b2e92dd1d504268} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!beforeerase@{beforeerase}}
+\index{beforeerase@{beforeerase}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{beforeerase()}{beforeerase()}}
+{\footnotesize\ttfamily beforeerase (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define beforeerase trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 354 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_ae34d64fef3b7e4de2eede65ca67751d7}{}\label{class_d_b_1_1_cursor_ae34d64fef3b7e4de2eede65ca67751d7} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!beforeinsert@{beforeinsert}}
+\index{beforeinsert@{beforeinsert}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{beforeinsert()}{beforeinsert()}}
+{\footnotesize\ttfamily beforeinsert (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define beforeinsert trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 269 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a9d837ab7aea1a740986d5f6c0258b395}{}\label{class_d_b_1_1_cursor_a9d837ab7aea1a740986d5f6c0258b395} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!beforesave@{beforesave}}
+\index{beforesave@{beforesave}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{beforesave()}{beforesave()}}
+{\footnotesize\ttfamily beforesave (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define beforesave trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 323 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a9f11326bbf4cdec47ac4f1d143f1dfba}{}\label{class_d_b_1_1_cursor_a9f11326bbf4cdec47ac4f1d143f1dfba} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!beforeupdate@{beforeupdate}}
+\index{beforeupdate@{beforeupdate}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{beforeupdate()}{beforeupdate()}}
+{\footnotesize\ttfamily beforeupdate (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define beforeupdate trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 296 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_aa33294a722f17e6e4946223bb73f13ab}{}\label{class_d_b_1_1_cursor_aa33294a722f17e6e4946223bb73f13ab} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!cast@{cast}}
+\index{cast@{cast}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{cast()}{cast()}}
+{\footnotesize\ttfamily cast (\begin{DoxyParamCaption}\item[{}]{\$obj = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return fields of mapper object as an associative array \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$obj} & object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_d_b_1_1_cursor_adffe904ab38af888d9b033647ec6d935}{}\label{class_d_b_1_1_cursor_adffe904ab38af888d9b033647ec6d935} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!copyfrom@{copyfrom}}
+\index{copyfrom@{copyfrom}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{copyfrom()}{copyfrom()}}
+{\footnotesize\ttfamily copyfrom (\begin{DoxyParamCaption}\item[{}]{\$var,  }\item[{}]{\$func = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Hydrate mapper object using hive array variable \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$var} & array$\vert$string \\
+\hline
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_d_b_1_1_cursor_a4bcf54f913758fb093c35ea81fc29615}{}\label{class_d_b_1_1_cursor_a4bcf54f913758fb093c35ea81fc29615} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!copyto@{copyto}}
+\index{copyto@{copyto}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{copyto()}{copyto()}}
+{\footnotesize\ttfamily copyto (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Populate hive array variable with mapper fields \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_d_b_1_1_cursor_ab1f3a3bd85dca49dceaea57f2fe21abf}{}\label{class_d_b_1_1_cursor_ab1f3a3bd85dca49dceaea57f2fe21abf} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!count@{count}}
+\index{count@{count}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}\item[{}]{\$filter = {\ttfamily NULL},  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Count records that match criteria \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$filter} & array \\
+\hline
+{\em \$ttl} & int \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_d_b_1_1_cursor_a38948c2fb1711f49b72f123cbd91e611}{}\label{class_d_b_1_1_cursor_a38948c2fb1711f49b72f123cbd91e611} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!dbtype@{dbtype}}
+\index{dbtype@{dbtype}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{dbtype()}{dbtype()}}
+{\footnotesize\ttfamily dbtype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return database type \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_d_b_1_1_cursor_acc3a900450447c51540aaa9dec5959a4}{}\label{class_d_b_1_1_cursor_acc3a900450447c51540aaa9dec5959a4} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!dry@{dry}}
+\index{dry@{dry}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{dry()}{dry()}}
+{\footnotesize\ttfamily dry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if current cursor position is not mapped to any record \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a933f3fa1037c8b797bdd237d811edf82}{}\label{class_d_b_1_1_cursor_a933f3fa1037c8b797bdd237d811edf82} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!erase@{erase}}
+\index{erase@{erase}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Delete current record \begin{DoxyReturn}{Returns}
+int$\vert$bool 
+\end{DoxyReturn}
+
+
+Definition at line 249 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a9dfc1601eaf8348bed6ba5622f725971}{}\label{class_d_b_1_1_cursor_a9dfc1601eaf8348bed6ba5622f725971} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!fields@{fields}}
+\index{fields@{fields}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{fields()}{fields()}}
+{\footnotesize\ttfamily fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return field names \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_d_b_1_1_cursor_a45e70f55799839fc0286bc94000924a7}{}\label{class_d_b_1_1_cursor_a45e70f55799839fc0286bc94000924a7} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!find@{find}}
+\index{find@{find}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily find (\begin{DoxyParamCaption}\item[{}]{\$filter = {\ttfamily NULL},  }\item[{array}]{\$options = {\ttfamily NULL},  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return records (array of mapper objects) that match criteria \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$filter} & string$\vert$array \\
+\hline
+{\em \$options} & array \\
+\hline
+{\em \$ttl} & int \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_d_b_1_1_cursor_abf73a1aa82ad1233b41388c0a4711c86}{}\label{class_d_b_1_1_cursor_abf73a1aa82ad1233b41388c0a4711c86} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!findone@{findone}}
+\index{findone@{findone}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{findone()}{findone()}}
+{\footnotesize\ttfamily findone (\begin{DoxyParamCaption}\item[{}]{\$filter = {\ttfamily NULL},  }\item[{array}]{\$options = {\ttfamily NULL},  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Return first record (mapper object) that matches criteria \begin{DoxyReturn}{Returns}
+static$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$filter} & string$\vert$array \\
+\hline
+{\em \$options} & array \\
+\hline
+{\em \$ttl} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_ac73eef9ff76ea330c0dab36ca448b90d}{}\label{class_d_b_1_1_cursor_ac73eef9ff76ea330c0dab36ca448b90d} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!first@{first}}
+\index{first@{first}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Map to first record in cursor \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 191 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a7f835c25df4cb49d02328644722656da}{}\label{class_d_b_1_1_cursor_a7f835c25df4cb49d02328644722656da} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!getiterator@{getiterator}}
+\index{getiterator@{getiterator}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{getiterator()}{getiterator()}}
+{\footnotesize\ttfamily getiterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get cursor\textquotesingle{}s equivalent external iterator Causes a fatal error in P\+HP 5.\+3.\+5 if uncommented return Array\+Iterator \hypertarget{class_d_b_1_1_cursor_a473241246338cfccc4709ba896749019}{}\label{class_d_b_1_1_cursor_a473241246338cfccc4709ba896749019} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!insert@{insert}}
+\index{insert@{insert}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily insert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Insert new record \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_d_b_1_1_cursor_ac90cadb327363232bb2d83a4f8ebd613}{}\label{class_d_b_1_1_cursor_ac90cadb327363232bb2d83a4f8ebd613} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!last@{last}}
+\index{last@{last}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Map to last record in cursor \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a4db66c122e6274a3d653eff639e8476f}{}\label{class_d_b_1_1_cursor_a4db66c122e6274a3d653eff639e8476f} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!load@{load}}
+\index{load@{load}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily load (\begin{DoxyParamCaption}\item[{}]{\$filter = {\ttfamily NULL},  }\item[{array}]{\$options = {\ttfamily NULL},  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Map to first record that matches criteria \begin{DoxyReturn}{Returns}
+array$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$filter} & string$\vert$array \\
+\hline
+{\em \$options} & array \\
+\hline
+{\em \$ttl} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 173 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a3f07a4aa73e71d525744db933bc2aff4}{}\label{class_d_b_1_1_cursor_a3f07a4aa73e71d525744db933bc2aff4} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!loaded@{loaded}}
+\index{loaded@{loaded}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{loaded()}{loaded()}}
+{\footnotesize\ttfamily loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the count of records loaded \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 183 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_acea62048bfee7b3cd80ed446c86fb78a}{}\label{class_d_b_1_1_cursor_acea62048bfee7b3cd80ed446c86fb78a} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!next@{next}}
+\index{next@{next}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Map next record \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_aebef85c8e2c1ece8cb36a60dc332595f}{}\label{class_d_b_1_1_cursor_aebef85c8e2c1ece8cb36a60dc332595f} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!onerase@{onerase}}
+\index{onerase@{onerase}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{onerase()}{onerase()}}
+{\footnotesize\ttfamily onerase (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define onerase trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 372 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_ab3ebd70359a4d0916e07bc3523099fff}{}\label{class_d_b_1_1_cursor_ab3ebd70359a4d0916e07bc3523099fff} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!oninsert@{oninsert}}
+\index{oninsert@{oninsert}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{oninsert()}{oninsert()}}
+{\footnotesize\ttfamily oninsert (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define oninsert trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 287 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a7615e052068ed5e2c78a87f9b562f98e}{}\label{class_d_b_1_1_cursor_a7615e052068ed5e2c78a87f9b562f98e} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!onload@{onload}}
+\index{onload@{onload}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{onload()}{onload()}}
+{\footnotesize\ttfamily onload (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define onload trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 260 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a507f285ea3bb622446f79e07e838e147}{}\label{class_d_b_1_1_cursor_a507f285ea3bb622446f79e07e838e147} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!onsave@{onsave}}
+\index{onsave@{onsave}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{onsave()}{onsave()}}
+{\footnotesize\ttfamily onsave (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define onsave trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 345 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a6af536a479e72aff418c5965eff20320}{}\label{class_d_b_1_1_cursor_a6af536a479e72aff418c5965eff20320} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!onupdate@{onupdate}}
+\index{onupdate@{onupdate}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{onupdate()}{onupdate()}}
+{\footnotesize\ttfamily onupdate (\begin{DoxyParamCaption}\item[{}]{\$func }\end{DoxyParamCaption})}
+
+Define onupdate trigger \begin{DoxyReturn}{Returns}
+callback 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 314 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a51889c022407cdc6cc565afa5ffe2715}{}\label{class_d_b_1_1_cursor_a51889c022407cdc6cc565afa5ffe2715} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!paginate@{paginate}}
+\index{paginate@{paginate}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{paginate()}{paginate()}}
+{\footnotesize\ttfamily paginate (\begin{DoxyParamCaption}\item[{}]{\$pos = {\ttfamily 0},  }\item[{}]{\$size = {\ttfamily 10},  }\item[{}]{\$filter = {\ttfamily NULL},  }\item[{array}]{\$options = {\ttfamily NULL},  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Return array containing subset of records matching criteria, total number of records in superset, specified limit, number of subsets available, and actual subset position \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$pos} & int \\
+\hline
+{\em \$size} & int \\
+\hline
+{\em \$filter} & string$\vert$array \\
+\hline
+{\em \$options} & array \\
+\hline
+{\em \$ttl} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a190535b88008d474b610585a5d9eb84c}{}\label{class_d_b_1_1_cursor_a190535b88008d474b610585a5d9eb84c} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!prev@{prev}}
+\index{prev@{prev}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Map previous record \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a4a20559544fdf4dcb457e258dc976cf8}{}\label{class_d_b_1_1_cursor_a4a20559544fdf4dcb457e258dc976cf8} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!reset@{reset}}
+\index{reset@{reset}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset cursor \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 380 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_d_b_1_1_cursor_afc8a3c62679cf00ade9f15fb2a6d6132} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!save@{save}}
+\index{save@{save}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save mapped record \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 241 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_aad399d205074eaeed711d5e0157b3c0a}{}\label{class_d_b_1_1_cursor_aad399d205074eaeed711d5e0157b3c0a} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!skip@{skip}}
+\index{skip@{skip}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily skip (\begin{DoxyParamCaption}\item[{}]{\$ofs = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Map to nth record relative to current cursor position \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$ofs} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 208 of file cursor.\+php.
+
+\hypertarget{class_d_b_1_1_cursor_a842e4774e3b3601a005b995c02f7e883}{}\label{class_d_b_1_1_cursor_a842e4774e3b3601a005b995c02f7e883} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!update@{update}}
+\index{update@{update}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Update current record \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_d_b_1_1_cursor_abb9f0d6adf1eb9b3b55712056861a247}{}\label{class_d_b_1_1_cursor_abb9f0d6adf1eb9b3b55712056861a247} 
+\index{D\+B\+::\+Cursor@{D\+B\+::\+Cursor}!valid@{valid}}
+\index{valid@{valid}!D\+B\+::\+Cursor@{D\+B\+::\+Cursor}}
+\subsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return whether current iterator position is valid. 
+
+Definition at line 233 of file cursor.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/db/cursor.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\hypertarget{class_web_1_1_o_auth2}{}\section{O\+Auth2 Class Reference}
+\label{class_web_1_1_o_auth2}\index{O\+Auth2@{O\+Auth2}}
+
+
+Lightweight \hyperlink{class_web_1_1_o_auth2}{O\+Auth2} client.  
+
+
+Inheritance diagram for O\+Auth2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_web_1_1_o_auth2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_1_1_o_auth2_a52f2721541169726269393c6eaaf8f53}{uri} (\$endpoint)
+\item 
+\hyperlink{class_web_1_1_o_auth2_ad75f56dfe168d5939f0c5b161d95d351}{request} (\$\hyperlink{class_web_1_1_o_auth2_a52f2721541169726269393c6eaaf8f53}{uri}, \$method, \$token=N\+U\+LL)
+\item 
+\hyperlink{class_web_1_1_o_auth2_a0520d136dfbea7d3360681b460d23a3c}{jwt} (\$token)
+\item 
+\hyperlink{class_web_1_1_o_auth2_ace1ae5be37bf26c172cc7ea4e1a65e26}{exists} (\$key)
+\item 
+\hyperlink{class_web_1_1_o_auth2_ac8d8012023e560c81f55a629022cb65a}{set} (\$key, \$val)
+\item 
+\& \hyperlink{class_web_1_1_o_auth2_ac3695923790b06917410e205068b8376}{get} (\$key)
+\item 
+\hyperlink{class_web_1_1_o_auth2_a3afe9e27ee9d208e19b23b9e5ba2689a}{clear} (\$key=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_web_1_1_o_auth2_a67e94494731d99ed23b123e95175bc10}{}\label{class_web_1_1_o_auth2_a67e94494731d99ed23b123e95175bc10} 
+\hyperlink{class_web_1_1_o_auth2_a67e94494731d99ed23b123e95175bc10}{\$args} =\mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Scopes and claims. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lightweight \hyperlink{class_web_1_1_o_auth2}{O\+Auth2} client. 
+
+Definition at line 26 of file oauth2.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_web_1_1_o_auth2_a3afe9e27ee9d208e19b23b9e5ba2689a}{}\label{class_web_1_1_o_auth2_a3afe9e27ee9d208e19b23b9e5ba2689a} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!clear@{clear}}
+\index{clear@{clear}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily clear (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Remove scope/claim \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_ace1ae5be37bf26c172cc7ea4e1a65e26}{}\label{class_web_1_1_o_auth2_ace1ae5be37bf26c172cc7ea4e1a65e26} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!exists@{exists}}
+\index{exists@{exists}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily exists (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if scope/claim exists \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_ac3695923790b06917410e205068b8376}{}\label{class_web_1_1_o_auth2_ac3695923790b06917410e205068b8376} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!get@{get}}
+\index{get@{get}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \& get (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Return value of scope/claim \begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_a0520d136dfbea7d3360681b460d23a3c}{}\label{class_web_1_1_o_auth2_a0520d136dfbea7d3360681b460d23a3c} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!jwt@{jwt}}
+\index{jwt@{jwt}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{jwt()}{jwt()}}
+{\footnotesize\ttfamily jwt (\begin{DoxyParamCaption}\item[{}]{\$token }\end{DoxyParamCaption})}
+
+Parse J\+S\+ON \hyperlink{class_web}{Web} token \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$token} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_ad75f56dfe168d5939f0c5b161d95d351}{}\label{class_web_1_1_o_auth2_ad75f56dfe168d5939f0c5b161d95d351} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!request@{request}}
+\index{request@{request}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily request (\begin{DoxyParamCaption}\item[{}]{\$uri,  }\item[{}]{\$method,  }\item[{}]{\$token = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Send request to A\+P\+I/token endpoint \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$uri} & string \\
+\hline
+{\em \$method} & string \\
+\hline
+{\em \$token} & array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_ac8d8012023e560c81f55a629022cb65a}{}\label{class_web_1_1_o_auth2_ac8d8012023e560c81f55a629022cb65a} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!set@{set}}
+\index{set@{set}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$val }\end{DoxyParamCaption})}
+
+Bind value to scope/claim \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string \\
+\hline
+{\em \$val} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file oauth2.\+php.
+
+\hypertarget{class_web_1_1_o_auth2_a52f2721541169726269393c6eaaf8f53}{}\label{class_web_1_1_o_auth2_a52f2721541169726269393c6eaaf8f53} 
+\index{Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}!uri@{uri}}
+\index{uri@{uri}!Web\+::\+O\+Auth2@{Web\+::\+O\+Auth2}}
+\subsubsection{\texorpdfstring{uri()}{uri()}}
+{\footnotesize\ttfamily uri (\begin{DoxyParamCaption}\item[{}]{\$endpoint }\end{DoxyParamCaption})}
+
+Return \hyperlink{class_web_1_1_o_auth2}{O\+Auth2} authentication U\+RI \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$endpoint} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file oauth2.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/web/oauth2.\+php\end{DoxyCompactItemize}

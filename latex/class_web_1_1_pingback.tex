@@ -1,0 +1,136 @@
+\hypertarget{class_web_1_1_pingback}{}\section{Pingback Class Reference}
+\label{class_web_1_1_pingback}\index{Pingback@{Pingback}}
+
+
+\hyperlink{class_web_1_1_pingback}{Pingback} 1.\+0 protocol (client and server) implementation.  
+
+
+Inheritance diagram for Pingback\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_web_1_1_pingback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_1_1_pingback_af2f57c4ad56194df3b169d4993d49dbb}{inspect} (\$source)
+\item 
+\hyperlink{class_web_1_1_pingback_aa1f607b468feb8edba01ef661f980294}{listen} (\$func, \$path=N\+U\+LL)
+\item 
+\hyperlink{class_web_1_1_pingback_a5e06d9b7f0033278f40a41d081efbe71}{log} ()
+\item 
+\hyperlink{class_web_1_1_pingback_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_1_1_pingback_a40d5adaa4e43f4c875ad081d7118ce4e}{enabled} (\$url)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_web_1_1_pingback_a9a2cf15a653aee8be437f7ae474cd494}{}\label{class_web_1_1_pingback_a9a2cf15a653aee8be437f7ae474cd494} 
+\hyperlink{class_web_1_1_pingback_a9a2cf15a653aee8be437f7ae474cd494}{\$log}
+\begin{DoxyCompactList}\small\item\em Transaction history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_web_1_1_pingback}{Pingback} 1.\+0 protocol (client and server) implementation. 
+
+Definition at line 26 of file pingback.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_web_1_1_pingback_a095c5d389db211932136b53f25f39685}{}\label{class_web_1_1_pingback_a095c5d389db211932136b53f25f39685} 
+\index{Web\+::\+Pingback@{Web\+::\+Pingback}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Web\+::\+Pingback@{Web\+::\+Pingback}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Instantiate class \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file pingback.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_web_1_1_pingback_a40d5adaa4e43f4c875ad081d7118ce4e}{}\label{class_web_1_1_pingback_a40d5adaa4e43f4c875ad081d7118ce4e} 
+\index{Web\+::\+Pingback@{Web\+::\+Pingback}!enabled@{enabled}}
+\index{enabled@{enabled}!Web\+::\+Pingback@{Web\+::\+Pingback}}
+\subsubsection{\texorpdfstring{enabled()}{enabled()}}
+{\footnotesize\ttfamily enabled (\begin{DoxyParamCaption}\item[{}]{\$url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return T\+R\+UE if U\+RL points to a pingback-\/enabled resource \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$url} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file pingback.\+php.
+
+\hypertarget{class_web_1_1_pingback_af2f57c4ad56194df3b169d4993d49dbb}{}\label{class_web_1_1_pingback_af2f57c4ad56194df3b169d4993d49dbb} 
+\index{Web\+::\+Pingback@{Web\+::\+Pingback}!inspect@{inspect}}
+\index{inspect@{inspect}!Web\+::\+Pingback@{Web\+::\+Pingback}}
+\subsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily inspect (\begin{DoxyParamCaption}\item[{}]{\$source }\end{DoxyParamCaption})}
+
+Load local page contents, parse H\+T\+ML anchor tags, find permalinks, and send X\+M\+L-\/\+R\+PC calls to corresponding pingback servers \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$source} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file pingback.\+php.
+
+\hypertarget{class_web_1_1_pingback_aa1f607b468feb8edba01ef661f980294}{}\label{class_web_1_1_pingback_aa1f607b468feb8edba01ef661f980294} 
+\index{Web\+::\+Pingback@{Web\+::\+Pingback}!listen@{listen}}
+\index{listen@{listen}!Web\+::\+Pingback@{Web\+::\+Pingback}}
+\subsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily listen (\begin{DoxyParamCaption}\item[{}]{\$func,  }\item[{}]{\$path = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Receive ping, check if local page is pingback-\/enabled, verify source contents, and return X\+M\+L-\/\+R\+PC response \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$func} & callback \\
+\hline
+{\em \$path} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file pingback.\+php.
+
+\hypertarget{class_web_1_1_pingback_a5e06d9b7f0033278f40a41d081efbe71}{}\label{class_web_1_1_pingback_a5e06d9b7f0033278f40a41d081efbe71} 
+\index{Web\+::\+Pingback@{Web\+::\+Pingback}!log@{log}}
+\index{log@{log}!Web\+::\+Pingback@{Web\+::\+Pingback}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return transaction history \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file pingback.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/web/pingback.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,308 @@
+\hypertarget{class_audit}{}\section{Audit Class Reference}
+\label{class_audit}\index{Audit@{Audit}}
+
+
+Data validator.  
+
+
+Inheritance diagram for Audit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_audit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_audit_aef8b9a57041dec7db0ff956bba1d8b3f}{url} (\$str)
+\item 
+\hyperlink{class_audit_a369b2fd023996c185845f4993d03f530}{email} (\$str, \$mx=T\+R\+UE)
+\item 
+\hyperlink{class_audit_a2c914582b13324bf624b1cd1763f258e}{ipv4} (\$addr)
+\item 
+\hyperlink{class_audit_a74a69adbf8a934eee039f323c864a508}{ipv6} (\$addr)
+\item 
+\hyperlink{class_audit_a9bb5536f5e8cfe33672340a407daa387}{isprivate} (\$addr)
+\item 
+\hyperlink{class_audit_a352a97e07f1d2ebb7dcc009da6c67825}{isreserved} (\$addr)
+\item 
+\hyperlink{class_audit_a421f0166ffee8171ee3948970abcecad}{ispublic} (\$addr)
+\item 
+\hyperlink{class_audit_ac6c1cda9920c8236cd00d10bffb2890f}{isdesktop} (\$agent=N\+U\+LL)
+\item 
+\hyperlink{class_audit_afbca2bf25d7295857c0e7b161ab21beb}{ismobile} (\$agent=N\+U\+LL)
+\item 
+\hyperlink{class_audit_a7d73389ff426668e83b171fd662018ad}{isbot} (\$agent=N\+U\+LL)
+\item 
+\hyperlink{class_audit_a80595e89a7b191abab586fcd73e54c6a}{mod10} (\$id)
+\item 
+\hyperlink{class_audit_a631df11fda2fb8e663e24f804c978367}{card} (\$id)
+\item 
+\hyperlink{class_audit_ac1c0abeb7a7ac6bf923e6e0abdfe336e}{entropy} (\$str)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_audit_a0a52494b8ebe7bc548e0ff67a81f717c}{}\label{class_audit_a0a52494b8ebe7bc548e0ff67a81f717c} 
+const {\bfseries U\+A\+\_\+\+Mobile} =\textquotesingle{}android$\vert$blackberry$\vert$phone$\vert$ipod$\vert$palm$\vert$windows\textbackslash{}s+ce\textquotesingle{}
+\item 
+\hypertarget{class_audit_af48a17a5642de795ab0da730d87c6109}{}\label{class_audit_af48a17a5642de795ab0da730d87c6109} 
+const {\bfseries U\+A\+\_\+\+Desktop} =\textquotesingle{}bsd$\vert$linux$\vert$os\textbackslash{}s+\mbox{[}x9\mbox{]}$\vert$solaris$\vert$windows\textquotesingle{}
+\item 
+\hypertarget{class_audit_a6c072917477cd06e254dda1a977406e6}{}\label{class_audit_a6c072917477cd06e254dda1a977406e6} 
+const {\bfseries U\+A\+\_\+\+Bot} =\textquotesingle{}bot$\vert$crawl$\vert$slurp$\vert$spider\textquotesingle{}
+\end{DoxyCompactItemize}
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Data validator. 
+
+Definition at line 24 of file audit.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_audit_a631df11fda2fb8e663e24f804c978367}{}\label{class_audit_a631df11fda2fb8e663e24f804c978367} 
+\index{Audit@{Audit}!card@{card}}
+\index{card@{card}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{card()}{card()}}
+{\footnotesize\ttfamily card (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Return credit card type if number is valid \begin{DoxyReturn}{Returns}
+string$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file audit.\+php.
+
+\hypertarget{class_audit_a369b2fd023996c185845f4993d03f530}{}\label{class_audit_a369b2fd023996c185845f4993d03f530} 
+\index{Audit@{Audit}!email@{email}}
+\index{email@{email}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{email()}{email()}}
+{\footnotesize\ttfamily email (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$mx = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if string is a valid e-\/mail address; Check D\+NS MX records if specified \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+{\em \$mx} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file audit.\+php.
+
+\hypertarget{class_audit_ac1c0abeb7a7ac6bf923e6e0abdfe336e}{}\label{class_audit_ac1c0abeb7a7ac6bf923e6e0abdfe336e} 
+\index{Audit@{Audit}!entropy@{entropy}}
+\index{entropy@{entropy}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{entropy()}{entropy()}}
+{\footnotesize\ttfamily entropy (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Return entropy estimate of a password (N\+I\+ST 800-\/63) \begin{DoxyReturn}{Returns}
+int$\vert$float 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file audit.\+php.
+
+\hypertarget{class_audit_a2c914582b13324bf624b1cd1763f258e}{}\label{class_audit_a2c914582b13324bf624b1cd1763f258e} 
+\index{Audit@{Audit}!ipv4@{ipv4}}
+\index{ipv4@{ipv4}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{ipv4()}{ipv4()}}
+{\footnotesize\ttfamily ipv4 (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if string is a valid I\+P\+V4 address \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file audit.\+php.
+
+\hypertarget{class_audit_a74a69adbf8a934eee039f323c864a508}{}\label{class_audit_a74a69adbf8a934eee039f323c864a508} 
+\index{Audit@{Audit}!ipv6@{ipv6}}
+\index{ipv6@{ipv6}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{ipv6()}{ipv6()}}
+{\footnotesize\ttfamily ipv6 (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if string is a valid I\+P\+V6 address \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file audit.\+php.
+
+\hypertarget{class_audit_a7d73389ff426668e83b171fd662018ad}{}\label{class_audit_a7d73389ff426668e83b171fd662018ad} 
+\index{Audit@{Audit}!isbot@{isbot}}
+\index{isbot@{isbot}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{isbot()}{isbot()}}
+{\footnotesize\ttfamily isbot (\begin{DoxyParamCaption}\item[{}]{\$agent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if user agent is a \hyperlink{class_web}{Web} bot \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$agent} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file audit.\+php.
+
+\hypertarget{class_audit_ac6c1cda9920c8236cd00d10bffb2890f}{}\label{class_audit_ac6c1cda9920c8236cd00d10bffb2890f} 
+\index{Audit@{Audit}!isdesktop@{isdesktop}}
+\index{isdesktop@{isdesktop}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{isdesktop()}{isdesktop()}}
+{\footnotesize\ttfamily isdesktop (\begin{DoxyParamCaption}\item[{}]{\$agent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if user agent is a desktop browser \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$agent} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file audit.\+php.
+
+\hypertarget{class_audit_afbca2bf25d7295857c0e7b161ab21beb}{}\label{class_audit_afbca2bf25d7295857c0e7b161ab21beb} 
+\index{Audit@{Audit}!ismobile@{ismobile}}
+\index{ismobile@{ismobile}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{ismobile()}{ismobile()}}
+{\footnotesize\ttfamily ismobile (\begin{DoxyParamCaption}\item[{}]{\$agent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if user agent is a mobile device \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$agent} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file audit.\+php.
+
+\hypertarget{class_audit_a9bb5536f5e8cfe33672340a407daa387}{}\label{class_audit_a9bb5536f5e8cfe33672340a407daa387} 
+\index{Audit@{Audit}!isprivate@{isprivate}}
+\index{isprivate@{isprivate}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{isprivate()}{isprivate()}}
+{\footnotesize\ttfamily isprivate (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if IP address is within private range \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file audit.\+php.
+
+\hypertarget{class_audit_a421f0166ffee8171ee3948970abcecad}{}\label{class_audit_a421f0166ffee8171ee3948970abcecad} 
+\index{Audit@{Audit}!ispublic@{ispublic}}
+\index{ispublic@{ispublic}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{ispublic()}{ispublic()}}
+{\footnotesize\ttfamily ispublic (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if IP address is neither private nor reserved \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file audit.\+php.
+
+\hypertarget{class_audit_a352a97e07f1d2ebb7dcc009da6c67825}{}\label{class_audit_a352a97e07f1d2ebb7dcc009da6c67825} 
+\index{Audit@{Audit}!isreserved@{isreserved}}
+\index{isreserved@{isreserved}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{isreserved()}{isreserved()}}
+{\footnotesize\ttfamily isreserved (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if IP address is within reserved range \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$addr} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 88 of file audit.\+php.
+
+\hypertarget{class_audit_a80595e89a7b191abab586fcd73e54c6a}{}\label{class_audit_a80595e89a7b191abab586fcd73e54c6a} 
+\index{Audit@{Audit}!mod10@{mod10}}
+\index{mod10@{mod10}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{mod10()}{mod10()}}
+{\footnotesize\ttfamily mod10 (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if specified ID has a valid (Luhn) Mod-\/10 check digit \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file audit.\+php.
+
+\hypertarget{class_audit_aef8b9a57041dec7db0ff956bba1d8b3f}{}\label{class_audit_aef8b9a57041dec7db0ff956bba1d8b3f} 
+\index{Audit@{Audit}!url@{url}}
+\index{url@{url}!Audit@{Audit}}
+\subsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily url (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Return T\+R\+UE if string is a valid U\+RL \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file audit.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/audit.\+php\end{DoxyCompactItemize}

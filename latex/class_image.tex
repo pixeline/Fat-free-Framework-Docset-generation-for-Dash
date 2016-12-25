@@ -1,0 +1,645 @@
+\hypertarget{class_image}{}\section{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+
+
+\hyperlink{class_image}{Image} manipulation tools.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_image_ab2758ab5d8c1d2cd3c4e48b72daed2d9}{rgb} (\$color)
+\item 
+\hyperlink{class_image_a70a743c63f97d5bbfdb2cdab7d186938}{invert} ()
+\item 
+\hyperlink{class_image_af571c7cddbd8021822dc8a6c36bd4059}{brightness} (\$level)
+\item 
+\hyperlink{class_image_a7af23605eb273c1084cbbf092bf69c50}{contrast} (\$level)
+\item 
+\hyperlink{class_image_acc92bb7ca13df725e80732ca8181a0c2}{grayscale} ()
+\item 
+\hyperlink{class_image_a7ebc6366f3da2bf2af1608663fdb7a09}{smooth} (\$level)
+\item 
+\hyperlink{class_image_aabc8c1473621bfe3e064dd0a756c935e}{emboss} ()
+\item 
+\hyperlink{class_image_a4723159606519b101e408854bc65ee35}{sepia} ()
+\item 
+\hyperlink{class_image_af2baa228f3e2d08bafa8621d4501b113}{pixelate} (\$size)
+\item 
+\hyperlink{class_image_acdca850837eae7c01092f833157ace57}{blur} (\$selective=F\+A\+L\+SE)
+\item 
+\hyperlink{class_image_afc92209cb2a19193d46a9338b13a3bb9}{sketch} ()
+\item 
+\hyperlink{class_image_a24dbd95e2d9306a1bfe43cc344b8af1d}{hflip} ()
+\item 
+\hyperlink{class_image_ac7bff34c7bb8af86f020474c2f4f2737}{vflip} ()
+\item 
+\hyperlink{class_image_a4363bcc58d31e100cc126fafad73ef1a}{crop} (\$x1, \$y1, \$x2, \$y2)
+\item 
+\hyperlink{class_image_a359458680d67cee8333d7af2f078e859}{resize} (\$\hyperlink{class_image_aac6ce1a0981556eb27334db76b666350}{width}=N\+U\+LL, \$\hyperlink{class_image_a40c074d7d21447265a9ce46470c94414}{height}=N\+U\+LL, \$\hyperlink{class_image_a4363bcc58d31e100cc126fafad73ef1a}{crop}=T\+R\+UE, \$enlarge=T\+R\+UE)
+\item 
+\hyperlink{class_image_a4295061e879c4cc714213bf14116d346}{rotate} (\$angle)
+\item 
+\hyperlink{class_image_a8a9ac897190d669360d49849f2fedd4b}{overlay} (\hyperlink{class_image}{Image} \$img, \$align=N\+U\+LL, \$alpha=100)
+\item 
+\hyperlink{class_image_a21a211586a8f97991d047e17b1b886e2}{identicon} (\$str, \$size=64, \$blocks=4)
+\item 
+\hyperlink{class_image_a4a77a76c9efebb84729d655f56d405d1}{captcha} (\$font, \$size=24, \$len=5, \$key=N\+U\+LL, \$path=\textquotesingle{}\textquotesingle{}, \$fg=0x\+F\+F\+F\+F\+F\+F, \$bg=0x000000)
+\item 
+\hyperlink{class_image_aac6ce1a0981556eb27334db76b666350}{width} ()
+\item 
+\hyperlink{class_image_a40c074d7d21447265a9ce46470c94414}{height} ()
+\item 
+\hyperlink{class_image_afde88292c44dc59faf017738dae6dffb}{render} ()
+\item 
+\hyperlink{class_image_a5bf63e4ac70cfd9d97e3f2eab936ec8b}{dump} ()
+\item 
+\hyperlink{class_image_a742e8fae78fd74219638525de1271605}{data} ()
+\item 
+\hyperlink{class_image_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\item 
+\hyperlink{class_image_a6c2fdbe1df4f3168e741037c8be1a7c0}{restore} (\$state=1)
+\item 
+\hyperlink{class_image_a0347027efc0e46047792065615ac94eb}{undo} ()
+\item 
+\hyperlink{class_image_afab4d10bf39b2e1c9b00b50833b7442a}{load} (\$str)
+\item 
+\hyperlink{class_image_a57aaf05740138a0cc4719034d5b066ce}{\+\_\+\+\_\+construct} (\$file=N\+U\+LL, \$flag=F\+A\+L\+SE, \$path=N\+U\+LL)
+\item 
+\hyperlink{class_image_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_a6efc15b5a2314dd4b5aaa556a375c6d6}{}\label{class_image_a6efc15b5a2314dd4b5aaa556a375c6d6} 
+\hyperlink{class_image_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_image}{Image} resource. \end{DoxyCompactList}\item 
+\hypertarget{class_image_acf5d6dd3ee125abb9a2523b30bc47d02}{}\label{class_image_acf5d6dd3ee125abb9a2523b30bc47d02} 
+\hyperlink{class_image_acf5d6dd3ee125abb9a2523b30bc47d02}{\$flag} =F\+A\+L\+SE
+\begin{DoxyCompactList}\small\item\em Enable/disable history. \end{DoxyCompactList}\item 
+\hypertarget{class_image_af789423037bbc89dc7c850e761177570}{}\label{class_image_af789423037bbc89dc7c850e761177570} 
+\hyperlink{class_image_af789423037bbc89dc7c850e761177570}{\$count} =0
+\begin{DoxyCompactList}\small\item\em Filter count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_adfd85288bc26eee86aab0d233a2015e9}{}\label{class_image_adfd85288bc26eee86aab0d233a2015e9} 
+const {\bfseries E\+\_\+\+Color} =\textquotesingle{}Invalid color specified\+: \%s\textquotesingle{}
+\item 
+\hypertarget{class_image_ae0c1bddb66851a1c5d4984cf458a005f}{}\label{class_image_ae0c1bddb66851a1c5d4984cf458a005f} 
+const {\bfseries E\+\_\+\+File} =\textquotesingle{}File not found\textquotesingle{}
+\item 
+\hypertarget{class_image_acd0bd9a1f20fc7514da5cdfac2915be4}{}\label{class_image_acd0bd9a1f20fc7514da5cdfac2915be4} 
+const {\bfseries E\+\_\+\+Font} =\textquotesingle{}C\+A\+P\+T\+C\+HA font not found\textquotesingle{}
+\item 
+\hypertarget{class_image_a44c38043df185dc80b11a79ce277812c}{}\label{class_image_a44c38043df185dc80b11a79ce277812c} 
+const {\bfseries E\+\_\+\+T\+TF} =\textquotesingle{}No True\+Type support in GD module\textquotesingle{}
+\item 
+\hypertarget{class_image_a7b6dc599dc1deedc879b3513186f3ccf}{}\label{class_image_a7b6dc599dc1deedc879b3513186f3ccf} 
+const {\bfseries E\+\_\+\+Length} =\textquotesingle{}Invalid C\+A\+P\+T\+C\+HA length\+: \%s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_ab225040ebf6e263af6bbcd1499667e24}{}\label{class_image_ab225040ebf6e263af6bbcd1499667e24} 
+const {\bfseries P\+O\+S\+\_\+\+Left} =1
+\item 
+\hypertarget{class_image_ae420359b7aab55c02b2165226f37b596}{}\label{class_image_ae420359b7aab55c02b2165226f37b596} 
+const {\bfseries P\+O\+S\+\_\+\+Center} =2
+\item 
+\hypertarget{class_image_ab54804feab04fe8feb23d94849510922}{}\label{class_image_ab54804feab04fe8feb23d94849510922} 
+const {\bfseries P\+O\+S\+\_\+\+Right} =4
+\item 
+\hypertarget{class_image_a8e891c95deb74e3fcf51bb8ee1827fb9}{}\label{class_image_a8e891c95deb74e3fcf51bb8ee1827fb9} 
+const {\bfseries P\+O\+S\+\_\+\+Top} =8
+\item 
+\hypertarget{class_image_a339da37dd1c147d0db3947297e843d31}{}\label{class_image_a339da37dd1c147d0db3947297e843d31} 
+const {\bfseries P\+O\+S\+\_\+\+Middle} =16
+\item 
+\hypertarget{class_image_a5bbbe1d9932acfbb292e8c76ff17b263}{}\label{class_image_a5bbbe1d9932acfbb292e8c76ff17b263} 
+const {\bfseries P\+O\+S\+\_\+\+Bottom} =32
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_aa1bfbd27060176201b271918dff57e8f}{}\label{class_image_aa1bfbd27060176201b271918dff57e8f} 
+\hyperlink{class_image_aa1bfbd27060176201b271918dff57e8f}{\$file}
+\begin{DoxyCompactList}\small\item\em Source filename. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_image}{Image} manipulation tools. 
+
+Definition at line 24 of file image.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_image_a57aaf05740138a0cc4719034d5b066ce}{}\label{class_image_a57aaf05740138a0cc4719034d5b066ce} 
+\index{Image@{Image}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Image@{Image}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$file = {\ttfamily NULL},  }\item[{}]{\$flag = {\ttfamily FALSE},  }\item[{}]{\$path = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Instantiate image 
+\begin{DoxyParams}{Parameters}
+{\em \$file} & string \\
+\hline
+{\em \$flag} & bool \\
+\hline
+{\em \$path} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 585 of file image.\+php.
+
+\hypertarget{class_image_a421831a265621325e1fdd19aace0c758}{}\label{class_image_a421831a265621325e1fdd19aace0c758} 
+\index{Image@{Image}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Image@{Image}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wrap-\/up \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 604 of file image.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_image_acdca850837eae7c01092f833157ace57}{}\label{class_image_acdca850837eae7c01092f833157ace57} 
+\index{Image@{Image}!blur@{blur}}
+\index{blur@{blur}!Image@{Image}}
+\subsubsection{\texorpdfstring{blur()}{blur()}}
+{\footnotesize\ttfamily blur (\begin{DoxyParamCaption}\item[{}]{\$selective = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Blur the image using Gaussian filter \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$selective} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file image.\+php.
+
+\hypertarget{class_image_af571c7cddbd8021822dc8a6c36bd4059}{}\label{class_image_af571c7cddbd8021822dc8a6c36bd4059} 
+\index{Image@{Image}!brightness@{brightness}}
+\index{brightness@{brightness}!Image@{Image}}
+\subsubsection{\texorpdfstring{brightness()}{brightness()}}
+{\footnotesize\ttfamily brightness (\begin{DoxyParamCaption}\item[{}]{\$level }\end{DoxyParamCaption})}
+
+Adjust brightness (range\+:-\/255 to 255) \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$level} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 88 of file image.\+php.
+
+\hypertarget{class_image_a4a77a76c9efebb84729d655f56d405d1}{}\label{class_image_a4a77a76c9efebb84729d655f56d405d1} 
+\index{Image@{Image}!captcha@{captcha}}
+\index{captcha@{captcha}!Image@{Image}}
+\subsubsection{\texorpdfstring{captcha()}{captcha()}}
+{\footnotesize\ttfamily captcha (\begin{DoxyParamCaption}\item[{}]{\$font,  }\item[{}]{\$size = {\ttfamily 24},  }\item[{}]{\$len = {\ttfamily 5},  }\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$path = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$fg = {\ttfamily 0xFFFFFF},  }\item[{}]{\$bg = {\ttfamily 0x000000} }\end{DoxyParamCaption})}
+
+Generate C\+A\+P\+T\+C\+HA image \begin{DoxyReturn}{Returns}
+object$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$font} & string \\
+\hline
+{\em \$size} & int \\
+\hline
+{\em \$len} & int \\
+\hline
+{\em \$key} & string \\
+\hline
+{\em \$path} & string \\
+\hline
+{\em \$fg} & int \\
+\hline
+{\em \$bg} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 401 of file image.\+php.
+
+\hypertarget{class_image_a7af23605eb273c1084cbbf092bf69c50}{}\label{class_image_a7af23605eb273c1084cbbf092bf69c50} 
+\index{Image@{Image}!contrast@{contrast}}
+\index{contrast@{contrast}!Image@{Image}}
+\subsubsection{\texorpdfstring{contrast()}{contrast()}}
+{\footnotesize\ttfamily contrast (\begin{DoxyParamCaption}\item[{}]{\$level }\end{DoxyParamCaption})}
+
+Adjust contrast (range\+:-\/100 to 100) \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$level} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file image.\+php.
+
+\hypertarget{class_image_a4363bcc58d31e100cc126fafad73ef1a}{}\label{class_image_a4363bcc58d31e100cc126fafad73ef1a} 
+\index{Image@{Image}!crop@{crop}}
+\index{crop@{crop}!Image@{Image}}
+\subsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily crop (\begin{DoxyParamCaption}\item[{}]{\$x1,  }\item[{}]{\$y1,  }\item[{}]{\$x2,  }\item[{}]{\$y2 }\end{DoxyParamCaption})}
+
+Crop the image \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$x1} & int \\
+\hline
+{\em \$y1} & int \\
+\hline
+{\em \$x2} & int \\
+\hline
+{\em \$y2} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 211 of file image.\+php.
+
+\hypertarget{class_image_a742e8fae78fd74219638525de1271605}{}\label{class_image_a742e8fae78fd74219638525de1271605} 
+\index{Image@{Image}!data@{data}}
+\index{data@{data}!Image@{Image}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return image resource \begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+
+
+Definition at line 510 of file image.\+php.
+
+\hypertarget{class_image_a5bf63e4ac70cfd9d97e3f2eab936ec8b}{}\label{class_image_a5bf63e4ac70cfd9d97e3f2eab936ec8b} 
+\index{Image@{Image}!dump@{dump}}
+\index{dump@{dump}!Image@{Image}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return image as a string \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 495 of file image.\+php.
+
+\hypertarget{class_image_aabc8c1473621bfe3e064dd0a756c935e}{}\label{class_image_aabc8c1473621bfe3e064dd0a756c935e} 
+\index{Image@{Image}!emboss@{emboss}}
+\index{emboss@{emboss}!Image@{Image}}
+\subsubsection{\texorpdfstring{emboss()}{emboss()}}
+{\footnotesize\ttfamily emboss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Emboss the image \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file image.\+php.
+
+\hypertarget{class_image_acc92bb7ca13df725e80732ca8181a0c2}{}\label{class_image_acc92bb7ca13df725e80732ca8181a0c2} 
+\index{Image@{Image}!grayscale@{grayscale}}
+\index{grayscale@{grayscale}!Image@{Image}}
+\subsubsection{\texorpdfstring{grayscale()}{grayscale()}}
+{\footnotesize\ttfamily grayscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Convert to grayscale \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file image.\+php.
+
+\hypertarget{class_image_a40c074d7d21447265a9ce46470c94414}{}\label{class_image_a40c074d7d21447265a9ce46470c94414} 
+\index{Image@{Image}!height@{height}}
+\index{height@{height}!Image@{Image}}
+\subsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return image height \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 470 of file image.\+php.
+
+\hypertarget{class_image_a24dbd95e2d9306a1bfe43cc344b8af1d}{}\label{class_image_a24dbd95e2d9306a1bfe43cc344b8af1d} 
+\index{Image@{Image}!hflip@{hflip}}
+\index{hflip@{hflip}!Image@{Image}}
+\subsubsection{\texorpdfstring{hflip()}{hflip()}}
+{\footnotesize\ttfamily hflip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Flip on horizontal axis \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file image.\+php.
+
+\hypertarget{class_image_a21a211586a8f97991d047e17b1b886e2}{}\label{class_image_a21a211586a8f97991d047e17b1b886e2} 
+\index{Image@{Image}!identicon@{identicon}}
+\index{identicon@{identicon}!Image@{Image}}
+\subsubsection{\texorpdfstring{identicon()}{identicon()}}
+{\footnotesize\ttfamily identicon (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$size = {\ttfamily 64},  }\item[{}]{\$blocks = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+Generate identicon \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+{\em \$size} & int \\
+\hline
+{\em \$blocks} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 344 of file image.\+php.
+
+\hypertarget{class_image_a70a743c63f97d5bbfdb2cdab7d186938}{}\label{class_image_a70a743c63f97d5bbfdb2cdab7d186938} 
+\index{Image@{Image}!invert@{invert}}
+\index{invert@{invert}!Image@{Image}}
+\subsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily invert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Invert image \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file image.\+php.
+
+\hypertarget{class_image_afab4d10bf39b2e1c9b00b50833b7442a}{}\label{class_image_afab4d10bf39b2e1c9b00b50833b7442a} 
+\index{Image@{Image}!load@{load}}
+\index{load@{load}!Image@{Image}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily load (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Load string \begin{DoxyReturn}{Returns}
+object$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$str} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 571 of file image.\+php.
+
+\hypertarget{class_image_a8a9ac897190d669360d49849f2fedd4b}{}\label{class_image_a8a9ac897190d669360d49849f2fedd4b} 
+\index{Image@{Image}!overlay@{overlay}}
+\index{overlay@{overlay}!Image@{Image}}
+\subsubsection{\texorpdfstring{overlay()}{overlay()}}
+{\footnotesize\ttfamily overlay (\begin{DoxyParamCaption}\item[{\hyperlink{class_image}{Image}}]{\$img,  }\item[{}]{\$align = {\ttfamily NULL},  }\item[{}]{\$alpha = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+Apply an image overlay \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$img} & object \\
+\hline
+{\em \$align} & int$\vert$array \\
+\hline
+{\em \$alpha} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 296 of file image.\+php.
+
+\hypertarget{class_image_af2baa228f3e2d08bafa8621d4501b113}{}\label{class_image_af2baa228f3e2d08bafa8621d4501b113} 
+\index{Image@{Image}!pixelate@{pixelate}}
+\index{pixelate@{pixelate}!Image@{Image}}
+\subsubsection{\texorpdfstring{pixelate()}{pixelate()}}
+{\footnotesize\ttfamily pixelate (\begin{DoxyParamCaption}\item[{}]{\$size }\end{DoxyParamCaption})}
+
+Pixelate the image \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$size} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file image.\+php.
+
+\hypertarget{class_image_afde88292c44dc59faf017738dae6dffb}{}\label{class_image_afde88292c44dc59faf017738dae6dffb} 
+\index{Image@{Image}!render@{render}}
+\index{render@{render}!Image@{Image}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Send image to H\+T\+TP client \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 478 of file image.\+php.
+
+\hypertarget{class_image_a359458680d67cee8333d7af2f078e859}{}\label{class_image_a359458680d67cee8333d7af2f078e859} 
+\index{Image@{Image}!resize@{resize}}
+\index{resize@{resize}!Image@{Image}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily resize (\begin{DoxyParamCaption}\item[{}]{\$width = {\ttfamily NULL},  }\item[{}]{\$height = {\ttfamily NULL},  }\item[{}]{\$crop = {\ttfamily TRUE},  }\item[{}]{\$enlarge = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Resize image (Maintain aspect ratio); Crop relative to center if flag is enabled; Enlargement allowed if flag is enabled \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$width} & int \\
+\hline
+{\em \$height} & int \\
+\hline
+{\em \$crop} & bool \\
+\hline
+{\em \$enlarge} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 231 of file image.\+php.
+
+\hypertarget{class_image_a6c2fdbe1df4f3168e741037c8be1a7c0}{}\label{class_image_a6c2fdbe1df4f3168e741037c8be1a7c0} 
+\index{Image@{Image}!restore@{restore}}
+\index{restore@{restore}!Image@{Image}}
+\subsubsection{\texorpdfstring{restore()}{restore()}}
+{\footnotesize\ttfamily restore (\begin{DoxyParamCaption}\item[{}]{\$state = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Revert to specified state \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$state} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 536 of file image.\+php.
+
+\hypertarget{class_image_ab2758ab5d8c1d2cd3c4e48b72daed2d9}{}\label{class_image_ab2758ab5d8c1d2cd3c4e48b72daed2d9} 
+\index{Image@{Image}!rgb@{rgb}}
+\index{rgb@{rgb}!Image@{Image}}
+\subsubsection{\texorpdfstring{rgb()}{rgb()}}
+{\footnotesize\ttfamily rgb (\begin{DoxyParamCaption}\item[{}]{\$color }\end{DoxyParamCaption})}
+
+Convert R\+GB hex triad to array \begin{DoxyReturn}{Returns}
+array$\vert$\+F\+A\+L\+SE 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$color} & int$\vert$string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file image.\+php.
+
+\hypertarget{class_image_a4295061e879c4cc714213bf14116d346}{}\label{class_image_a4295061e879c4cc714213bf14116d346} 
+\index{Image@{Image}!rotate@{rotate}}
+\index{rotate@{rotate}!Image@{Image}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily rotate (\begin{DoxyParamCaption}\item[{}]{\$angle }\end{DoxyParamCaption})}
+
+Rotate image \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$angle} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 282 of file image.\+php.
+
+\hypertarget{class_image_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_image_afc8a3c62679cf00ade9f15fb2a6d6132} 
+\index{Image@{Image}!save@{save}}
+\index{save@{save}!Image@{Image}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save current state \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 518 of file image.\+php.
+
+\hypertarget{class_image_a4723159606519b101e408854bc65ee35}{}\label{class_image_a4723159606519b101e408854bc65ee35} 
+\index{Image@{Image}!sepia@{sepia}}
+\index{sepia@{sepia}!Image@{Image}}
+\subsubsection{\texorpdfstring{sepia()}{sepia()}}
+{\footnotesize\ttfamily sepia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Apply sepia effect \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file image.\+php.
+
+\hypertarget{class_image_afc92209cb2a19193d46a9338b13a3bb9}{}\label{class_image_afc92209cb2a19193d46a9338b13a3bb9} 
+\index{Image@{Image}!sketch@{sketch}}
+\index{sketch@{sketch}!Image@{Image}}
+\subsubsection{\texorpdfstring{sketch()}{sketch()}}
+{\footnotesize\ttfamily sketch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Apply sketch effect \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file image.\+php.
+
+\hypertarget{class_image_a7ebc6366f3da2bf2af1608663fdb7a09}{}\label{class_image_a7ebc6366f3da2bf2af1608663fdb7a09} 
+\index{Image@{Image}!smooth@{smooth}}
+\index{smooth@{smooth}!Image@{Image}}
+\subsubsection{\texorpdfstring{smooth()}{smooth()}}
+{\footnotesize\ttfamily smooth (\begin{DoxyParamCaption}\item[{}]{\$level }\end{DoxyParamCaption})}
+
+Adjust smoothness \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$level} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file image.\+php.
+
+\hypertarget{class_image_a0347027efc0e46047792065615ac94eb}{}\label{class_image_a0347027efc0e46047792065615ac94eb} 
+\index{Image@{Image}!undo@{undo}}
+\index{undo@{undo}!Image@{Image}}
+\subsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Undo most recently applied filter \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 557 of file image.\+php.
+
+\hypertarget{class_image_ac7bff34c7bb8af86f020474c2f4f2737}{}\label{class_image_ac7bff34c7bb8af86f020474c2f4f2737} 
+\index{Image@{Image}!vflip@{vflip}}
+\index{vflip@{vflip}!Image@{Image}}
+\subsubsection{\texorpdfstring{vflip()}{vflip()}}
+{\footnotesize\ttfamily vflip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Flip on vertical axis \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 191 of file image.\+php.
+
+\hypertarget{class_image_aac6ce1a0981556eb27334db76b666350}{}\label{class_image_aac6ce1a0981556eb27334db76b666350} 
+\index{Image@{Image}!width@{width}}
+\index{width@{width}!Image@{Image}}
+\subsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return image width \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 462 of file image.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/image.\+php\end{DoxyCompactItemize}

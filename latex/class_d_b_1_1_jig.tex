@@ -1,0 +1,205 @@
+\hypertarget{class_d_b_1_1_jig}{}\section{Jig Class Reference}
+\label{class_d_b_1_1_jig}\index{Jig@{Jig}}
+
+
+In-\/memory/flat-\/file DB wrapper.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\& \hyperlink{class_d_b_1_1_jig_a49e4883f63642e3c6593545d87feae4a}{read} (\$file)
+\item 
+\hyperlink{class_d_b_1_1_jig_ab5b85afee638474da9c66ecd35d9bee1}{write} (\$file, array \$data=N\+U\+LL)
+\item 
+\hyperlink{class_d_b_1_1_jig_a17cfff4e7aae63d66e06be93dcf3ea31}{dir} ()
+\item 
+\hyperlink{class_d_b_1_1_jig_a0a684acda95e124d8596758e4986fe44}{uuid} ()
+\item 
+\hyperlink{class_d_b_1_1_jig_a92faa80a7077936bd630e5dcc7bb4a64}{log} (\$flag=T\+R\+UE)
+\item 
+\hyperlink{class_d_b_1_1_jig_ab165454e8fcb681f401a76fc77eab8e6}{jot} (\$frame)
+\item 
+\hyperlink{class_d_b_1_1_jig_aeb639e5b2b713ed87ab8f2033af98ae8}{drop} ()
+\item 
+\hyperlink{class_d_b_1_1_jig_a2a82bc563fc5e6152b0d0eb2c687b10a}{\+\_\+\+\_\+construct} (\$\hyperlink{class_d_b_1_1_jig_a17cfff4e7aae63d66e06be93dcf3ea31}{dir}=N\+U\+LL, \$format=self\+::\+F\+O\+R\+M\+A\+T\+\_\+\+J\+S\+ON)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_jig_a1659f0a629d408e0f849dbe4ee061e62}{}\label{class_d_b_1_1_jig_a1659f0a629d408e0f849dbe4ee061e62} 
+\hyperlink{class_d_b_1_1_jig_a1659f0a629d408e0f849dbe4ee061e62}{\$dir}
+\begin{DoxyCompactList}\small\item\em Storage location. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_jig_a1e6e4ea377a908a5407c435e9054e3a9}{}\label{class_d_b_1_1_jig_a1e6e4ea377a908a5407c435e9054e3a9} 
+\hyperlink{class_d_b_1_1_jig_a1e6e4ea377a908a5407c435e9054e3a9}{\$format}
+\begin{DoxyCompactList}\small\item\em Current storage format. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_jig_a9a2cf15a653aee8be437f7ae474cd494}{}\label{class_d_b_1_1_jig_a9a2cf15a653aee8be437f7ae474cd494} 
+\hyperlink{class_d_b_1_1_jig_a9a2cf15a653aee8be437f7ae474cd494}{\$log}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_d_b_1_1_jig}{Jig} log. \end{DoxyCompactList}\item 
+\hypertarget{class_d_b_1_1_jig_a6efc15b5a2314dd4b5aaa556a375c6d6}{}\label{class_d_b_1_1_jig_a6efc15b5a2314dd4b5aaa556a375c6d6} 
+\hyperlink{class_d_b_1_1_jig_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}
+\begin{DoxyCompactList}\small\item\em Memory-\/held data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_jig_ab5b06d4e1b51345fd3778b422815451d}{}\label{class_d_b_1_1_jig_ab5b06d4e1b51345fd3778b422815451d} 
+const {\bfseries F\+O\+R\+M\+A\+T\+\_\+\+J\+S\+ON} =0
+\item 
+\hypertarget{class_d_b_1_1_jig_a8e7a886766aa7d2923696e6e11a84c2f}{}\label{class_d_b_1_1_jig_a8e7a886766aa7d2923696e6e11a84c2f} 
+const {\bfseries F\+O\+R\+M\+A\+T\+\_\+\+Serialized} =1
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_d_b_1_1_jig_aeccc2a337445686487ea085278c79eff}{}\label{class_d_b_1_1_jig_aeccc2a337445686487ea085278c79eff} 
+\hyperlink{class_d_b_1_1_jig_aeccc2a337445686487ea085278c79eff}{\$uuid}
+\begin{DoxyCompactList}\small\item\em U\+U\+ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+In-\/memory/flat-\/file DB wrapper. 
+
+Definition at line 26 of file jig.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_b_1_1_jig_a2a82bc563fc5e6152b0d0eb2c687b10a}{}\label{class_d_b_1_1_jig_a2a82bc563fc5e6152b0d0eb2c687b10a} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$dir = {\ttfamily NULL},  }\item[{}]{\$format = {\ttfamily self\+:\+:FORMAT\+\_\+JSON} }\end{DoxyParamCaption})}
+
+Instantiate class 
+\begin{DoxyParams}{Parameters}
+{\em \$dir} & string \\
+\hline
+{\em \$format} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file jig.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_b_1_1_jig_a17cfff4e7aae63d66e06be93dcf3ea31}{}\label{class_d_b_1_1_jig_a17cfff4e7aae63d66e06be93dcf3ea31} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!dir@{dir}}
+\index{dir@{dir}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{dir()}{dir()}}
+{\footnotesize\ttfamily dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return directory \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_aeb639e5b2b713ed87ab8f2033af98ae8}{}\label{class_d_b_1_1_jig_aeb639e5b2b713ed87ab8f2033af98ae8} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!drop@{drop}}
+\index{drop@{drop}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily drop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean storage \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_ab165454e8fcb681f401a76fc77eab8e6}{}\label{class_d_b_1_1_jig_ab165454e8fcb681f401a76fc77eab8e6} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!jot@{jot}}
+\index{jot@{jot}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{jot()}{jot()}}
+{\footnotesize\ttfamily jot (\begin{DoxyParamCaption}\item[{}]{\$frame }\end{DoxyParamCaption})}
+
+Jot down log entry \begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$frame} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 124 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_a92faa80a7077936bd630e5dcc7bb4a64}{}\label{class_d_b_1_1_jig_a92faa80a7077936bd630e5dcc7bb4a64} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!log@{log}}
+\index{log@{log}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily log (\begin{DoxyParamCaption}\item[{}]{\$flag = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Return profiler results (or disable logging) 
+\begin{DoxyParams}{Parameters}
+{\em \$flag} & bool \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_a49e4883f63642e3c6593545d87feae4a}{}\label{class_d_b_1_1_jig_a49e4883f63642e3c6593545d87feae4a} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!read@{read}}
+\index{read@{read}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \& read (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+Read data from memory/file \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$file} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_a0a684acda95e124d8596758e4986fe44}{}\label{class_d_b_1_1_jig_a0a684acda95e124d8596758e4986fe44} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!uuid@{uuid}}
+\index{uuid@{uuid}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{uuid()}{uuid()}}
+{\footnotesize\ttfamily uuid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return U\+U\+ID \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file jig.\+php.
+
+\hypertarget{class_d_b_1_1_jig_ab5b85afee638474da9c66ecd35d9bee1}{}\label{class_d_b_1_1_jig_ab5b85afee638474da9c66ecd35d9bee1} 
+\index{D\+B\+::\+Jig@{D\+B\+::\+Jig}!write@{write}}
+\index{write@{write}!D\+B\+::\+Jig@{D\+B\+::\+Jig}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{}]{\$file,  }\item[{array}]{\$data = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Write data to memory/file \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$file} & string \\
+\hline
+{\em \$data} & array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file jig.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aplennevaux/\+G\+I\+T\+H\+U\+B/\+Visionary-\/website/src/vendor/bcosca/fatfree/lib/db/jig.\+php\end{DoxyCompactItemize}
