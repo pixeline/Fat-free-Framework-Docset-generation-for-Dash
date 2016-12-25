@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_d_b_1_1_jig" kind="class" language="PHP" prot="public">
+    <compoundname>DB::Jig</compoundname>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1ab5b06d4e1b51345fd3778b422815451d" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const FORMAT_JSON</definition>
+        <argsstring></argsstring>
+        <name>FORMAT_JSON</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1a8e7a886766aa7d2923696e6e11a84c2f" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const FORMAT_Serialized</definition>
+        <argsstring></argsstring>
+        <name>FORMAT_Serialized</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="31" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1a1659f0a629d408e0f849dbe4ee061e62" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$dir</definition>
+        <argsstring></argsstring>
+        <name>$dir</name>
+        <briefdescription>
+<para>Storage location. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="38" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1a1e6e4ea377a908a5407c435e9054e3a9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$format</definition>
+        <argsstring></argsstring>
+        <name>$format</name>
+        <briefdescription>
+<para>Current storage format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="40" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1a9a2cf15a653aee8be437f7ae474cd494" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$log</definition>
+        <argsstring></argsstring>
+        <name>$log</name>
+        <briefdescription>
+<para><ref refid="class_d_b_1_1_jig" kindref="compound">Jig</ref> log. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="42" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1a6efc15b5a2314dd4b5aaa556a375c6d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$data</definition>
+        <argsstring></argsstring>
+        <name>$data</name>
+        <briefdescription>
+<para>Memory-held data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="44" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_d_b_1_1_jig_1aeccc2a337445686487ea085278c79eff" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$uuid</definition>
+        <argsstring></argsstring>
+        <name>$uuid</name>
+        <briefdescription>
+<para>UUID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="36" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_b_1_1_jig_1a49e4883f63642e3c6593545d87feae4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; read</definition>
+        <argsstring>($file)</argsstring>
+        <name>read</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from memory/file <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="51" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="51" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1ab5b85afee638474da9c66ecd35d9bee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>write</definition>
+        <argsstring>($file, array $data=NULL)</argsstring>
+        <name>write</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$data</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data to memory/file <simplesect kind="return"><para>int </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="77" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1a17cfff4e7aae63d66e06be93dcf3ea31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dir</definition>
+        <argsstring>()</argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return directory <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="96" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1a0a684acda95e124d8596758e4986fe44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uuid</definition>
+        <argsstring>()</argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return UUID <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="104" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1a92faa80a7077936bd630e5dcc7bb4a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>log</definition>
+        <argsstring>($flag=TRUE)</argsstring>
+        <name>log</name>
+        <param>
+          <declname>$flag</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return profiler results (or disable logging) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="113" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1ab165454e8fcb681f401a76fc77eab8e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>jot</definition>
+        <argsstring>($frame)</argsstring>
+        <name>jot</name>
+        <param>
+          <declname>$frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jot down log entry <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="124" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1aeb639e5b2b713ed87ab8f2033af98ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drop</definition>
+        <argsstring>()</argsstring>
+        <name>drop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean storage <simplesect kind="return"><para>NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="133" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="133" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_jig_1a2a82bc563fc5e6152b0d0eb2c687b10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>($dir=NULL, $format=self::FORMAT_JSON)</argsstring>
+        <name>__construct</name>
+        <param>
+          <declname>$dir</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$format</declname>
+          <defval>self::FORMAT_JSON</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="150" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="150" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_d_b_1_1_jig_1ad0cb87b388bc74d63dc884accdca8713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__clone</definition>
+        <argsstring>()</argsstring>
+        <name>__clone</name>
+        <briefdescription>
+<para>Prohibit cloning. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="142" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="142" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>In-memory/flat-file <ref refid="namespace_d_b" kindref="compound">DB</ref> wrapper. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig.php" bodystart="26" bodyend="157"/>
+    <listofallmembers>
+      <member refid="class_d_b_1_1_jig_1a6efc15b5a2314dd4b5aaa556a375c6d6" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>$data</name></member>
+      <member refid="class_d_b_1_1_jig_1a1659f0a629d408e0f849dbe4ee061e62" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>$dir</name></member>
+      <member refid="class_d_b_1_1_jig_1a1e6e4ea377a908a5407c435e9054e3a9" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>$format</name></member>
+      <member refid="class_d_b_1_1_jig_1a9a2cf15a653aee8be437f7ae474cd494" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>$log</name></member>
+      <member refid="class_d_b_1_1_jig_1aeccc2a337445686487ea085278c79eff" prot="protected" virt="non-virtual"><scope>DB::Jig</scope><name>$uuid</name></member>
+      <member refid="class_d_b_1_1_jig_1ad0cb87b388bc74d63dc884accdca8713" prot="private" virt="non-virtual"><scope>DB::Jig</scope><name>__clone</name></member>
+      <member refid="class_d_b_1_1_jig_1a2a82bc563fc5e6152b0d0eb2c687b10a" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>__construct</name></member>
+      <member refid="class_d_b_1_1_jig_1a17cfff4e7aae63d66e06be93dcf3ea31" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>dir</name></member>
+      <member refid="class_d_b_1_1_jig_1aeb639e5b2b713ed87ab8f2033af98ae8" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>drop</name></member>
+      <member refid="class_d_b_1_1_jig_1ab5b06d4e1b51345fd3778b422815451d" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>FORMAT_JSON</name></member>
+      <member refid="class_d_b_1_1_jig_1a8e7a886766aa7d2923696e6e11a84c2f" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>FORMAT_Serialized</name></member>
+      <member refid="class_d_b_1_1_jig_1ab165454e8fcb681f401a76fc77eab8e6" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>jot</name></member>
+      <member refid="class_d_b_1_1_jig_1a92faa80a7077936bd630e5dcc7bb4a64" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>log</name></member>
+      <member refid="class_d_b_1_1_jig_1a49e4883f63642e3c6593545d87feae4a" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>read</name></member>
+      <member refid="class_d_b_1_1_jig_1a0a684acda95e124d8596758e4986fe44" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>uuid</name></member>
+      <member refid="class_d_b_1_1_jig_1ab5b85afee638474da9c66ecd35d9bee1" prot="public" virt="non-virtual"><scope>DB::Jig</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

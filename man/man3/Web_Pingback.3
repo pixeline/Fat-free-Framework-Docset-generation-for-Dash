@@ -1,0 +1,136 @@
+.TH "Pingback" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pingback \- \fBPingback\fP 1\&.0 protocol (client and server) implementation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBPrefab\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBinspect\fP ($source)"
+.br
+.ti -1c
+.RI "\fBlisten\fP ($func, $path=NULL)"
+.br
+.ti -1c
+.RI "\fBlog\fP ()"
+.br
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBenabled\fP ($url)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$log\fP"
+.br
+.RI "Transaction history\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBPingback\fP 1\&.0 protocol (client and server) implementation\&. 
+.PP
+Definition at line 26 of file pingback\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ()"
+Instantiate class 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 171 of file pingback\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "enabled ( $url)\fC [protected]\fP"
+Return TRUE if URL points to a pingback-enabled resource 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$url\fP 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file pingback\&.php\&.
+.SS "inspect ( $source)"
+Load local page contents, parse HTML anchor tags, find permalinks, and send XML-RPC calls to corresponding pingback servers 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$source\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file pingback\&.php\&.
+.SS "listen ( $func,  $path = \fCNULL\fP)"
+Receive ping, check if local page is pingback-enabled, verify source contents, and return XML-RPC response 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$func\fP callback 
+.br
+\fI$path\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file pingback\&.php\&.
+.SS "log ()"
+Return transaction history 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 163 of file pingback\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$\fBlog\fP\fC [protected]\fP"
+
+.PP
+Transaction history\&. 
+.PP
+Definition at line 30 of file pingback\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

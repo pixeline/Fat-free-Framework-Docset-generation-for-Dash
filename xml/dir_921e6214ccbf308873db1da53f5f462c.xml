@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_921e6214ccbf308873db1da53f5f462c" kind="dir">
+    <compoundname>/Users/aplennevaux/GITHUB/Visionary-website</compoundname>
+    <innerdir refid="dir_7e910fa00e0c0e5704d0ca36b3b68a7f">/Users/aplennevaux/GITHUB/Visionary-website/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/"/>
+  </compounddef>
+</doxygen>

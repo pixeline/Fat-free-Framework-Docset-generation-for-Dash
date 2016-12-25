@@ -1,0 +1,388 @@
+.TH "Template" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Template \- XML-style template engine\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBPreview\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbuild\fP ($node)"
+.br
+.ti -1c
+.RI "\fBextend\fP ($tag, $func)"
+.br
+.ti -1c
+.RI "\fB__call\fP ($func, array $args)"
+.br
+.ti -1c
+.RI "\fBparse\fP ($text)"
+.br
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$custom\fP =[]"
+.br
+.RI "Custom tag handlers\&. "
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBE_Method\fP ='Call to undefined method %s()'"
+.br
+.in -1c
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB_set\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_include\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_exclude\fP ()"
+.br
+.ti -1c
+.RI "\fB_ignore\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_loop\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_repeat\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_check\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_true\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_false\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_switch\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_case\fP (array $node)"
+.br
+.ti -1c
+.RI "\fB_default\fP (array $node)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$tags\fP"
+.br
+.RI "\fBTemplate\fP tags\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+XML-style template engine\&. 
+.PP
+Definition at line 24 of file template\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ()"
+Class constructor return object 
+.PP
+Definition at line 341 of file template\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "__call ( $func, array $args)"
+Call custom tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$func\fP callback 
+.br
+\fI$args\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 258 of file template\&.php\&.
+.SS "_case (array $node)\fC [protected]\fP"
+\fBTemplate\fP -case- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 202 of file template\&.php\&.
+.SS "_check (array $node)\fC [protected]\fP"
+\fBTemplate\fP -check- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 144 of file template\&.php\&.
+.SS "_default (array $node)\fC [protected]\fP"
+\fBTemplate\fP -default- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 220 of file template\&.php\&.
+.SS "_exclude ()\fC [protected]\fP"
+\fBTemplate\fP -exclude- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file template\&.php\&.
+.SS "_false (array $node)\fC [protected]\fP"
+\fBTemplate\fP -false- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 176 of file template\&.php\&.
+.SS "_ignore (array $node)\fC [protected]\fP"
+\fBTemplate\fP -ignore- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file template\&.php\&.
+.SS "_include (array $node)\fC [protected]\fP"
+\fBTemplate\fP -include- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file template\&.php\&.
+.SS "_loop (array $node)\fC [protected]\fP"
+\fBTemplate\fP -loop- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file template\&.php\&.
+.SS "_repeat (array $node)\fC [protected]\fP"
+\fBTemplate\fP -repeat- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file template\&.php\&.
+.SS "_set (array $node)\fC [protected]\fP"
+\fBTemplate\fP -set- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file template\&.php\&.
+.SS "_switch (array $node)\fC [protected]\fP"
+\fBTemplate\fP -switch- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file template\&.php\&.
+.SS "_true (array $node)\fC [protected]\fP"
+\fBTemplate\fP -true- tag handler 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 167 of file template\&.php\&.
+.SS "build ( $node)"
+Assemble markup 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP array|string 
+.RE
+.PP
+
+.PP
+Definition at line 232 of file template\&.php\&.
+.SS "extend ( $tag,  $func)"
+Extend template with custom tag 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$tag\fP string 
+.br
+\fI$func\fP callback 
+.RE
+.PP
+
+.PP
+Definition at line 247 of file template\&.php\&.
+.SS "parse ( $text)"
+Parse string for template directives and tokens 
+.PP
+\fBReturns:\fP
+.RS 4
+string|array 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$text\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 271 of file template\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$custom =[]"
+
+.PP
+Custom tag handlers\&. 
+.PP
+Definition at line 35 of file template\&.php\&.
+.SS "$tags\fC [protected]\fP"
+
+.PP
+\fBTemplate\fP tags\&. 
+.PP
+Definition at line 33 of file template\&.php\&.
+.SS "const E_Method ='Call to undefined method %s()'"
+
+.PP
+Definition at line 28 of file template\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

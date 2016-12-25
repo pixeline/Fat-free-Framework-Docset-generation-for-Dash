@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_u_t_f" kind="class" language="PHP" prot="public">
+    <compoundname>UTF</compoundname>
+    <basecompoundref refid="class_prefab" prot="public" virt="non-virtual">Prefab</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_t_f_1a6379e4105bda35d62738418b43d6c214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>strlen</definition>
+        <argsstring>($str)</argsstring>
+        <name>strlen</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get string length <simplesect kind="return"><para>int </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="31" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1aee5290955ede3ffc95e03032792d6cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>strrev</definition>
+        <argsstring>($str)</argsstring>
+        <name>strrev</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverse a string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="41" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a091781748220e04bdfb81119c2d215ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stripos</definition>
+        <argsstring>($stack, $needle, $ofs=0)</argsstring>
+        <name>stripos</name>
+        <param>
+          <declname>$stack</declname>
+        </param>
+        <param>
+          <declname>$needle</declname>
+        </param>
+        <param>
+          <declname>$ofs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find position of first occurrence of a string (case-insensitive) <simplesect kind="return"><para>int|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$needle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="53" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a3ac4e2d27df237cef0d1d7f5b5858841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>strpos</definition>
+        <argsstring>($stack, $needle, $ofs=0, $case=FALSE)</argsstring>
+        <name>strpos</name>
+        <param>
+          <declname>$stack</declname>
+        </param>
+        <param>
+          <declname>$needle</declname>
+        </param>
+        <param>
+          <declname>$ofs</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <declname>$case</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find position of first occurrence of a string <simplesect kind="return"><para>int|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$needle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$case</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="65" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1ae5a935ae0460ac0723be7eb4c677ae4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stristr</definition>
+        <argsstring>($stack, $needle, $before=FALSE)</argsstring>
+        <name>stristr</name>
+        <param>
+          <declname>$stack</declname>
+        </param>
+        <param>
+          <declname>$needle</declname>
+        </param>
+        <param>
+          <declname>$before</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns part of haystack string from the first occurrence of needle to the end of haystack (case-insensitive) <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$needle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="79" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1aede414417475770b5dea3c6975c2e3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>strstr</definition>
+        <argsstring>($stack, $needle, $before=FALSE, $case=FALSE)</argsstring>
+        <name>strstr</name>
+        <param>
+          <declname>$stack</declname>
+        </param>
+        <param>
+          <declname>$needle</declname>
+        </param>
+        <param>
+          <declname>$before</declname>
+          <defval>FALSE</defval>
+        </param>
+        <param>
+          <declname>$case</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns part of haystack string from the first occurrence of needle to the end of haystack <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$needle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$case</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="92" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="92" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1ab012fe0920f5e9be4a09e01bfb81b867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>substr</definition>
+        <argsstring>($str, $start, $len=0)</argsstring>
+        <name>substr</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <param>
+          <declname>$start</declname>
+        </param>
+        <param>
+          <declname>$len</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return part of a string <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="111" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a1ed9fae3a0627f5fc1adbafed4adab86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>substr_count</definition>
+        <argsstring>($stack, $needle)</argsstring>
+        <name>substr_count</name>
+        <param>
+          <declname>$stack</declname>
+        </param>
+        <param>
+          <declname>$needle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count the number of substring occurrences <simplesect kind="return"><para>int </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$needle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="126" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a36a0151237d3480734de64933f769843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ltrim</definition>
+        <argsstring>($str)</argsstring>
+        <name>ltrim</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Strip whitespaces from the beginning of a string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="137" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1afa81b944f8aed770a266a9884e3e5049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rtrim</definition>
+        <argsstring>($str)</argsstring>
+        <name>rtrim</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Strip whitespaces from the end of a string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="146" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a432e7b973a6e6bfa55cced21e75ee29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>trim</definition>
+        <argsstring>($str)</argsstring>
+        <name>trim</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Strip whitespaces from the beginning and end of a string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="155" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a5cb12f35229a81f7a869171b000573b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bom</definition>
+        <argsstring>()</argsstring>
+        <name>bom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return UTF-8 byte order mark <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="163" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1a798f9e9997b8a6f34ff111df63531c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>translate</definition>
+        <argsstring>($str)</argsstring>
+        <name>translate</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert code points to Unicode symbols <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="172" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_t_f_1aaf95120818560ee5ba86d5f4efba6671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>emojify</definition>
+        <argsstring>($str)</argsstring>
+        <name>emojify</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Translate emoji tokens to Unicode font-supported symbols <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="182" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="182" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unicode string manager. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="208">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+      <node id="207">
+        <label>UTF</label>
+        <link refid="class_u_t_f"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="210">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+      <node id="209">
+        <label>UTF</label>
+        <link refid="class_u_t_f"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" line="24" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/utf.php" bodystart="24" bodyend="199"/>
+    <listofallmembers>
+      <member refid="class_u_t_f_1a5cb12f35229a81f7a869171b000573b8" prot="public" virt="non-virtual"><scope>UTF</scope><name>bom</name></member>
+      <member refid="class_u_t_f_1aaf95120818560ee5ba86d5f4efba6671" prot="public" virt="non-virtual"><scope>UTF</scope><name>emojify</name></member>
+      <member refid="class_prefab_1a0deb004950b8dc4f51836316fd19c111" prot="public" virt="non-virtual"><scope>UTF</scope><name>instance</name></member>
+      <member refid="class_u_t_f_1a36a0151237d3480734de64933f769843" prot="public" virt="non-virtual"><scope>UTF</scope><name>ltrim</name></member>
+      <member refid="class_u_t_f_1afa81b944f8aed770a266a9884e3e5049" prot="public" virt="non-virtual"><scope>UTF</scope><name>rtrim</name></member>
+      <member refid="class_u_t_f_1a091781748220e04bdfb81119c2d215ab" prot="public" virt="non-virtual"><scope>UTF</scope><name>stripos</name></member>
+      <member refid="class_u_t_f_1ae5a935ae0460ac0723be7eb4c677ae4f" prot="public" virt="non-virtual"><scope>UTF</scope><name>stristr</name></member>
+      <member refid="class_u_t_f_1a6379e4105bda35d62738418b43d6c214" prot="public" virt="non-virtual"><scope>UTF</scope><name>strlen</name></member>
+      <member refid="class_u_t_f_1a3ac4e2d27df237cef0d1d7f5b5858841" prot="public" virt="non-virtual"><scope>UTF</scope><name>strpos</name></member>
+      <member refid="class_u_t_f_1aee5290955ede3ffc95e03032792d6cef" prot="public" virt="non-virtual"><scope>UTF</scope><name>strrev</name></member>
+      <member refid="class_u_t_f_1aede414417475770b5dea3c6975c2e3dd" prot="public" virt="non-virtual"><scope>UTF</scope><name>strstr</name></member>
+      <member refid="class_u_t_f_1ab012fe0920f5e9be4a09e01bfb81b867" prot="public" virt="non-virtual"><scope>UTF</scope><name>substr</name></member>
+      <member refid="class_u_t_f_1a1ed9fae3a0627f5fc1adbafed4adab86" prot="public" virt="non-virtual"><scope>UTF</scope><name>substr_count</name></member>
+      <member refid="class_u_t_f_1a798f9e9997b8a6f34ff111df63531c08" prot="public" virt="non-virtual"><scope>UTF</scope><name>translate</name></member>
+      <member refid="class_u_t_f_1a432e7b973a6e6bfa55cced21e75ee29e" prot="public" virt="non-virtual"><scope>UTF</scope><name>trim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_web_1_1_open_i_d" kind="class" language="PHP" prot="public">
+    <compoundname>Web::OpenID</compoundname>
+    <basecompoundref refid="class_magic" prot="public" virt="non-virtual">Magic</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_web_1_1_open_i_d_1acf215f34a917d014776ce684a9ee8909" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$url</definition>
+        <argsstring></argsstring>
+        <name>$url</name>
+        <briefdescription>
+<para><ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> provider endpoint URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_web_1_1_open_i_d_1a67e94494731d99ed23b123e95175bc10" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$args</definition>
+        <argsstring></argsstring>
+        <name>$args</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+<para>HTTP request parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="32" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1a8fe09384f979cc36cabfcc675e1de1d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>discover</definition>
+        <argsstring>($proxy)</argsstring>
+        <name>discover</name>
+        <param>
+          <declname>$proxy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> provider <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="39" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="39" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1a83c8bf3d9d47536f727fce44c00de4f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth</definition>
+        <argsstring>($proxy=NULL, $attr=[], array $reqd=NULL)</argsstring>
+        <name>auth</name>
+        <param>
+          <declname>$proxy</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$attr</declname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$reqd</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initiate <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> authentication sequence; Return FALSE on failure or redirect to <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> provider URL <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$reqd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="144" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="144" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1a5d29540442d0e302ca0916620ad2bc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>verified</definition>
+        <argsstring>($proxy=NULL)</argsstring>
+        <name>verified</name>
+        <param>
+          <declname>$proxy</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> verification was successful <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="174" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="174" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1a1e3f1bea94184e9ba901797124266e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>response</definition>
+        <argsstring>()</argsstring>
+        <name>response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> response fields <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="203" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>exists</definition>
+        <argsstring>($key)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> request parameter exists <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="212" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1ac8d8012023e560c81f55a629022cb65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind value to <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> request parameter <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="222" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1ac3695923790b06917410e205068b8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; get</definition>
+        <argsstring>($key)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return value of <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> request parameter <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="231" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="231" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_open_i_d_1a10a949ef75de6c82c98ac555f371ba83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring>($key)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove <ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> request parameter <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="244" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="244" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_web_1_1_open_i_d" kindref="compound">OpenID</ref> consumer. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="116">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="114">
+        <label>OpenID</label>
+        <link refid="class_web_1_1_open_i_d"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="119">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="117">
+        <label>OpenID</label>
+        <link refid="class_web_1_1_open_i_d"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/openid.php" bodystart="26" bodyend="248"/>
+    <listofallmembers>
+      <member refid="class_web_1_1_open_i_d_1a67e94494731d99ed23b123e95175bc10" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>$args</name></member>
+      <member refid="class_web_1_1_open_i_d_1acf215f34a917d014776ce684a9ee8909" prot="protected" virt="non-virtual"><scope>Web::OpenID</scope><name>$url</name></member>
+      <member refid="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>__get</name></member>
+      <member refid="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>__isset</name></member>
+      <member refid="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>__set</name></member>
+      <member refid="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>__unset</name></member>
+      <member refid="class_web_1_1_open_i_d_1a83c8bf3d9d47536f727fce44c00de4f0" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>auth</name></member>
+      <member refid="class_web_1_1_open_i_d_1a10a949ef75de6c82c98ac555f371ba83" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>clear</name></member>
+      <member refid="class_web_1_1_open_i_d_1a8fe09384f979cc36cabfcc675e1de1d7" prot="protected" virt="non-virtual"><scope>Web::OpenID</scope><name>discover</name></member>
+      <member refid="class_web_1_1_open_i_d_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>exists</name></member>
+      <member refid="class_web_1_1_open_i_d_1ac3695923790b06917410e205068b8376" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>get</name></member>
+      <member refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>offsetexists</name></member>
+      <member refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>offsetget</name></member>
+      <member refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>offsetset</name></member>
+      <member refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>offsetunset</name></member>
+      <member refid="class_web_1_1_open_i_d_1a1e3f1bea94184e9ba901797124266e96" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>response</name></member>
+      <member refid="class_web_1_1_open_i_d_1ac8d8012023e560c81f55a629022cb65a" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>set</name></member>
+      <member refid="class_web_1_1_open_i_d_1a5d29540442d0e302ca0916620ad2bc17" prot="public" virt="non-virtual"><scope>Web::OpenID</scope><name>verified</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,3838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_base" kind="class" language="PHP" prot="public">
+    <compoundname>Base</compoundname>
+    <basecompoundref refid="class_prefab" prot="public" virt="non-virtual">Prefab</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ArrayAccess</basecompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_base_1a037d2e8a6e9d6f5c55e8b24e3faa5189" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const PACKAGE</definition>
+        <argsstring></argsstring>
+        <name>PACKAGE</name>
+        <initializer>=&apos;Fat-Free Framework&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="47" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1af71005841ce53adac00581ab0ba24c1f" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const VERSION</definition>
+        <argsstring></argsstring>
+        <name>VERSION</name>
+        <initializer>=&apos;3.6.0-Release&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="48" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_base_1a42c03aab8b513fd2992aeb7820003ad1" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_100</definition>
+        <argsstring></argsstring>
+        <name>HTTP_100</name>
+        <initializer>=&apos;Continue&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="53" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a3e91894cd6ca5dcd2cdbc4e658328dbe" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_101</definition>
+        <argsstring></argsstring>
+        <name>HTTP_101</name>
+        <initializer>=&apos;Switching Protocols&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="54" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ae0a2cfd13da12e121cd5cd44cdba63f1" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_200</definition>
+        <argsstring></argsstring>
+        <name>HTTP_200</name>
+        <initializer>=&apos;OK&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="55" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a5a183af6b7b3d27eadc14a92cc1a8f52" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_201</definition>
+        <argsstring></argsstring>
+        <name>HTTP_201</name>
+        <initializer>=&apos;Created&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="56" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a58dd15c950afe66a5723a02d296e8ef3" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_202</definition>
+        <argsstring></argsstring>
+        <name>HTTP_202</name>
+        <initializer>=&apos;Accepted&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="57" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a6829270d25c830b55a9399c8c2f4c64d" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_203</definition>
+        <argsstring></argsstring>
+        <name>HTTP_203</name>
+        <initializer>=&apos;Non-Authorative Information&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="58" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1afe27bd4b405e5b231f7391a6ad27305d" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_204</definition>
+        <argsstring></argsstring>
+        <name>HTTP_204</name>
+        <initializer>=&apos;No Content&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="59" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a6abfa0503972e8adc8901aac33e3ba82" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_205</definition>
+        <argsstring></argsstring>
+        <name>HTTP_205</name>
+        <initializer>=&apos;Reset Content&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="60" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a58e0f63fd99ed0ea3e7e60d6ad3b945a" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_206</definition>
+        <argsstring></argsstring>
+        <name>HTTP_206</name>
+        <initializer>=&apos;Partial Content&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="61" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1adafda22dbd720503d24641dd6233d288" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_300</definition>
+        <argsstring></argsstring>
+        <name>HTTP_300</name>
+        <initializer>=&apos;Multiple Choices&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="62" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a6c5ed14921b8f4e396f4efe351b7cf17" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_301</definition>
+        <argsstring></argsstring>
+        <name>HTTP_301</name>
+        <initializer>=&apos;Moved Permanently&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="63" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a6c27583e94a43460f3a53bc8d52928ed" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_302</definition>
+        <argsstring></argsstring>
+        <name>HTTP_302</name>
+        <initializer>=&apos;Found&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="64" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ad1e133ece2bc42ef9f254c9816cc095b" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_303</definition>
+        <argsstring></argsstring>
+        <name>HTTP_303</name>
+        <initializer>=&apos;See Other&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="65" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1abdb84279eb4c2ac564c82aa6e6b33304" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_304</definition>
+        <argsstring></argsstring>
+        <name>HTTP_304</name>
+        <initializer>=&apos;Not Modified&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="66" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a71b15cf5ca7eca4fcb95a65d9ef4591e" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_305</definition>
+        <argsstring></argsstring>
+        <name>HTTP_305</name>
+        <initializer>=&apos;Use Proxy&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="67" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a8da1214deb6446d70f581c2019cfdbee" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_307</definition>
+        <argsstring></argsstring>
+        <name>HTTP_307</name>
+        <initializer>=&apos;Temporary Redirect&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="68" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a9bc01f248df88512037bd8ccb3bc62cf" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_400</definition>
+        <argsstring></argsstring>
+        <name>HTTP_400</name>
+        <initializer>=&apos;Bad Request&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="69" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a5edf9bc886987f75d84fa9a259fbff15" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_401</definition>
+        <argsstring></argsstring>
+        <name>HTTP_401</name>
+        <initializer>=&apos;Unauthorized&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="70" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1aa6565d2b492ee606d53edce743d5c71d" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_402</definition>
+        <argsstring></argsstring>
+        <name>HTTP_402</name>
+        <initializer>=&apos;Payment Required&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="71" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a026a0a02c60785631930a6b6a7dfa779" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_403</definition>
+        <argsstring></argsstring>
+        <name>HTTP_403</name>
+        <initializer>=&apos;Forbidden&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="72" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ab15b06b5211e7c1d62dbfefdd2f48fae" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_404</definition>
+        <argsstring></argsstring>
+        <name>HTTP_404</name>
+        <initializer>=&apos;Not Found&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="73" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ac8f37841b9501862ab4436188e6ef52c" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_405</definition>
+        <argsstring></argsstring>
+        <name>HTTP_405</name>
+        <initializer>=&apos;Method Not Allowed&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="74" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ac89c0f949c653c14eabf66cf51914f7a" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_406</definition>
+        <argsstring></argsstring>
+        <name>HTTP_406</name>
+        <initializer>=&apos;Not Acceptable&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="75" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1aa2744fa255e0fde11c39044a4f39218f" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_407</definition>
+        <argsstring></argsstring>
+        <name>HTTP_407</name>
+        <initializer>=&apos;Proxy Authentication Required&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="76" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ad478a80358a910b447fe9a8f0fe3e5f3" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_408</definition>
+        <argsstring></argsstring>
+        <name>HTTP_408</name>
+        <initializer>=&apos;Request Timeout&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="77" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a14c4dd15ae82f4276945fe8ca3587425" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_409</definition>
+        <argsstring></argsstring>
+        <name>HTTP_409</name>
+        <initializer>=&apos;Conflict&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="78" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a6ecb7b05cfc5c946b48c517f4cd1eb1e" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_410</definition>
+        <argsstring></argsstring>
+        <name>HTTP_410</name>
+        <initializer>=&apos;Gone&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="79" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a5fd3f7b58e313d50de57055da35b8c34" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_411</definition>
+        <argsstring></argsstring>
+        <name>HTTP_411</name>
+        <initializer>=&apos;Length Required&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="80" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ab3afa21eeb61eec4bec88e01faa33a83" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_412</definition>
+        <argsstring></argsstring>
+        <name>HTTP_412</name>
+        <initializer>=&apos;Precondition Failed&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="81" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a45f0b1f7c9cf100d85d99d35122be993" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_413</definition>
+        <argsstring></argsstring>
+        <name>HTTP_413</name>
+        <initializer>=&apos;Request Entity Too Large&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="82" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a3bc4a9f6ae41b35db4ef4cb6c3c81dc0" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_414</definition>
+        <argsstring></argsstring>
+        <name>HTTP_414</name>
+        <initializer>=&apos;Request-URI Too Long&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="83" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a5d89cd8370f685b1f3e6e269687adc45" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_415</definition>
+        <argsstring></argsstring>
+        <name>HTTP_415</name>
+        <initializer>=&apos;Unsupported Media Type&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="84" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a38e6c727e49a57b0d54d558ee6c42577" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_416</definition>
+        <argsstring></argsstring>
+        <name>HTTP_416</name>
+        <initializer>=&apos;Requested Range Not Satisfiable&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="85" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1adad1d3f1ac9914076661124ac1125344" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_417</definition>
+        <argsstring></argsstring>
+        <name>HTTP_417</name>
+        <initializer>=&apos;Expectation Failed&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="86" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a33889bdfdb2d12c842493341cd16851b" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_500</definition>
+        <argsstring></argsstring>
+        <name>HTTP_500</name>
+        <initializer>=&apos;Internal Server Error&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="87" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a87cea373c6e56aaf7a228e510ba556ae" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_501</definition>
+        <argsstring></argsstring>
+        <name>HTTP_501</name>
+        <initializer>=&apos;Not Implemented&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="88" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ad1700a5a37fbd79890aefad7ce0cb498" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_502</definition>
+        <argsstring></argsstring>
+        <name>HTTP_502</name>
+        <initializer>=&apos;Bad Gateway&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="89" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a8646dd1cbc680e1bf771241e82a0a701" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_503</definition>
+        <argsstring></argsstring>
+        <name>HTTP_503</name>
+        <initializer>=&apos;Service Unavailable&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="90" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ad02fdd88ce4a4f595f8302e2e7e2fec3" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_504</definition>
+        <argsstring></argsstring>
+        <name>HTTP_504</name>
+        <initializer>=&apos;Gateway Timeout&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="91" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ae2b559dd27bdc2459d58581ed4289275" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const HTTP_505</definition>
+        <argsstring></argsstring>
+        <name>HTTP_505</name>
+        <initializer>=&apos;HTTP Version Not Supported&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="92" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_base_1acc82b22baa60bf2d2a558f73b83b01b7" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const REQ_SYNC</definition>
+        <argsstring></argsstring>
+        <name>REQ_SYNC</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="107" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a0d45704345cefda5b42533a00b8f02a7" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const REQ_AJAX</definition>
+        <argsstring></argsstring>
+        <name>REQ_AJAX</name>
+        <initializer>=2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="108" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a1662b755d7828c7beb5dd2f5461ae3bc" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const REQ_CLI</definition>
+        <argsstring></argsstring>
+        <name>REQ_CLI</name>
+        <initializer>=4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="109" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_base_1a2a8c25f4fb29d11d273ea8b7cc678a10" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Pattern</definition>
+        <argsstring></argsstring>
+        <name>E_Pattern</name>
+        <initializer>=&apos;Invalid routing pattern: %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="114" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ab7eb7301d76ada1832c7dfd106ee7413" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Named</definition>
+        <argsstring></argsstring>
+        <name>E_Named</name>
+        <initializer>=&apos;Named <ref refid="class_base_1a369026a3cb8f321eadc19535ee308b2d" kindref="member">route</ref> does not exist: %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="115" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a317619c968fa68a4a7704384d9f4efda" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Fatal</definition>
+        <argsstring></argsstring>
+        <name>E_Fatal</name>
+        <initializer>=&apos;Fatal error: %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="116" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a0bbe3ee05726cd755830674390571869" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Open</definition>
+        <argsstring></argsstring>
+        <name>E_Open</name>
+        <initializer>=&apos;Unable to open %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="117" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a0a15c5ad9084c1fd577c494e4b1d4b52" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Routes</definition>
+        <argsstring></argsstring>
+        <name>E_Routes</name>
+        <initializer>=&apos;No routes specified&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="118" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a98d5554d5113e4daf97d5496887942dd" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Class</definition>
+        <argsstring></argsstring>
+        <name>E_Class</name>
+        <initializer>=&apos;Invalid class %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="119" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a095176974668a9554e3e88442ba21baa" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Method</definition>
+        <argsstring></argsstring>
+        <name>E_Method</name>
+        <initializer>=&apos;Invalid method %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="120" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1aa0fc170fc7e191b7d16baccde8eea996" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Hive</definition>
+        <argsstring></argsstring>
+        <name>E_Hive</name>
+        <initializer>=&apos;Invalid <ref refid="class_base_1a9492bc2587be1faa2fa7e69d2a89a53e" kindref="member">hive</ref> key %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="121" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_base_1a4a494a8977b10f1b9980faadf3ea0fc2" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const GLOBALS</definition>
+        <argsstring></argsstring>
+        <name>GLOBALS</name>
+        <initializer>=&apos;GET|POST|COOKIE|REQUEST|SESSION|FILES|SERVER|ENV&apos;</initializer>
+        <briefdescription>
+<para>Mapped PHP globals. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="97" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a43552934268bce7080a8a0dfdab5ff48" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const VERBS</definition>
+        <argsstring></argsstring>
+        <name>VERBS</name>
+        <initializer>=&apos;GET|HEAD|POST|PUT|PATCH|DELETE|CONNECT&apos;</initializer>
+        <briefdescription>
+<para>HTTP verbs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="99" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a4eea605dd8e0b6a69464ec041dc9872a" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const MODE</definition>
+        <argsstring></argsstring>
+        <name>MODE</name>
+        <initializer>=0755</initializer>
+        <briefdescription>
+<para>Default directory permissions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="101" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1ad3c2e05f38fee8ac8cdc370fd4c84941" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const CSS</definition>
+        <argsstring></argsstring>
+        <name>CSS</name>
+        <initializer>=&apos;code.css&apos;</initializer>
+        <briefdescription>
+<para>Syntax highlighting stylesheet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="103" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a8834b0851b05d161c207a7d2e5dca9bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$init</definition>
+        <argsstring></argsstring>
+        <name>$init</name>
+        <briefdescription>
+<para>Initial settings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="128" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a8856d0a49881ef8e0a6d205d37d4a7af" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$languages</definition>
+        <argsstring></argsstring>
+        <name>$languages</name>
+        <briefdescription>
+<para>Language lookup sequence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="130" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1a0aa2d1acd291d3fedc1a3617d716e28e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$fallback</definition>
+        <argsstring></argsstring>
+        <name>$fallback</name>
+        <initializer>=&apos;en&apos;</initializer>
+        <briefdescription>
+<para>Default fallback language. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="132" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_base_1a10ae9335419b13d419643c4e3ad94a91" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>$hive</definition>
+        <argsstring></argsstring>
+        <name>$hive</name>
+        <briefdescription>
+<para>Globals. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="126" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1aada982ed0466e5ed14d4fcbe22c61840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sync</definition>
+        <argsstring>($key)</argsstring>
+        <name>sync</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sync PHP global with corresponding hive key <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="139" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9f2a5290b60008d473e1c9e38f1465d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>build</definition>
+        <argsstring>($url, $args=[])</argsstring>
+        <name>build</name>
+        <param>
+          <declname>$url</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replace tokenized URL with available token values <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="159" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="159" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a222997c88655e69eb1bb3a18147ddc3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>alias</definition>
+        <argsstring>($name, $params=[], $query=NULL)</argsstring>
+        <name>alias</name>
+        <param>
+          <declname>$name</declname>
+        </param>
+        <param>
+          <declname>$params</declname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <declname>$query</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assemble url from alias name <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="193" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="193" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a4d0e49aacf195439c437277b22a81062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>parse</definition>
+        <argsstring>($str)</argsstring>
+        <name>parse</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse string containing key-value pairs <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="209" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="209" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1af206a5f3197cfe2acbbb071ec086b710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compile</definition>
+        <argsstring>($str)</argsstring>
+        <name>compile</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert JS-style token to PHP expression <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="229" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="229" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aee913b6f1b4e910dc64485c4d8e48b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; ref</definition>
+        <argsstring>($key, $add=TRUE, &amp;$var=NULL)</argsstring>
+        <name>ref</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$add</declname>
+          <defval>TRUE</defval>
+        </param>
+        <param>
+          <type>&amp;</type>
+          <declname>$var</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get hive key reference/contents; Add non-existent hive keys, array elements, and object properties by default <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="268" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="268" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a28497caad131119319e31168c38713b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>exists</definition>
+        <argsstring>($key, &amp;$val=NULL)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <type>&amp;</type>
+          <declname>$val</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if hive key is set (or return timestamp and TTL if cached) <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="320" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="320" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a7de02315df24d7ef20a0bd441060d6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>devoid</definition>
+        <argsstring>($key, &amp;$val=NULL)</argsstring>
+        <name>devoid</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <type>&amp;</type>
+          <declname>$val</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if hive key is empty and not cached <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="333" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="333" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a845297666b2c78affb9fa78605ebf93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set</definition>
+        <argsstring>($key, $val, $ttl=0)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind value to hive key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="347" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="347" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a17baee8d5275e5926004818839f9d838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get</definition>
+        <argsstring>($key, $args=NULL)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve contents of hive key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="413" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="413" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a10a949ef75de6c82c98ac555f371ba83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring>($key)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unset hive key <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="432" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="432" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a1e33118c04d4a7df9336e02db8f8d663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>checked</definition>
+        <argsstring>($key)</argsstring>
+        <name>checked</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if hive variable is &apos;on&apos; <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="481" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="481" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a6cdd645b49b8ec6bd1bebe80074f98fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>visible</definition>
+        <argsstring>($obj, $key)</argsstring>
+        <name>visible</name>
+        <param>
+          <declname>$obj</declname>
+        </param>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if property has public visibility <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="492" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="492" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aa4d056d44b4c50924926f9d40cdb9bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mset</definition>
+        <argsstring>(array $vars, $prefix=&apos;&apos;, $ttl=0)</argsstring>
+        <name>mset</name>
+        <param>
+          <type>array</type>
+          <declname>$vars</declname>
+        </param>
+        <param>
+          <declname>$prefix</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multi-variable assignment using associative array <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="509" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="509" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9492bc2587be1faa2fa7e69d2a89a53e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hive</definition>
+        <argsstring>()</argsstring>
+        <name>hive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish hive contents <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="518" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="518" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9051a0cda0ec6cae19cbd32e3945f31a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>copy</definition>
+        <argsstring>($src, $dst)</argsstring>
+        <name>copy</name>
+        <param>
+          <declname>$src</declname>
+        </param>
+        <param>
+          <declname>$dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy contents of hive variable to another <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="528" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="528" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ac750abed7c77c34dab7894d272a2a293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>concat</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>concat</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Concatenate string to hive string variable <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="539" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="539" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a0b0020960192ed3b1d87f4c1a2587373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>flip</definition>
+        <argsstring>($key)</argsstring>
+        <name>flip</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Swap keys and values of hive array variable <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="551" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="551" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aef81a11cc1b68233d80e63bcf6fa94f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>push</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>push</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add element to the end of hive array variable <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="562" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="562" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a0a5ec8de186492bebff151ad40b17fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pop</definition>
+        <argsstring>($key)</argsstring>
+        <name>pop</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove last element of hive array variable <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="573" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="573" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a44e8f53ad45c8f0caa4e438285d08a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unshift</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>unshift</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add element to the beginning of hive array variable <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="584" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="584" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a4ddb1b90cf267ea505ec59db4c6f5134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shift</definition>
+        <argsstring>($key)</argsstring>
+        <name>shift</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove first element of hive array variable <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="595" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="595" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9dc15a0b65021967dad733868514f2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>merge</definition>
+        <argsstring>($key, $src, $keep=FALSE)</argsstring>
+        <name>merge</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$src</declname>
+        </param>
+        <param>
+          <declname>$keep</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Merge array with hive array variable <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$keep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="607" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="607" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1adab2e4455e35467d6012ceaf488a3744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>extend</definition>
+        <argsstring>($key, $src, $keep=FALSE)</argsstring>
+        <name>extend</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$src</declname>
+        </param>
+        <param>
+          <declname>$keep</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extend hive array variable with default values from $src <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$keep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="624" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="624" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a052692dd304d0f28451a8fc601fa277e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fixslashes</definition>
+        <argsstring>($str)</argsstring>
+        <name>fixslashes</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert backslashes to slashes <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="639" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="639" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ac7b410d4c7145630a45e608d465bb1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>split</definition>
+        <argsstring>($str, $noempty=TRUE)</argsstring>
+        <name>split</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <param>
+          <declname>$noempty</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Split comma-, semi-colon, or pipe-separated string <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$noempty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="649" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="649" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1adb7cb366d6c6e4d4338bc35e76dfaf67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stringify</definition>
+        <argsstring>($arg, array $stack=NULL)</argsstring>
+        <name>stringify</name>
+        <param>
+          <declname>$arg</declname>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$stack</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert PHP expression/value to compressed exportable string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="660" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="660" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a2f39631e6920b33e0e88713de4566bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csv</definition>
+        <argsstring>(array $args)</argsstring>
+        <name>csv</name>
+        <param>
+          <type>array</type>
+          <declname>$args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flatten array values and return as CSV string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="696" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="696" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ad8ac953e9fcd497f1ce693e7639911a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>camelcase</definition>
+        <argsstring>($str)</argsstring>
+        <name>camelcase</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert snakecase string to camelcase <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="706" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="706" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a28e7ef7f4daed47ec1d65760c0a85c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>snakecase</definition>
+        <argsstring>($str)</argsstring>
+        <name>snakecase</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert camelcase string to snakecase <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="721" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="721" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a94648b79713b75bf4b68864e4f916df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sign</definition>
+        <argsstring>($num)</argsstring>
+        <name>sign</name>
+        <param>
+          <declname>$num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return -1 if specified number is negative, 0 if zero, or 1 if the number is positive <simplesect kind="return"><para>int </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="731" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="731" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1abb0deeb7aea6b11961c802cddd6f5925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>extract</definition>
+        <argsstring>($arr, $prefix)</argsstring>
+        <name>extract</name>
+        <param>
+          <declname>$arr</declname>
+        </param>
+        <param>
+          <declname>$prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract values of array whose keys start with the given prefix <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="741" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="741" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a8906c778c90cf5be4c1d76cd005945c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>constants</definition>
+        <argsstring>($class, $prefix=&apos;&apos;)</argsstring>
+        <name>constants</name>
+        <param>
+          <declname>$class</declname>
+        </param>
+        <param>
+          <declname>$prefix</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert class constants to array <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$class</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="755" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="755" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aea8db0058c00fd2bc1351ddb2ebf3191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash</definition>
+        <argsstring>($str)</argsstring>
+        <name>hash</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate 64bit/base36 hash <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="765" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a3b0a49639cd46ae1a3a817552b10e242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>base64</definition>
+        <argsstring>($data, $mime)</argsstring>
+        <name>base64</name>
+        <param>
+          <declname>$data</declname>
+        </param>
+        <param>
+          <declname>$mime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return Base64-encoded equivalent <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$mime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="776" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="776" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a27ad9a200330b2a3e71f8fa5df0f3397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>encode</definition>
+        <argsstring>($str)</argsstring>
+        <name>encode</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert special characters to HTML entities <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="785" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="785" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a4afbb486f4a5ff5a8170c832f5997986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>decode</definition>
+        <argsstring>($str)</argsstring>
+        <name>decode</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert HTML entities back to characters <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="795" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="795" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a17f774c561c4ac4a77f691bd98d5b647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>recursive</definition>
+        <argsstring>($arg, $func, $stack=[])</argsstring>
+        <name>recursive</name>
+        <param>
+          <declname>$arg</declname>
+        </param>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$stack</declname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invoke callback recursively for all data types <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="806" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="806" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aaaeb3a6da8c7c370705a33e599c3144a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clean</definition>
+        <argsstring>($arg, $tags=NULL)</argsstring>
+        <name>clean</name>
+        <param>
+          <declname>$arg</declname>
+        </param>
+        <param>
+          <declname>$tags</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove HTML tags (except those enumerated) and non-printable characters to mitigate XSS/code injection attacks <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="841" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="841" bodyend="852"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aa5b63d859ddc3953cc72877b834beb53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>scrub</definition>
+        <argsstring>(&amp;$var, $tags=NULL)</argsstring>
+        <name>scrub</name>
+        <param>
+          <type>&amp;</type>
+          <declname>$var</declname>
+        </param>
+        <param>
+          <declname>$tags</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="class_base_1aaaeb3a6da8c7c370705a33e599c3144a" kindref="member">clean()</ref>, except that variable is passed by reference <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="860" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="860" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1afe083716d50b3fb4057e519961b9235c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>format</definition>
+        <argsstring>()</argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return locale-aware formatted string <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="868" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="868" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aeff6ba9b2402e9a6e39c424452f8ffb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>language</definition>
+        <argsstring>($code)</argsstring>
+        <name>language</name>
+        <param>
+          <declname>$code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign/auto-detect language <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="986" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="986" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a084dcc9ed975d967d44aeafc628db4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lexicon</definition>
+        <argsstring>($path, $ttl=0)</argsstring>
+        <name>lexicon</name>
+        <param>
+          <declname>$path</declname>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return lexicon entries <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1025" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1025" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a8f26410af8419317fe83d822e12c18f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>serialize</definition>
+        <argsstring>($arg)</argsstring>
+        <name>serialize</name>
+        <param>
+          <declname>$arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return string representation of PHP value <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1067" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1067" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ad07703b75ad394aac9592c2f7684f87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unserialize</definition>
+        <argsstring>($arg)</argsstring>
+        <name>unserialize</name>
+        <param>
+          <declname>$arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return PHP value derived from string <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1081" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1081" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a4505aab5ca6dd00d047da06786883df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>status</definition>
+        <argsstring>($code)</argsstring>
+        <name>status</name>
+        <param>
+          <declname>$code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send HTTP status header; Return text equivalent of status code <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1095" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1095" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a11de9ffc2348b9090fbcd40fe00259ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>expire</definition>
+        <argsstring>($secs=0)</argsstring>
+        <name>expire</name>
+        <param>
+          <declname>$secs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send cache metadata to HTTP client <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$secs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1107" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1107" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a77f6a261d70e66c7b7273774832482dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agent</definition>
+        <argsstring>()</argsstring>
+        <name>agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return HTTP user agent <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1134" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1134" bodyend="1142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a73a8e42630137b1b11246d16d7cd23d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ajax</definition>
+        <argsstring>()</argsstring>
+        <name>ajax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if XMLHttpRequest detected <simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1148" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1148" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a197bae3714812901860bd006b00f91de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ip</definition>
+        <argsstring>()</argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sniff IP address <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1158" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1158" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a83230924155c911fd8db8f0619ced19a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>trace</definition>
+        <argsstring>(array $trace=NULL, $format=TRUE)</argsstring>
+        <name>trace</name>
+        <param>
+          <type>array</type>
+          <declname>$trace</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$format</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return filtered stack trace as a formatted string (or array) <simplesect kind="return"><para>string|array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$trace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1174" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1174" bodyend="1210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aa73cf9e2c791864c9baf4c2d55b5f68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>error</definition>
+        <argsstring>($code, $text=&apos;&apos;, array $trace=NULL, $level=0)</argsstring>
+        <name>error</name>
+        <param>
+          <declname>$code</declname>
+        </param>
+        <param>
+          <declname>$text</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$trace</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$level</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_log" kindref="compound">Log</ref> error; Execute ONERROR handler if defined, else display default error page (HTML for synchronous requests, JSON string for AJAX requests) <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$trace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1222" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1222" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a37955584341e20d695a2dea982e3e192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mock</definition>
+        <argsstring>($pattern, array $args=NULL, array $headers=NULL, $body=NULL)</argsstring>
+        <name>mock</name>
+        <param>
+          <declname>$pattern</declname>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$headers</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$body</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mock HTTP request <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1278" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1278" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a369026a3cb8f321eadc19535ee308b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>route</definition>
+        <argsstring>($pattern, $handler, $ttl=0, $kbps=0)</argsstring>
+        <name>route</name>
+        <param>
+          <declname>$pattern</declname>
+        </param>
+        <param>
+          <declname>$handler</declname>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <declname>$kbps</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind handler to route pattern <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$kbps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1326" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1326" bodyend="1352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a5a8efc7bc5d742984142bbcd2266128d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>reroute</definition>
+        <argsstring>($url=NULL, $permanent=FALSE)</argsstring>
+        <name>reroute</name>
+        <param>
+          <declname>$url</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$permanent</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reroute to specified URI <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$permanent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1360" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1360" bodyend="1387"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ad64de620e7d21824d5f36dad0fb75945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>map</definition>
+        <argsstring>($url, $class, $ttl=0, $kbps=0)</argsstring>
+        <name>map</name>
+        <param>
+          <declname>$url</declname>
+        </param>
+        <param>
+          <declname>$class</declname>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <declname>$kbps</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provide ReST interface by mapping HTTP verb to class method <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$class</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$kbps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1397" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1397" bodyend="1408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aabd48f745ba0f411f2a62460d5d10fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redirect</definition>
+        <argsstring>($pattern, $url, $permanent=TRUE)</argsstring>
+        <name>redirect</name>
+        <param>
+          <declname>$pattern</declname>
+        </param>
+        <param>
+          <declname>$url</declname>
+        </param>
+        <param>
+          <declname>$permanent</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Redirect a route to another URL <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$permanent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1417" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1417" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a3e27c86c02a50a6906d9d92337d7437d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>blacklisted</definition>
+        <argsstring>($ip)</argsstring>
+        <name>blacklisted</name>
+        <param>
+          <declname>$ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if IPv4 address exists in DNSBL <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1433" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1433" bodyend="1449"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1abc7b4470fe464baa2b35ec59e1a3ee3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mask</definition>
+        <argsstring>($pattern, $url=NULL)</argsstring>
+        <name>mask</name>
+        <param>
+          <declname>$pattern</declname>
+        </param>
+        <param>
+          <declname>$url</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies the specified URL mask and returns parameterized matches <simplesect kind="return"><para>$args array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1457" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1457" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1afb0fafe7e02a3ae1993c01c19fad2bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Match routes against incoming URI <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1493" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1493" bodyend="1650"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ac0839746f9fe00ea683310b3af59c671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>until</definition>
+        <argsstring>($func, $args=NULL, $timeout=60)</argsstring>
+        <name>until</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$timeout</declname>
+          <defval>60</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loop until callback returns TRUE (for long polling) <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1659" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1659" bodyend="1689"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a0b3225a00a2350b06234860096d5178a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>abort</definition>
+        <argsstring>()</argsstring>
+        <name>abort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disconnect HTTP client </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1694" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1694" bodyend="1707"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a669bbc5855d5fc5ff1959819fd8a987d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>grab</definition>
+        <argsstring>($func, $args=NULL)</argsstring>
+        <name>grab</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Grab the real route handler behind the string expression <simplesect kind="return"><para>string|array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1715" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1715" bodyend="1733"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a58d9a02809fd387d8ed8ace64e10628e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>call</definition>
+        <argsstring>($func, $args=NULL, $hooks=&apos;&apos;)</argsstring>
+        <name>call</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$hooks</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute callback/hooks (supports &apos;class-&gt;method&apos; format) <simplesect kind="return"><para>mixed|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$hooks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1742" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1742" bodyend="1785"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ab92ef3c41964ec3291278fefb47d16f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>chain</definition>
+        <argsstring>($funcs, $args=NULL)</argsstring>
+        <name>chain</name>
+        <param>
+          <declname>$funcs</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute specified callbacks in succession; Apply same arguments to all callbacks <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$funcs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1794" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1794" bodyend="1799"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aeae41eb437d4e24660a712e05240515d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>relay</definition>
+        <argsstring>($funcs, $args=NULL)</argsstring>
+        <name>relay</name>
+        <param>
+          <declname>$funcs</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute specified callbacks in succession; Relay result of previous callback as argument to the next callback <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$funcs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1808" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1808" bodyend="1812"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9b5adda44e6db1d1f45cf1e4a6be5ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config</definition>
+        <argsstring>($file, $allow=FALSE)</argsstring>
+        <name>config</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <param>
+          <declname>$allow</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure framework according to .ini-style file settings; If optional 2nd arg is provided, template strings are interpreted <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$allow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1821" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1821" bodyend="1906"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1aee63f67e17f2fce3781b9199e98025fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mutex</definition>
+        <argsstring>($id, $func, $args=NULL)</argsstring>
+        <name>mutex</name>
+        <param>
+          <declname>$id</declname>
+        </param>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create mutex, invoke callback then drop ownership when done <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1915" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1915" bodyend="1930"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a7dbce4917d643c341f1c072f484329c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>read</definition>
+        <argsstring>($file, $lf=FALSE)</argsstring>
+        <name>read</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <param>
+          <declname>$lf</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read file (with option to apply Unix LF as standard line ending) <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$lf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1938" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1938" bodyend="1941"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1afb51e542cbff9f00cc964ac9bd6eecb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>write</definition>
+        <argsstring>($file, $data, $append=FALSE)</argsstring>
+        <name>write</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <param>
+          <declname>$data</declname>
+        </param>
+        <param>
+          <declname>$append</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exclusive file write <simplesect kind="return"><para>int|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$append</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1950" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1950" bodyend="1952"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a9e02fb072a50fb8358713128b41ba417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>highlight</definition>
+        <argsstring>($text)</argsstring>
+        <name>highlight</name>
+        <param>
+          <declname>$text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply syntax highlighting <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1959" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1959" bodyend="1979"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a238c9a8c7839b0773ee92327c86d3438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dump</definition>
+        <argsstring>($expr)</argsstring>
+        <name>dump</name>
+        <param>
+          <declname>$expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dump expression with syntax highlighting <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1986" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1986" bodyend="1988"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a83965c040afee15a85c5085b56626d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rel</definition>
+        <argsstring>($url)</argsstring>
+        <name>rel</name>
+        <param>
+          <declname>$url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return path (and query parameters) relative to the base directory <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="1995" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="1995" bodyend="1998"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1adc7d192011936335400f5baffa3c2667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unload</definition>
+        <argsstring>($cwd)</argsstring>
+        <name>unload</name>
+        <param>
+          <declname>$cwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute framework/application shutdown sequence <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$cwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2023" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2023" bodyend="2035"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetexists</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetexists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for checking hive key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2042" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2042" bodyend="2044"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetset</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>offsetset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for assigning hive value <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2052" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2052" bodyend="2054"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a4736f7355697c49bcd06b643b4077e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; offsetget</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetget</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for retrieving hive value <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2061" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2061" bodyend="2064"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetunset</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetunset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for removing hive key <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2071" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2071" bodyend="2073"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ae858fed7cd2822fbceac154138b68baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__isset</definition>
+        <argsstring>($key)</argsstring>
+        <name>__isset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_base_1a16da5af940f99a0df550a7f7c7c5d4e4" kindref="member">offsetexists()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2080" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2080" bodyend="2082"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>__set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_base_1a67693a9cff0abdfbbd353c36c00fb8d3" kindref="member">offsetset()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2090" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2090" bodyend="2092"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; __get</definition>
+        <argsstring>($key)</argsstring>
+        <name>__get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_base_1a4736f7355697c49bcd06b643b4077e8a" kindref="member">offsetget()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2099" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2099" bodyend="2102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__unset</definition>
+        <argsstring>($key)</argsstring>
+        <name>__unset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_base_1a414cd1cb3c09fc06e5e83502f6309dde" kindref="member">offsetunset()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2109" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2109" bodyend="2111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a12381dd8315ac26000fdf6b9b0735321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__call</definition>
+        <argsstring>($key, $args)</argsstring>
+        <name>__call</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call function identified by hive key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2119" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2119" bodyend="2121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a095c5d389db211932136b53f25f39685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+<para>Bootstrap. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2128" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2128" bodyend="2340"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_base_1a07891ba35065f0b436666485bf37b113" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cut</definition>
+        <argsstring>($key)</argsstring>
+        <name>cut</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the parts of specified hive key <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="148" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1ad0cb87b388bc74d63dc884accdca8713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__clone</definition>
+        <argsstring>()</argsstring>
+        <name>__clone</name>
+        <briefdescription>
+<para>Prohibit cloning. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2124" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2124" bodyend="2125"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_base_1aad6cfb5484c7eda55731134910c7a280" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>autoload</definition>
+        <argsstring>($class)</argsstring>
+        <name>autoload</name>
+        <param>
+          <declname>$class</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Namespace-aware class autoloader <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$class</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="2005" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="2005" bodyend="2017"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_base" kindref="compound">Base</ref> structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="8">
+        <label>Base</label>
+        <link refid="class_base"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="11">
+        <label>Base</label>
+        <link refid="class_base"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="43" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="43" bodyend="2342"/>
+    <listofallmembers>
+      <member refid="class_base_1a0aa2d1acd291d3fedc1a3617d716e28e" prot="public" virt="non-virtual"><scope>Base</scope><name>$fallback</name></member>
+      <member refid="class_base_1a10ae9335419b13d419643c4e3ad94a91" prot="private" virt="non-virtual"><scope>Base</scope><name>$hive</name></member>
+      <member refid="class_base_1a8834b0851b05d161c207a7d2e5dca9bd" prot="public" virt="non-virtual"><scope>Base</scope><name>$init</name></member>
+      <member refid="class_base_1a8856d0a49881ef8e0a6d205d37d4a7af" prot="public" virt="non-virtual"><scope>Base</scope><name>$languages</name></member>
+      <member refid="class_base_1a12381dd8315ac26000fdf6b9b0735321" prot="public" virt="non-virtual"><scope>Base</scope><name>__call</name></member>
+      <member refid="class_base_1ad0cb87b388bc74d63dc884accdca8713" prot="private" virt="non-virtual"><scope>Base</scope><name>__clone</name></member>
+      <member refid="class_base_1a095c5d389db211932136b53f25f39685" prot="public" virt="non-virtual"><scope>Base</scope><name>__construct</name></member>
+      <member refid="class_base_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>Base</scope><name>__get</name></member>
+      <member refid="class_base_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>Base</scope><name>__isset</name></member>
+      <member refid="class_base_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>Base</scope><name>__set</name></member>
+      <member refid="class_base_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>Base</scope><name>__unset</name></member>
+      <member refid="class_base_1a0b3225a00a2350b06234860096d5178a" prot="public" virt="non-virtual"><scope>Base</scope><name>abort</name></member>
+      <member refid="class_base_1a77f6a261d70e66c7b7273774832482dc" prot="public" virt="non-virtual"><scope>Base</scope><name>agent</name></member>
+      <member refid="class_base_1a73a8e42630137b1b11246d16d7cd23d5" prot="public" virt="non-virtual"><scope>Base</scope><name>ajax</name></member>
+      <member refid="class_base_1a222997c88655e69eb1bb3a18147ddc3d" prot="public" virt="non-virtual"><scope>Base</scope><name>alias</name></member>
+      <member refid="class_base_1aad6cfb5484c7eda55731134910c7a280" prot="protected" virt="non-virtual"><scope>Base</scope><name>autoload</name></member>
+      <member refid="class_base_1a3b0a49639cd46ae1a3a817552b10e242" prot="public" virt="non-virtual"><scope>Base</scope><name>base64</name></member>
+      <member refid="class_base_1a3e27c86c02a50a6906d9d92337d7437d" prot="public" virt="non-virtual"><scope>Base</scope><name>blacklisted</name></member>
+      <member refid="class_base_1a9f2a5290b60008d473e1c9e38f1465d0" prot="public" virt="non-virtual"><scope>Base</scope><name>build</name></member>
+      <member refid="class_base_1a58d9a02809fd387d8ed8ace64e10628e" prot="public" virt="non-virtual"><scope>Base</scope><name>call</name></member>
+      <member refid="class_base_1ad8ac953e9fcd497f1ce693e7639911a5" prot="public" virt="non-virtual"><scope>Base</scope><name>camelcase</name></member>
+      <member refid="class_base_1ab92ef3c41964ec3291278fefb47d16f5" prot="public" virt="non-virtual"><scope>Base</scope><name>chain</name></member>
+      <member refid="class_base_1a1e33118c04d4a7df9336e02db8f8d663" prot="public" virt="non-virtual"><scope>Base</scope><name>checked</name></member>
+      <member refid="class_base_1aaaeb3a6da8c7c370705a33e599c3144a" prot="public" virt="non-virtual"><scope>Base</scope><name>clean</name></member>
+      <member refid="class_base_1a10a949ef75de6c82c98ac555f371ba83" prot="public" virt="non-virtual"><scope>Base</scope><name>clear</name></member>
+      <member refid="class_base_1af206a5f3197cfe2acbbb071ec086b710" prot="public" virt="non-virtual"><scope>Base</scope><name>compile</name></member>
+      <member refid="class_base_1ac750abed7c77c34dab7894d272a2a293" prot="public" virt="non-virtual"><scope>Base</scope><name>concat</name></member>
+      <member refid="class_base_1a9b5adda44e6db1d1f45cf1e4a6be5ce1" prot="public" virt="non-virtual"><scope>Base</scope><name>config</name></member>
+      <member refid="class_base_1a8906c778c90cf5be4c1d76cd005945c5" prot="public" virt="non-virtual"><scope>Base</scope><name>constants</name></member>
+      <member refid="class_base_1a9051a0cda0ec6cae19cbd32e3945f31a" prot="public" virt="non-virtual"><scope>Base</scope><name>copy</name></member>
+      <member refid="class_base_1ad3c2e05f38fee8ac8cdc370fd4c84941" prot="public" virt="non-virtual"><scope>Base</scope><name>CSS</name></member>
+      <member refid="class_base_1a2f39631e6920b33e0e88713de4566bdc" prot="public" virt="non-virtual"><scope>Base</scope><name>csv</name></member>
+      <member refid="class_base_1a07891ba35065f0b436666485bf37b113" prot="private" virt="non-virtual"><scope>Base</scope><name>cut</name></member>
+      <member refid="class_base_1a4afbb486f4a5ff5a8170c832f5997986" prot="public" virt="non-virtual"><scope>Base</scope><name>decode</name></member>
+      <member refid="class_base_1a7de02315df24d7ef20a0bd441060d6d2" prot="public" virt="non-virtual"><scope>Base</scope><name>devoid</name></member>
+      <member refid="class_base_1a238c9a8c7839b0773ee92327c86d3438" prot="public" virt="non-virtual"><scope>Base</scope><name>dump</name></member>
+      <member refid="class_base_1a98d5554d5113e4daf97d5496887942dd" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Class</name></member>
+      <member refid="class_base_1a317619c968fa68a4a7704384d9f4efda" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Fatal</name></member>
+      <member refid="class_base_1aa0fc170fc7e191b7d16baccde8eea996" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Hive</name></member>
+      <member refid="class_base_1a095176974668a9554e3e88442ba21baa" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Method</name></member>
+      <member refid="class_base_1ab7eb7301d76ada1832c7dfd106ee7413" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Named</name></member>
+      <member refid="class_base_1a0bbe3ee05726cd755830674390571869" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Open</name></member>
+      <member refid="class_base_1a2a8c25f4fb29d11d273ea8b7cc678a10" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Pattern</name></member>
+      <member refid="class_base_1a0a15c5ad9084c1fd577c494e4b1d4b52" prot="public" virt="non-virtual"><scope>Base</scope><name>E_Routes</name></member>
+      <member refid="class_base_1a27ad9a200330b2a3e71f8fa5df0f3397" prot="public" virt="non-virtual"><scope>Base</scope><name>encode</name></member>
+      <member refid="class_base_1aa73cf9e2c791864c9baf4c2d55b5f68b" prot="public" virt="non-virtual"><scope>Base</scope><name>error</name></member>
+      <member refid="class_base_1a28497caad131119319e31168c38713b6" prot="public" virt="non-virtual"><scope>Base</scope><name>exists</name></member>
+      <member refid="class_base_1a11de9ffc2348b9090fbcd40fe00259ab" prot="public" virt="non-virtual"><scope>Base</scope><name>expire</name></member>
+      <member refid="class_base_1adab2e4455e35467d6012ceaf488a3744" prot="public" virt="non-virtual"><scope>Base</scope><name>extend</name></member>
+      <member refid="class_base_1abb0deeb7aea6b11961c802cddd6f5925" prot="public" virt="non-virtual"><scope>Base</scope><name>extract</name></member>
+      <member refid="class_base_1a052692dd304d0f28451a8fc601fa277e" prot="public" virt="non-virtual"><scope>Base</scope><name>fixslashes</name></member>
+      <member refid="class_base_1a0b0020960192ed3b1d87f4c1a2587373" prot="public" virt="non-virtual"><scope>Base</scope><name>flip</name></member>
+      <member refid="class_base_1afe083716d50b3fb4057e519961b9235c" prot="public" virt="non-virtual"><scope>Base</scope><name>format</name></member>
+      <member refid="class_base_1a17baee8d5275e5926004818839f9d838" prot="public" virt="non-virtual"><scope>Base</scope><name>get</name></member>
+      <member refid="class_base_1a4a494a8977b10f1b9980faadf3ea0fc2" prot="public" virt="non-virtual"><scope>Base</scope><name>GLOBALS</name></member>
+      <member refid="class_base_1a669bbc5855d5fc5ff1959819fd8a987d" prot="public" virt="non-virtual"><scope>Base</scope><name>grab</name></member>
+      <member refid="class_base_1aea8db0058c00fd2bc1351ddb2ebf3191" prot="public" virt="non-virtual"><scope>Base</scope><name>hash</name></member>
+      <member refid="class_base_1a9e02fb072a50fb8358713128b41ba417" prot="public" virt="non-virtual"><scope>Base</scope><name>highlight</name></member>
+      <member refid="class_base_1a9492bc2587be1faa2fa7e69d2a89a53e" prot="public" virt="non-virtual"><scope>Base</scope><name>hive</name></member>
+      <member refid="class_base_1a42c03aab8b513fd2992aeb7820003ad1" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_100</name></member>
+      <member refid="class_base_1a3e91894cd6ca5dcd2cdbc4e658328dbe" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_101</name></member>
+      <member refid="class_base_1ae0a2cfd13da12e121cd5cd44cdba63f1" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_200</name></member>
+      <member refid="class_base_1a5a183af6b7b3d27eadc14a92cc1a8f52" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_201</name></member>
+      <member refid="class_base_1a58dd15c950afe66a5723a02d296e8ef3" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_202</name></member>
+      <member refid="class_base_1a6829270d25c830b55a9399c8c2f4c64d" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_203</name></member>
+      <member refid="class_base_1afe27bd4b405e5b231f7391a6ad27305d" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_204</name></member>
+      <member refid="class_base_1a6abfa0503972e8adc8901aac33e3ba82" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_205</name></member>
+      <member refid="class_base_1a58e0f63fd99ed0ea3e7e60d6ad3b945a" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_206</name></member>
+      <member refid="class_base_1adafda22dbd720503d24641dd6233d288" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_300</name></member>
+      <member refid="class_base_1a6c5ed14921b8f4e396f4efe351b7cf17" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_301</name></member>
+      <member refid="class_base_1a6c27583e94a43460f3a53bc8d52928ed" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_302</name></member>
+      <member refid="class_base_1ad1e133ece2bc42ef9f254c9816cc095b" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_303</name></member>
+      <member refid="class_base_1abdb84279eb4c2ac564c82aa6e6b33304" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_304</name></member>
+      <member refid="class_base_1a71b15cf5ca7eca4fcb95a65d9ef4591e" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_305</name></member>
+      <member refid="class_base_1a8da1214deb6446d70f581c2019cfdbee" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_307</name></member>
+      <member refid="class_base_1a9bc01f248df88512037bd8ccb3bc62cf" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_400</name></member>
+      <member refid="class_base_1a5edf9bc886987f75d84fa9a259fbff15" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_401</name></member>
+      <member refid="class_base_1aa6565d2b492ee606d53edce743d5c71d" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_402</name></member>
+      <member refid="class_base_1a026a0a02c60785631930a6b6a7dfa779" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_403</name></member>
+      <member refid="class_base_1ab15b06b5211e7c1d62dbfefdd2f48fae" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_404</name></member>
+      <member refid="class_base_1ac8f37841b9501862ab4436188e6ef52c" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_405</name></member>
+      <member refid="class_base_1ac89c0f949c653c14eabf66cf51914f7a" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_406</name></member>
+      <member refid="class_base_1aa2744fa255e0fde11c39044a4f39218f" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_407</name></member>
+      <member refid="class_base_1ad478a80358a910b447fe9a8f0fe3e5f3" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_408</name></member>
+      <member refid="class_base_1a14c4dd15ae82f4276945fe8ca3587425" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_409</name></member>
+      <member refid="class_base_1a6ecb7b05cfc5c946b48c517f4cd1eb1e" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_410</name></member>
+      <member refid="class_base_1a5fd3f7b58e313d50de57055da35b8c34" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_411</name></member>
+      <member refid="class_base_1ab3afa21eeb61eec4bec88e01faa33a83" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_412</name></member>
+      <member refid="class_base_1a45f0b1f7c9cf100d85d99d35122be993" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_413</name></member>
+      <member refid="class_base_1a3bc4a9f6ae41b35db4ef4cb6c3c81dc0" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_414</name></member>
+      <member refid="class_base_1a5d89cd8370f685b1f3e6e269687adc45" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_415</name></member>
+      <member refid="class_base_1a38e6c727e49a57b0d54d558ee6c42577" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_416</name></member>
+      <member refid="class_base_1adad1d3f1ac9914076661124ac1125344" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_417</name></member>
+      <member refid="class_base_1a33889bdfdb2d12c842493341cd16851b" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_500</name></member>
+      <member refid="class_base_1a87cea373c6e56aaf7a228e510ba556ae" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_501</name></member>
+      <member refid="class_base_1ad1700a5a37fbd79890aefad7ce0cb498" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_502</name></member>
+      <member refid="class_base_1a8646dd1cbc680e1bf771241e82a0a701" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_503</name></member>
+      <member refid="class_base_1ad02fdd88ce4a4f595f8302e2e7e2fec3" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_504</name></member>
+      <member refid="class_base_1ae2b559dd27bdc2459d58581ed4289275" prot="public" virt="non-virtual"><scope>Base</scope><name>HTTP_505</name></member>
+      <member refid="class_prefab_1a0deb004950b8dc4f51836316fd19c111" prot="public" virt="non-virtual"><scope>Base</scope><name>instance</name></member>
+      <member refid="class_base_1a197bae3714812901860bd006b00f91de" prot="public" virt="non-virtual"><scope>Base</scope><name>ip</name></member>
+      <member refid="class_base_1aeff6ba9b2402e9a6e39c424452f8ffb1" prot="public" virt="non-virtual"><scope>Base</scope><name>language</name></member>
+      <member refid="class_base_1a084dcc9ed975d967d44aeafc628db4da" prot="public" virt="non-virtual"><scope>Base</scope><name>lexicon</name></member>
+      <member refid="class_base_1ad64de620e7d21824d5f36dad0fb75945" prot="public" virt="non-virtual"><scope>Base</scope><name>map</name></member>
+      <member refid="class_base_1abc7b4470fe464baa2b35ec59e1a3ee3a" prot="public" virt="non-virtual"><scope>Base</scope><name>mask</name></member>
+      <member refid="class_base_1a9dc15a0b65021967dad733868514f2a3" prot="public" virt="non-virtual"><scope>Base</scope><name>merge</name></member>
+      <member refid="class_base_1a37955584341e20d695a2dea982e3e192" prot="public" virt="non-virtual"><scope>Base</scope><name>mock</name></member>
+      <member refid="class_base_1a4eea605dd8e0b6a69464ec041dc9872a" prot="public" virt="non-virtual"><scope>Base</scope><name>MODE</name></member>
+      <member refid="class_base_1aa4d056d44b4c50924926f9d40cdb9bf2" prot="public" virt="non-virtual"><scope>Base</scope><name>mset</name></member>
+      <member refid="class_base_1aee63f67e17f2fce3781b9199e98025fb" prot="public" virt="non-virtual"><scope>Base</scope><name>mutex</name></member>
+      <member refid="class_base_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>Base</scope><name>offsetexists</name></member>
+      <member refid="class_base_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>Base</scope><name>offsetget</name></member>
+      <member refid="class_base_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>Base</scope><name>offsetset</name></member>
+      <member refid="class_base_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>Base</scope><name>offsetunset</name></member>
+      <member refid="class_base_1a037d2e8a6e9d6f5c55e8b24e3faa5189" prot="public" virt="non-virtual"><scope>Base</scope><name>PACKAGE</name></member>
+      <member refid="class_base_1a4d0e49aacf195439c437277b22a81062" prot="public" virt="non-virtual"><scope>Base</scope><name>parse</name></member>
+      <member refid="class_base_1a0a5ec8de186492bebff151ad40b17fa4" prot="public" virt="non-virtual"><scope>Base</scope><name>pop</name></member>
+      <member refid="class_base_1aef81a11cc1b68233d80e63bcf6fa94f3" prot="public" virt="non-virtual"><scope>Base</scope><name>push</name></member>
+      <member refid="class_base_1a7dbce4917d643c341f1c072f484329c1" prot="public" virt="non-virtual"><scope>Base</scope><name>read</name></member>
+      <member refid="class_base_1a17f774c561c4ac4a77f691bd98d5b647" prot="public" virt="non-virtual"><scope>Base</scope><name>recursive</name></member>
+      <member refid="class_base_1aabd48f745ba0f411f2a62460d5d10fba" prot="public" virt="non-virtual"><scope>Base</scope><name>redirect</name></member>
+      <member refid="class_base_1aee913b6f1b4e910dc64485c4d8e48b15" prot="public" virt="non-virtual"><scope>Base</scope><name>ref</name></member>
+      <member refid="class_base_1a83965c040afee15a85c5085b56626d80" prot="public" virt="non-virtual"><scope>Base</scope><name>rel</name></member>
+      <member refid="class_base_1aeae41eb437d4e24660a712e05240515d" prot="public" virt="non-virtual"><scope>Base</scope><name>relay</name></member>
+      <member refid="class_base_1a0d45704345cefda5b42533a00b8f02a7" prot="public" virt="non-virtual"><scope>Base</scope><name>REQ_AJAX</name></member>
+      <member refid="class_base_1a1662b755d7828c7beb5dd2f5461ae3bc" prot="public" virt="non-virtual"><scope>Base</scope><name>REQ_CLI</name></member>
+      <member refid="class_base_1acc82b22baa60bf2d2a558f73b83b01b7" prot="public" virt="non-virtual"><scope>Base</scope><name>REQ_SYNC</name></member>
+      <member refid="class_base_1a5a8efc7bc5d742984142bbcd2266128d" prot="public" virt="non-virtual"><scope>Base</scope><name>reroute</name></member>
+      <member refid="class_base_1a369026a3cb8f321eadc19535ee308b2d" prot="public" virt="non-virtual"><scope>Base</scope><name>route</name></member>
+      <member refid="class_base_1afb0fafe7e02a3ae1993c01c19fad2bae" prot="public" virt="non-virtual"><scope>Base</scope><name>run</name></member>
+      <member refid="class_base_1aa5b63d859ddc3953cc72877b834beb53" prot="public" virt="non-virtual"><scope>Base</scope><name>scrub</name></member>
+      <member refid="class_base_1a8f26410af8419317fe83d822e12c18f0" prot="public" virt="non-virtual"><scope>Base</scope><name>serialize</name></member>
+      <member refid="class_base_1a845297666b2c78affb9fa78605ebf93e" prot="public" virt="non-virtual"><scope>Base</scope><name>set</name></member>
+      <member refid="class_base_1a4ddb1b90cf267ea505ec59db4c6f5134" prot="public" virt="non-virtual"><scope>Base</scope><name>shift</name></member>
+      <member refid="class_base_1a94648b79713b75bf4b68864e4f916df4" prot="public" virt="non-virtual"><scope>Base</scope><name>sign</name></member>
+      <member refid="class_base_1a28e7ef7f4daed47ec1d65760c0a85c27" prot="public" virt="non-virtual"><scope>Base</scope><name>snakecase</name></member>
+      <member refid="class_base_1ac7b410d4c7145630a45e608d465bb1b5" prot="public" virt="non-virtual"><scope>Base</scope><name>split</name></member>
+      <member refid="class_base_1a4505aab5ca6dd00d047da06786883df2" prot="public" virt="non-virtual"><scope>Base</scope><name>status</name></member>
+      <member refid="class_base_1adb7cb366d6c6e4d4338bc35e76dfaf67" prot="public" virt="non-virtual"><scope>Base</scope><name>stringify</name></member>
+      <member refid="class_base_1aada982ed0466e5ed14d4fcbe22c61840" prot="public" virt="non-virtual"><scope>Base</scope><name>sync</name></member>
+      <member refid="class_base_1a83230924155c911fd8db8f0619ced19a" prot="public" virt="non-virtual"><scope>Base</scope><name>trace</name></member>
+      <member refid="class_base_1adc7d192011936335400f5baffa3c2667" prot="public" virt="non-virtual"><scope>Base</scope><name>unload</name></member>
+      <member refid="class_base_1ad07703b75ad394aac9592c2f7684f87e" prot="public" virt="non-virtual"><scope>Base</scope><name>unserialize</name></member>
+      <member refid="class_base_1a44e8f53ad45c8f0caa4e438285d08a49" prot="public" virt="non-virtual"><scope>Base</scope><name>unshift</name></member>
+      <member refid="class_base_1ac0839746f9fe00ea683310b3af59c671" prot="public" virt="non-virtual"><scope>Base</scope><name>until</name></member>
+      <member refid="class_base_1a43552934268bce7080a8a0dfdab5ff48" prot="public" virt="non-virtual"><scope>Base</scope><name>VERBS</name></member>
+      <member refid="class_base_1af71005841ce53adac00581ab0ba24c1f" prot="public" virt="non-virtual"><scope>Base</scope><name>VERSION</name></member>
+      <member refid="class_base_1a6cdd645b49b8ec6bd1bebe80074f98fb" prot="public" virt="non-virtual"><scope>Base</scope><name>visible</name></member>
+      <member refid="class_base_1afb51e542cbff9f00cc964ac9bd6eecb5" prot="public" virt="non-virtual"><scope>Base</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

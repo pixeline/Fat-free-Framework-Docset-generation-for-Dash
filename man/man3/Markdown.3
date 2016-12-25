@@ -1,0 +1,423 @@
+.TH "Markdown" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Markdown \- Markdown-to-HTML converter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBPrefab\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBesc\fP ($str)"
+.br
+.ti -1c
+.RI "\fBscan\fP ($str)"
+.br
+.ti -1c
+.RI "\fBconvert\fP ($txt)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$special\fP"
+.br
+.RI "Special characters\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB_blockquote\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_pre\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_fence\fP ($hint, $str)"
+.br
+.ti -1c
+.RI "\fB_hr\fP ()"
+.br
+.ti -1c
+.RI "\fB_atx\fP ($type, $str)"
+.br
+.ti -1c
+.RI "\fB_setext\fP ($str, $type)"
+.br
+.ti -1c
+.RI "\fB_li\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_raw\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_p\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_text\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_img\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_a\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_auto\fP ($str)"
+.br
+.ti -1c
+.RI "\fB_code\fP ($str)"
+.br
+.ti -1c
+.RI "\fBsnip\fP ($str)"
+.br
+.ti -1c
+.RI "\fBbuild\fP ($str)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$blocks\fP"
+.br
+.RI "Parsing rules\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Markdown-to-HTML converter\&. 
+.PP
+Definition at line 24 of file markdown\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "_a ( $str)\fC [protected]\fP"
+Process anchor span 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 371 of file markdown\&.php\&.
+.SS "_atx ( $type,  $str)\fC [protected]\fP"
+Process atx-style heading 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$type\fP string 
+.br
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 194 of file markdown\&.php\&.
+.SS "_auto ( $str)\fC [protected]\fP"
+Auto-convert links 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 391 of file markdown\&.php\&.
+.SS "_blockquote ( $str)\fC [protected]\fP"
+Process blockquote 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file markdown\&.php\&.
+.SS "_code ( $str)\fC [protected]\fP"
+Process code span 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 411 of file markdown\&.php\&.
+.SS "_fence ( $hint,  $str)\fC [protected]\fP"
+Process fenced code block 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$hint\fP string 
+.br
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file markdown\&.php\&.
+.SS "_hr ()\fC [protected]\fP"
+Process horizontal rule 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 184 of file markdown\&.php\&.
+.SS "_img ( $str)\fC [protected]\fP"
+Process image span 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 349 of file markdown\&.php\&.
+.SS "_li ( $str)\fC [protected]\fP"
+Process ordered/unordered list 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 217 of file markdown\&.php\&.
+.SS "_p ( $str)\fC [protected]\fP"
+Process paragraph 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 286 of file markdown\&.php\&.
+.SS "_pre ( $str)\fC [protected]\fP"
+Process whitespace-prefixed code block 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file markdown\&.php\&.
+.SS "_raw ( $str)\fC [protected]\fP"
+Ignore raw HTML 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 277 of file markdown\&.php\&.
+.SS "_setext ( $str,  $type)\fC [protected]\fP"
+Process setext-style heading 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.br
+\fI$type\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file markdown\&.php\&.
+.SS "_text ( $str)\fC [protected]\fP"
+Process strong/em/strikethrough spans 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 320 of file markdown\&.php\&.
+.SS "build ( $str)\fC [protected]\fP"
+Assemble blocks 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 468 of file markdown\&.php\&.
+.SS "convert ( $txt)"
+Render HTML equivalent of markdown 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$txt\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 563 of file markdown\&.php\&.
+.SS "esc ( $str)"
+Convert characters to HTML entities 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 428 of file markdown\&.php\&.
+.SS "scan ( $str)"
+Scan line for convertible spans 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 456 of file markdown\&.php\&.
+.SS "snip ( $str)\fC [protected]\fP"
+Reduce multiple line feeds 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 447 of file markdown\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$blocks\fC [protected]\fP"
+
+.PP
+Parsing rules\&. 
+.PP
+Definition at line 28 of file markdown\&.php\&.
+.SS "$special"
+
+.PP
+Special characters\&. 
+.PP
+Definition at line 28 of file markdown\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

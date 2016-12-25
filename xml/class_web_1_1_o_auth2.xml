@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_web_1_1_o_auth2" kind="class" language="PHP" prot="public">
+    <compoundname>Web::OAuth2</compoundname>
+    <basecompoundref refid="class_magic" prot="public" virt="non-virtual">Magic</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_web_1_1_o_auth2_1a67e94494731d99ed23b123e95175bc10" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$args</definition>
+        <argsstring></argsstring>
+        <name>$args</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+<para>Scopes and claims. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1a52f2721541169726269393c6eaaf8f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uri</definition>
+        <argsstring>($endpoint)</argsstring>
+        <name>uri</name>
+        <param>
+          <declname>$endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="class_web_1_1_o_auth2" kindref="compound">OAuth2</ref> authentication URI <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="37" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1ad75f56dfe168d5939f0c5b161d95d351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>request</definition>
+        <argsstring>($uri, $method, $token=NULL)</argsstring>
+        <name>request</name>
+        <param>
+          <declname>$uri</declname>
+        </param>
+        <param>
+          <declname>$method</declname>
+        </param>
+        <param>
+          <declname>$token</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send request to API/token endpoint <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="48" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="48" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1a0520d136dfbea7d3360681b460d23a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>jwt</definition>
+        <argsstring>($token)</argsstring>
+        <name>jwt</name>
+        <param>
+          <declname>$token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse JSON <ref refid="class_web" kindref="compound">Web</ref> token <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="76" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>exists</definition>
+        <argsstring>($key)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if scope/claim exists <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="94" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1ac8d8012023e560c81f55a629022cb65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind value to scope/claim <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="104" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1ac3695923790b06917410e205068b8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; get</definition>
+        <argsstring>($key)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return value of scope/claim <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="113" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="113" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_o_auth2_1a3afe9e27ee9d208e19b23b9e5ba2689a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring>($key=NULL)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove scope/claim <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="126" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="126" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Lightweight <ref refid="class_web_1_1_o_auth2" kindref="compound">OAuth2</ref> client. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="110">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="108">
+        <label>OAuth2</label>
+        <link refid="class_web_1_1_o_auth2"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="113">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="111">
+        <label>OAuth2</label>
+        <link refid="class_web_1_1_o_auth2"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/oauth2.php" bodystart="26" bodyend="133"/>
+    <listofallmembers>
+      <member refid="class_web_1_1_o_auth2_1a67e94494731d99ed23b123e95175bc10" prot="protected" virt="non-virtual"><scope>Web::OAuth2</scope><name>$args</name></member>
+      <member refid="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>__get</name></member>
+      <member refid="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>__isset</name></member>
+      <member refid="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>__set</name></member>
+      <member refid="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>__unset</name></member>
+      <member refid="class_web_1_1_o_auth2_1a3afe9e27ee9d208e19b23b9e5ba2689a" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>clear</name></member>
+      <member refid="class_web_1_1_o_auth2_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>exists</name></member>
+      <member refid="class_web_1_1_o_auth2_1ac3695923790b06917410e205068b8376" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>get</name></member>
+      <member refid="class_web_1_1_o_auth2_1a0520d136dfbea7d3360681b460d23a3c" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>jwt</name></member>
+      <member refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>offsetexists</name></member>
+      <member refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>offsetget</name></member>
+      <member refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>offsetset</name></member>
+      <member refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>offsetunset</name></member>
+      <member refid="class_web_1_1_o_auth2_1ad75f56dfe168d5939f0c5b161d95d351" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>request</name></member>
+      <member refid="class_web_1_1_o_auth2_1ac8d8012023e560c81f55a629022cb65a" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>set</name></member>
+      <member refid="class_web_1_1_o_auth2_1a52f2721541169726269393c6eaaf8f53" prot="public" virt="non-virtual"><scope>Web::OAuth2</scope><name>uri</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

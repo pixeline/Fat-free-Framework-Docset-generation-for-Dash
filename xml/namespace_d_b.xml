@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespace_d_b" kind="namespace" language="PHP">
+    <compoundname>DB</compoundname>
+    <innerclass refid="class_d_b_1_1_cursor" prot="public">DB::Cursor</innerclass>
+    <innerclass refid="class_d_b_1_1_jig" prot="public">DB::Jig</innerclass>
+    <innerclass refid="class_d_b_1_1_mongo" prot="public">DB::Mongo</innerclass>
+    <innerclass refid="class_d_b_1_1_s_q_l" prot="public">DB::SQL</innerclass>
+    <innernamespace refid="namespace_d_b_1_1_jig">DB::Jig</innernamespace>
+    <innernamespace refid="namespace_d_b_1_1_mongo">DB::Mongo</innernamespace>
+    <innernamespace refid="namespace_d_b_1_1_s_q_l">DB::SQL</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="23" column="1"/>
+  </compounddef>
+</doxygen>

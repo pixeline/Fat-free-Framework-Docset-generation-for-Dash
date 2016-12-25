@@ -1,0 +1,172 @@
+.TH "Test" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Test \- Unit test kit\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBresults\fP ()"
+.br
+.ti -1c
+.RI "\fBpassed\fP ()"
+.br
+.ti -1c
+.RI "\fBexpect\fP ($cond, $text=NULL)"
+.br
+.ti -1c
+.RI "\fBmessage\fP ($text)"
+.br
+.ti -1c
+.RI "\fB__construct\fP ($level=self::FLAG_Both)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$passed\fP =TRUE"
+.br
+.RI "Success indicator\&. "
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBFLAG_False\fP =0"
+.br
+.ti -1c
+.RI "const \fBFLAG_True\fP =1"
+.br
+.ti -1c
+.RI "const \fBFLAG_Both\fP =2"
+.br
+.in -1c
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$data\fP =[]"
+.br
+.RI "\fBTest\fP results\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Unit test kit\&. 
+.PP
+Definition at line 24 of file test\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ( $level = \fCself::FLAG_Both\fP)"
+Class constructor 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file test\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "expect ( $cond,  $text = \fCNULL\fP)"
+Evaluate condition and save test result 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$cond\fP bool 
+.br
+\fI$text\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file test\&.php\&.
+.SS "message ( $text)"
+Append message to test results 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$text\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file test\&.php\&.
+.SS "passed ()"
+Return FALSE if at least one test case fails 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file test\&.php\&.
+.SS "results ()"
+Return test results 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file test\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$data =[]\fC [protected]\fP"
+
+.PP
+\fBTest\fP results\&. 
+.PP
+Definition at line 35 of file test\&.php\&.
+.SS "$\fBpassed\fP =TRUE"
+
+.PP
+Success indicator\&. 
+.PP
+Definition at line 37 of file test\&.php\&.
+.SS "const FLAG_Both =2"
+
+.PP
+Definition at line 30 of file test\&.php\&.
+.SS "const FLAG_False =0"
+
+.PP
+Definition at line 28 of file test\&.php\&.
+.SS "const FLAG_True =1"
+
+.PP
+Definition at line 29 of file test\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

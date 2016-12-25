@@ -1,0 +1,294 @@
+.TH "Session" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Session \- SQL-managed session handler\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBMapper\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBopen\fP ($path, $\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBclose\fP ()"
+.br
+.ti -1c
+.RI "\fBread\fP ($id)"
+.br
+.ti -1c
+.RI "\fBwrite\fP ($id, $data)"
+.br
+.ti -1c
+.RI "\fBdestroy\fP ($id)"
+.br
+.ti -1c
+.RI "\fBcleanup\fP ($max)"
+.br
+.ti -1c
+.RI "\fBsid\fP ()"
+.br
+.ti -1c
+.RI "\fBcsrf\fP ()"
+.br
+.ti -1c
+.RI "\fBip\fP ()"
+.br
+.ti -1c
+.RI "\fBstamp\fP ()"
+.br
+.ti -1c
+.RI "\fBagent\fP ()"
+.br
+.ti -1c
+.RI "\fB__construct\fP (\\\fBDB\\SQL\fP $db, $\fBtable\fP='sessions', $force=TRUE, $onsuspect=NULL, $key=NULL)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$_csrf\fP"
+.br
+.RI "Anti-CSRF token\&. "
+.ti -1c
+.RI "\fB$_agent\fP"
+.br
+.RI "User agent\&. "
+.ti -1c
+.RI "\fB$_ip\fP"
+.br
+.RI "IP,\&. "
+.ti -1c
+.RI "\fB$onsuspect\fP"
+.br
+.RI "Suspect callback\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$sid\fP"
+.br
+.RI "\fBSession\fP ID\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+SQL-managed session handler\&. 
+.PP
+Definition at line 26 of file session\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct (\\\fBDB\\SQL\fP $db,  $table = \fC'sessions'\fP,  $force = \fCTRUE\fP,  $onsuspect = \fCNULL\fP,  $key = \fCNULL\fP)"
+Instantiate class 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$db\fP 
+.br
+\fI$table\fP string 
+.br
+\fI$force\fP bool 
+.br
+\fI$onsuspect\fP callback 
+.br
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 169 of file session\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "agent ()"
+Return HTTP user agent 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 157 of file session\&.php\&.
+.SS "cleanup ( $max)"
+Garbage collector 
+.PP
+\fBReturns:\fP
+.RS 4
+TRUE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$max\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 114 of file session\&.php\&.
+.SS "close ()"
+Close session 
+.PP
+\fBReturns:\fP
+.RS 4
+TRUE 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file session\&.php\&.
+.SS "csrf ()"
+Return anti-CSRF token 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 131 of file session\&.php\&.
+.SS "destroy ( $id)"
+Destroy session 
+.PP
+\fBReturns:\fP
+.RS 4
+TRUE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$id\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file session\&.php\&.
+.SS "ip ()"
+Return IP address 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 139 of file session\&.php\&.
+.SS "open ( $path,  $name)"
+Open session 
+.PP
+\fBReturns:\fP
+.RS 4
+TRUE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$path\fP string 
+.br
+\fI$name\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file session\&.php\&.
+.SS "read ( $id)"
+Return session data in serialized format 
+.PP
+\fBReturns:\fP
+.RS 4
+string|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$id\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 65 of file session\&.php\&.
+.SS "sid ()"
+Return session id (if session has started) 
+.PP
+\fBReturns:\fP
+.RS 4
+string|NULL 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file session\&.php\&.
+.SS "stamp ()"
+Return Unix timestamp 
+.PP
+\fBReturns:\fP
+.RS 4
+string|FALSE 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file session\&.php\&.
+.SS "write ( $id,  $data)"
+Write session data 
+.PP
+\fBReturns:\fP
+.RS 4
+TRUE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$id\fP string 
+.br
+\fI$data\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file session\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$_agent"
+
+.PP
+User agent\&. 
+.PP
+Definition at line 30 of file session\&.php\&.
+.SS "$_csrf"
+
+.PP
+Anti-CSRF token\&. 
+.PP
+Definition at line 30 of file session\&.php\&.
+.SS "$_ip"
+
+.PP
+IP,\&. 
+.PP
+Definition at line 30 of file session\&.php\&.
+.SS "$onsuspect"
+
+.PP
+Suspect callback\&. 
+.PP
+Definition at line 30 of file session\&.php\&.
+.SS "$\fBsid\fP\fC [protected]\fP"
+
+.PP
+\fBSession\fP ID\&. 
+.PP
+Definition at line 30 of file session\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

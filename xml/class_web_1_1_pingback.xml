@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_web_1_1_pingback" kind="class" language="PHP" prot="public">
+    <compoundname>Web::Pingback</compoundname>
+    <basecompoundref refid="class_prefab" prot="public" virt="non-virtual">Prefab</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_web_1_1_pingback_1a9a2cf15a653aee8be437f7ae474cd494" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$log</definition>
+        <argsstring></argsstring>
+        <name>$log</name>
+        <briefdescription>
+<para>Transaction history. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_web_1_1_pingback_1a40d5adaa4e43f4c875ad081d7118ce4e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>enabled</definition>
+        <argsstring>($url)</argsstring>
+        <name>enabled</name>
+        <param>
+          <declname>$url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if URL points to a pingback-enabled resource <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="37" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="37" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_1_1_pingback_1af2f57c4ad56194df3b169d4993d49dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>inspect</definition>
+        <argsstring>($source)</argsstring>
+        <name>inspect</name>
+        <param>
+          <declname>$source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load local page contents, parse HTML anchor tags, find permalinks, and send XML-RPC calls to corresponding pingback servers <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="64" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="64" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_pingback_1aa1f607b468feb8edba01ef661f980294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>listen</definition>
+        <argsstring>($func, $path=NULL)</argsstring>
+        <name>listen</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <declname>$path</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive ping, check if local page is pingback-enabled, verify source contents, and return XML-RPC response <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="110" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="110" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_pingback_1a5e06d9b7f0033278f40a41d081efbe71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>log</definition>
+        <argsstring>()</argsstring>
+        <name>log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return transaction history <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="163" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_pingback_1a095c5d389db211932136b53f25f39685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate class <simplesect kind="return"><para>object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="171" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="171" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_web_1_1_pingback" kindref="compound">Pingback</ref> 1.0 protocol (client and server) implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="120">
+        <label>Pingback</label>
+        <link refid="class_web_1_1_pingback"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>Pingback</label>
+        <link refid="class_web_1_1_pingback"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/pingback.php" bodystart="26" bodyend="176"/>
+    <listofallmembers>
+      <member refid="class_web_1_1_pingback_1a9a2cf15a653aee8be437f7ae474cd494" prot="protected" virt="non-virtual"><scope>Web::Pingback</scope><name>$log</name></member>
+      <member refid="class_web_1_1_pingback_1a095c5d389db211932136b53f25f39685" prot="public" virt="non-virtual"><scope>Web::Pingback</scope><name>__construct</name></member>
+      <member refid="class_web_1_1_pingback_1a40d5adaa4e43f4c875ad081d7118ce4e" prot="protected" virt="non-virtual"><scope>Web::Pingback</scope><name>enabled</name></member>
+      <member refid="class_web_1_1_pingback_1af2f57c4ad56194df3b169d4993d49dbb" prot="public" virt="non-virtual"><scope>Web::Pingback</scope><name>inspect</name></member>
+      <member refid="class_prefab_1a0deb004950b8dc4f51836316fd19c111" prot="public" virt="non-virtual"><scope>Web::Pingback</scope><name>instance</name></member>
+      <member refid="class_web_1_1_pingback_1aa1f607b468feb8edba01ef661f980294" prot="public" virt="non-virtual"><scope>Web::Pingback</scope><name>listen</name></member>
+      <member refid="class_web_1_1_pingback_1a5e06d9b7f0033278f40a41d081efbe71" prot="public" virt="non-virtual"><scope>Web::Pingback</scope><name>log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

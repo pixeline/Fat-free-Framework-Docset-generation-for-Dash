@@ -1,0 +1,2142 @@
+.TH "-1" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+-1 \- ) }} 
+{{ (int)765\&.29+1\&.2e3 }} <option value='F' {{ ?'selected='selected'':'' }}>Female</option> {{ var_dump() }} 
+.PP
+That is {{ preg_match('/Yes/i',)?'correct':'wrong' }}!
+.PP
+{{ ->property }} 
+.PP
+.nf
+An additional note about array expressions: Take note that `@foo\&.@bar` is a string concatenation `$foo\&.$bar`), whereas `@foo\&.bar` translates to `$foo['bar']`\&. If `$foo[$bar]` is what you intended, use the `@foo[@bar]` regular notation\&.
+
+Framework variables may also contain anonymous functions:
+
+``` php
+$f3->set('func',
+    function($a,$b) {
+        return $a\&.', '\&.$b;
+    }
+);
+
+.fi
+.PP
+.PP
+The \fBF3\fP template engine will interpret the token as expected, if you specify the following expression:
+.PP
+.PP
+.nf
+{{ @func('hello','world') }}
+.fi
+.PP
+.PP
+.SS "Templates Within Templates"
+.PP
+Simple variable substitution is one thing all template engines have\&. Fat-Free has more up its sleeves:-
+.PP
+.PP
+.nf
+<include href="header\&.htm" />
+.fi
+.PP
+.PP
+The  directive will embed the contents of the header\&.htm template at the exact position where the directive is stated\&. You can also have dynamic content in the form of:-
+.PP
+.PP
+.nf
+<include href="{{ @content }}" />
+.fi
+.PP
+.PP
+A practical use for such template directive is when you have several pages with a common HTML layout but with different content\&. Instructing the framework to insert a sub-template into your main template is as simple as writing the following PHP code:-
+.PP
+.PP
+.nf
+// switch content to your blog sub-template
+$f3->set('content','blog\&.htm');
+// in another route, switch content to the wiki sub-template
+$f3->set('content','wiki\&.htm');
+.fi
+.PP
+.PP
+A sub-template may in turn contain any number of  directives\&. \fBF3\fP allows unlimited nested templates\&.
+.PP
+You can specify filenames with something other than \&.htm or \&.html file extensions, but it's easier to preview them in your \fBWeb\fP browser during the development and debugging phase\&. The template engine is not limited to rendering HTML files\&. In fact you can use the template engine to render other kinds of files\&.
+.PP
+The \fC<include>\fP directive also has an optional \fCif\fP attribute so you can specify a condition that needs to be satisfied before the sub-template is inserted:-
+.PP
+.PP
+.nf
+<include if="{{ count(@items) }}" href="items\&.htm" />
+.fi
+.PP
+.PP
+.SS "Exclusion of Segments"
+.PP
+During the course of writing/debugging F3-powered programs and designing templates, there may be instances when disabling the display of a block of HTML may be handy\&. You can use the \fC<exclude>\fP directive for this purpose:-
+.PP
+.PP
+.nf
+<exclude>
+    <p>A chunk of HTML we don't want displayed at the moment</p>
+</exclude>
+.fi
+.PP
+.PP
+That's like the `\fCHTML comment tag, but the\fP<exclude>` directive makes the HTML block totally invisible once the template is rendered\&.
+.PP
+Here's another way of excluding template content or adding comments:-
+.PP
+.PP
+.nf
+{* <p>A chunk of HTML we don't want displayed at the moment</p> *}
+.fi
+.PP
+.PP
+.SS "Conditional Segments"
+.PP
+Another useful template feature is the \fC<check>\fP directive\&. It allows you to embed an HTML fragment depending on the evaluation of a certain condition\&. Here are a few examples:-
+.PP
+.PP
+.nf
+<check if="{{ @page=='Home' }}">
+    <false><span>Inserted if condition is false</span></false>
+</check>
+<check if="{{ @gender=='M' }}">
+    <true>
+        <div>Appears when condition is true</div>
+    </true>
+    <false>
+        <div>Appears when condition is false</div>
+    </false>
+</check>
+.fi
+.PP
+.PP
+You can have as many nested \fC<check>\fP directives as you need\&.
+.PP
+An \fBF3\fP expression inside an if attribute that equates to \fCNULL\fP, an empty string, a boolean \fCFALSE\fP, an empty array or zero, automatically invokes \fC<false>\fP\&. If your template has no \fC<false>\fP block, then the \fC<true>\fP opening and closing tags are optional:-
+.PP
+.PP
+.nf
+<check if="{{ @loggedin }}">
+    <p>HTML chunk to be included if condition is true</p>
+</check>
+.fi
+.PP
+.PP
+.SS "Repeating Segments"
+.PP
+Fat-Free can also handle repetitive HTML blocks:-
+.PP
+.PP
+.nf
+<repeat group="{{ @fruits }}" value="{{ @fruit }}">
+    <p>{{ trim(@fruit) }}</p>
+</repeat>
+.fi
+.PP
+.PP
+The \fCgroup\fP attribute \fC@fruits\fP inside the \fC<repeat>\fP directive must be an array and should be set in your PHP code accordingly:-
+.PP
+.PP
+.nf
+$f3->set('fruits',array('apple','orange ',' banana'));
+.fi
+.PP
+.PP
+Nothing is gained by assigning a value to \fC@fruit\fP in your application code\&. Fat-Free ignores any preset value it may have because it uses the variable to represent the current item during iteration over the group\&. The output of the above HTML template fragment and the corresponding PHP code becomes:-
+.PP
+.PP
+.nf
+<p>apple</p>
+<p>orange</p>
+<p>banana</p>
+.fi
+.PP
+.PP
+The framework allows unlimited nesting of \fC<repeat>\fP blocks:-
+.PP
+.PP
+.nf
+<repeat group="{{ @div }}" key="{{ @ikey }}" value="{{ @idiv }}">
+    <div>
+        <p><span><b>{{ @ikey }}</b></span></p>
+        <p>
+        <repeat group="{{ @idiv }}" value="{{ @ispan }}">
+            <span>{{ @ispan }}</span>
+        </repeat>
+        </p>
+    </div>
+</repeat>
+.fi
+.PP
+.PP
+Apply the following \fBF3\fP command:-
+.PP
+.PP
+.nf
+$f3->set('div',
+    array(
+        'coffee'=>array('arabica','barako','liberica','kopiluwak'),
+        'tea'=>array('darjeeling','pekoe','samovar')
+    )
+);
+.fi
+.PP
+.PP
+As a result, you get the following HTML fragment:-
+.PP
+.PP
+.nf
+<div>
+    <p><span><b>coffee</b></span></p>
+    <p>
+        <span>arabica</span>
+        <span>barako</span>
+        <span>liberica</span>
+        <span>kopiluwak</span>
+    <p>
+</div>
+<div>
+    <p><span><b>tea</b></span></p>
+    <p>
+        <span>darjeeling</span>
+        <span>pekoe</span>
+        <span>samovar</span>
+    </p>
+</div>
+.fi
+.PP
+.PP
+Amazing, isn't it? And the only thing you had to do in PHP was to define the contents of a single \fBF3\fP variable \fCdiv\fP to replace the \fC@div\fP token\&. Fat-Free makes both programming and \fBWeb\fP template design really easy\&.
+.PP
+The \fC<repeat>\fP template directive's \fCvalue\fP attribute returns the value of the current element in the iteration\&. If you need to get the array key of the current element, use the \fCkey\fP attribute instead\&. The \fCkey\fP attribute is optional\&.
+.PP
+\fC<repeat>\fP also has an optional counter attribute that can be used as follows:-
+.PP
+.PP
+.nf
+<repeat group="{{ @fruits }}" value="{{ @fruit }}" counter="{{ @ctr }}">
+    <p class="{{ @ctr%2?'odd':'even' }}">{{ trim(@fruit) }}</p>
+</repeat>
+.fi
+.PP
+.PP
+Internally, \fBF3\fP's template engine records the number of loop iterations and saves that value in the variable/token \fC@ctr\fP, which is used in our example to determine the odd/even classification\&.
+.PP
+.SS "Embedding Javascript and CSS"
+.PP
+If you have to insert \fBF3\fP tokens inside a \fC<script>\fP or \fC<style>\fP section of your template, the framework will still replace them the usual way:-
+.PP
+.PP
+.nf
+<script type="text/javascript">
+    function notify() {
+        alert('You are logged in as: {{ @userID }}');
+    }
+</script>
+.fi
+.PP
+.PP
+Embedding template directives inside your \fC<script>\fP or \fC<style>\fP tags requires no special handling:-
+.PP
+.PP
+.nf
+<script type="text/javascript">
+    var discounts=[];
+    <repeat group="{{ @rates }}" value="{{ @rate }}">
+        // whatever you want to repeat in Javascript, e\&.g\&.
+        discounts\&.push("{{ @rate }}");
+    </repeat>
+</script>
+.fi
+.PP
+.PP
+.SS "Document Encoding"
+.PP
+By default, Fat-Free uses the UTF-8 character set unless changed\&. You can override this behavior by issuing something like:-
+.PP
+.PP
+.nf
+$f3->set('ENCODING','ISO-8859-1');
+.fi
+.PP
+.PP
+Once you inform the framework of the desired character set, \fBF3\fP will use it in all HTML and XML templates until altered again\&.
+.PP
+.SS "All Kinds of Templates"
+.PP
+As mentioned earlier in this section, the framework isn't limited to HTML templates\&. You can process XML templates just as well\&. The mechanics are pretty much similar\&. You still have the same \fC{{ @variable }}\fP and \fC{{ expression }}\fP tokens, \fC<repeat>\fP, \fC<check>\fP, \fC<include>\fP, and \fC<exclude>\fP directives at your disposal\&. Just tell \fBF3\fP that you're passing an XML file instead of HTML:-
+.PP
+.PP
+.nf
+echo Template::instance()->render('template\&.xml','application/xml');
+.fi
+.PP
+.PP
+The second argument represents the MIME type of the document being rendered\&.
+.PP
+The \fBView\fP component of MVC covers everything that doesn't fall under the Model and Controller, which means your presentation can and should include all kinds of user interfaces, like RSS, e-mail, RDF, FOAF, text files, etc\&. The example below shows you how to separate your e-mail presentation from your application's business logic:-
+.PP
+.PP
+.nf
+MIME-Version: 1\&.0
+Content-type: text/html; charset={{ @ENCODING }}
+From: {{ @from }}
+To: {{ @to }}
+Subject: {{ @subject }}
+
+<p>Welcome, and thanks for joining {{ @site }}!</p>
+.fi
+.PP
+.PP
+Save the above e-mail template as welcome\&.txt\&. The associated \fBF3\fP code would be:-
+.PP
+.PP
+.nf
+$f3->set('from','<no-reply@mysite\&.com>');
+$f3->set('to','<slasher@throats\&.com>');
+$f3->set('subject','Welcome');
+ini_set('sendmail_from',$f3->get('from'));
+mail(
+    $f3->get('to'),
+    $f3->get('subject'),
+    Template::instance()->render('email\&.txt','text/html')
+);
+.fi
+.PP
+.PP
+Tip: Replace the \fBSMTP\fP mail() function with imap_mail() if your script communicates with an IMAP server\&.
+.PP
+Now isn't that something? Of course, if you have a bundle of e-mail recipients, you'd be using a database to populate the firstName, lastName, and email tokens\&.
+.PP
+Here's an alternative solution using the \fBF3\fP's \fBSMTP\fP plug-in:-
+.PP
+.PP
+.nf
+$mail=new SMTP('smtp\&.gmail\&.com',465,'SSL','account@gmail\&.com','secret');
+$mail->set('from','<no-reply@mysite\&.com>');
+$mail->set('to','"Slasher" <slasher@throats\&.com>');
+$mail->set('subject','Welcome');
+$mail->send(Template::instance()->render('email\&.txt'));
+.fi
+.PP
+.PP
+.SS "Multilingual Support"
+.PP
+\fBF3\fP supports multiple languages right out of the box\&.
+.PP
+First, create a dictionary file with the following structure (one file per language):-
+.PP
+.PP
+.nf
+<?php
+return array(
+    'love'=>'I love F3',
+    'today'=>'Today is {0,date}',
+    'pi'=>'{0,number}',
+    'money'=>'Amount remaining: {0,number,currency}'
+);
+.fi
+.PP
+.PP
+Save it as \fCdict/en\&.php\fP\&. Let's create another dictionary, this time for German\&. Save the file as \fCdict/de\&.php\fP:-
+.PP
+.PP
+.nf
+<?php
+return array(
+    'love'=>'Ich liebe F3',
+    'today'=>'Heute ist {0,date}',
+    'money'=>'Restbetrag: {0,number,currency}'
+);
+.fi
+.PP
+.PP
+Dictionaries are nothing more than key-value pairs\&. \fBF3\fP automatically instantiates framework variables based on the keys in the language files\&. As such, it's easy to embed these variables as tokens in your templates\&. Using the \fBF3\fP template engine:-
+.PP
+.PP
+.nf
+<h1>{{ @love }}</h1>
+<p>
+{{ @today,time() | format }}\&.<br />
+{{ @money,365\&.25 | format }}<br />
+{{ @pi }}
+</p>
+.fi
+.PP
+.PP
+And the longer version that utilizes PHP as a template engine:-
+.PP
+.PP
+.nf
+<?php $f3=Base::instance(); ?>
+<h1><?php echo $f3->get('love'); ?></h1>
+<p>
+    <?php echo $f3->get('today',time()); ?>\&.<br />
+    <?php echo $f3->get('money',365\&.25); ?>
+    <?php echo $f3->get('pi'); ?>
+</p>
+.fi
+.PP
+.PP
+Next, we instruct \fBF3\fP to look for dictionaries in the \fCdict/\fP folder:-
+.PP
+.PP
+.nf
+$f3->set('LOCALES','dict/');
+.fi
+.PP
+.PP
+But how does the framework determine which language to use? \fBF3\fP will detect it automatically by looking at the HTTP request headers first, specifically the \fCAccept-Language\fP header sent by the browser\&.
+.PP
+To override this behavior, you can trigger \fBF3\fP to use a language specified by the user or application:-
+.PP
+.PP
+.nf
+$f3->set('LANGUAGE','de');
+.fi
+.PP
+.PP
+\fBNote:\fP In the above example, the key pi exists only in the English dictionary\&. The framework will always use English (\fCen\fP) as a fallback to populate keys that are not present in the specified (or detected) language\&.
+.PP
+You may also create dictionary files for language variants like \fCen-US\fP, \fCes-AR\fP, etc\&. In this case, \fBF3\fP will use the language variant first (like \fCes-AR\fP)\&. If there are keys that do not exist in the variant, the framework will look up the key in the root language (\fCes\fP), then use the \fCen\fP language file as the final fallback\&. Dictionary key-value pairs become \fBF3\fP variables once referenced\&. Make sure the keys do not conflict with any framework variable instantiated via \fC$f3->set()\fP, \fC$f3->mset()\fP, or \fC$f3->config()\fP\&.
+.PP
+Did you notice the peculiar \fC'Today is {0,date}'\fP pattern in our previous example? \fBF3\fP's multilingual capability hinges on string/message formatting rules of the ICU project\&. The framework uses its own subset of the ICU string formatting implementation\&. There is no need for PHP's \fCintl\fP extension to be activated on the server\&.
+.PP
+One more thing: \fBF3\fP can also load \&.ini-style formatted files as dictionaries:-
+.PP
+.PP
+.nf
+love="I love F3"
+today="Today is {0,date}"
+pi="{0,number}"
+money="Amount remaining: {0,number,currency}"
+.fi
+.PP
+.PP
+Save it as \fCdict/en\&.ini\fP so the framework can load it automatically\&.
+.PP
+.SS "Data Sanitation"
+.PP
+By default, both view handler and template engine escapes all rendered variables, i\&.e\&. converted to HTML entities to protect you from possible XSS and code injection attacks\&. On the other hand, if you wish to pass valid HTML fragments from your application code to your template:-
+.PP
+.PP
+.nf
+$f3->set('ESCAPE',FALSE);
+.fi
+.PP
+.PP
+This may have undesirable effects\&. You might not want all variables to pass through unescaped\&. Fat-Free allows you to unescape variables individually\&. For \fBF3\fP templates:-
+.PP
+.PP
+.nf
+{{ @html_content | raw }}
+.fi
+.PP
+.PP
+In the case of PHP templates:-
+.PP
+.PP
+.nf
+<?php echo View::instance()->raw($html_content); ?>
+.fi
+.PP
+.PP
+As an addition to auto-escaping of \fBF3\fP variables, the framework also gives you a free hand at sanitizing user input from HTML forms:-
+.PP
+.PP
+.nf
+$f3->scrub($_GET,'p; br; span; div; a');
+.fi
+.PP
+.PP
+This command will strip all tags (except those specified in the second argument) and unsafe characters from the specified variable\&. If the variable contains an array, each element in the array is sanitized recursively\&. If an asterisk (*) is passed as the second argument, \fC$f3->scrub()\fP permits all HTML tags to pass through untouched and simply remove unsafe control characters\&.
+.PP
+.SS "Databases"
+.PP
+.SS "Connecting to a Database Engine"
+.PP
+Fat-Free is designed to make the job of interfacing with SQL databases a breeze\&. If you're not the type to immerse yourself in details about SQL, but lean more towards object-oriented data handling, you can go directly to the next section of this tutorial\&. However, if you need to do some complex data-handling and database performance optimization tasks, SQL is the way to go\&.
+.PP
+Establishing communication with a SQL engine like MySQL, SQLite, SQL Server, Sybase, and Oracle is done using the familiar \fC$f3->set()\fP command\&. Connecting to a SQLite database would be:-
+.PP
+.PP
+.nf
+$db=new DB\SQL('sqlite:/absolute/path/to/your/database\&.sqlite');
+.fi
+.PP
+.PP
+Another example, this time with MySQL:-
+.PP
+.PP
+.nf
+$db=new DB\SQL(
+    'mysql:host=localhost;port=3306;dbname=mysqldb',
+    'admin',
+    'p455w0rD'
+);
+.fi
+.PP
+.PP
+.SS "Querying the Database"
+.PP
+OK\&. That was easy, wasn't it? That's pretty much how you would do the same thing in ordinary PHP\&. You just need to know the DSN format of the database you're connecting to\&. See the PDO section of the PHP manual\&.
+.PP
+Let's continue our PHP code:-
+.PP
+.PP
+.nf
+$f3->set('result',$db->exec('SELECT brandName FROM wherever'));
+echo Template::instance()->render('abc\&.htm');
+.fi
+.PP
+.PP
+Huh, what's going on here? Shouldn't we be setting up things like PDOs, statements, cursors, etc\&.? The simple answer is: you don't have to\&. \fBF3\fP simplifies everything by taking care of all the hard work in the backend\&.
+.PP
+This time we create an HTML template like \fCabc\&.htm\fP that has at a minimum the following:-
+.PP
+.PP
+.nf
+<repeat group="{{ @result }}" value="{{ @item }}">
+    <span>{{ @item\&.brandName  }}</span>
+</repeat>
+.fi
+.PP
+.PP
+In most instances, the SQL command set should be enough to generate a Web-ready result so you can use the \fCresult\fP array variable in your template directly\&. Be that as it may, Fat-Free will not stop you from getting into its SQL handler internals\&. In fact, \fBF3\fP's \fC\fBDB\fP\\SQL\fP class derives directly from PHP's \fCPDO\fP class, so you still have access to the underlying PDO components and primitives involved in each process, if you need some fine-grain control\&.
+.PP
+.SS "Transactions"
+.PP
+Here's another example\&. Instead of a single statement provided as an argument to the \fC$db->exec()\fP command, you can also pass an array of SQL statements:-
+.PP
+.PP
+.nf
+$db->exec(
+    array(
+        'DELETE FROM diet WHERE food="cola"',
+        'INSERT INTO diet (food) VALUES ("carrot")',
+        'SELECT * FROM diet'
+    )
+);
+.fi
+.PP
+.PP
+\fBF3\fP is smart enough to know that if you're passing an array of SQL instructions, this indicates a SQL batch transaction\&. You don't have to worry about SQL rollbacks and commits because the framework will automatically revert to the initial state of the database if any error occurs during the transaction\&. If successful, \fBF3\fP commits all changes made to the database\&.
+.PP
+You can also start and end a transaction programmatically:-
+.PP
+.PP
+.nf
+$db->begin();
+$db->exec('DELETE FROM diet WHERE food="cola"');
+$db->exec('INSERT INTO diet (food) VALUES ("carrot")');
+$db->exec('SELECT * FROM diet');
+$db->commit();
+.fi
+.PP
+.PP
+A rollback will occur if any of the statements encounter an error\&.
+.PP
+To get a list of all database instructions issued:-
+.PP
+.PP
+.nf
+echo $db->log();
+.fi
+.PP
+.PP
+.SS "Parameterized Queries"
+.PP
+Passing string arguments to SQL statements is fraught with danger\&. Consider this:-
+.PP
+.PP
+.nf
+$db->exec(
+    'SELECT * FROM users '\&.
+    'WHERE username="'\&.$f3->get('POST\&.userID'\&.'"')
+);
+.fi
+.PP
+.PP
+If the \fCPOST\fP variable \fCuserID\fP does not go through any data sanitation process, a malicious user can pass the following string and damage your database irreversibly:-
+.PP
+.PP
+.nf
+admin"; DELETE FROM users; SELECT "1
+.fi
+.PP
+.PP
+Luckily, parameterized queries help you mitigate these risks:-
+.PP
+.PP
+.nf
+$db->exec(
+    'SELECT * FROM users WHERE userID=?',
+    $f3->get('POST\&.userID')
+);
+.fi
+.PP
+.PP
+If \fBF3\fP detects that the value of the query parameter/token is a string, the underlying data access layer escapes the string and adds quotes as necessary\&.
+.PP
+Our example in the previous section will be a lot safer from SQL injection if written this way:-
+.PP
+.PP
+.nf
+$db->exec(
+    array(
+        'DELETE FROM diet WHERE food=:name',
+        'INSERT INTO diet (food) VALUES (?)',
+        'SELECT * FROM diet'
+    ),
+    array(
+        array(':name'=>'cola'),
+        array(1=>'carrot'),
+        NULL
+    )
+);
+.fi
+.PP
+.PP
+.SS "CRUD (But With a Lot of Style)"
+.PP
+\fBF3\fP is packed with easy-to-use object-relational mappers (ORMs) that sit between your application and your data - making it a lot easier and faster for you to write programs that handle common data operations - like creating, retrieving, updating, and deleting (CRUD) information from SQL and NoSQL databases\&. Data mappers do most of the work by mapping PHP object interactions to the corresponding backend queries\&.
+.PP
+Suppose you have an existing MySQL database containing a table of users of your application\&. (SQLite, PostgreSQL, SQL Server, Sybase will do just as well\&.) It would have been created using the following SQL command:-
+.PP
+.PP
+.nf
+CREATE TABLE users (
+    userID VARCHAR(30),
+    password VARCHAR(30),
+    visits INT,
+    PRIMARY KEY(userID)
+);
+.fi
+.PP
+.PP
+\fBNote:\fP MongoDB is a NoSQL database engine and inherently schema-less\&. \fBF3\fP has its own fast and lightweight NoSQL implementation called Jig, which uses PHP-serialized or JSON-encoded flat files\&. These abstraction layers require no rigid data structures\&. Fields may vary from one record to another\&. They can also be defined or dropped on the fly\&.
+.PP
+Now back to SQL\&. First, we establish communication with our database\&.
+.PP
+.PP
+.nf
+$db=new DB\SQL(
+    'mysql:host=localhost;port=3306;dbname=mysqldb',
+    'admin',
+    'wh4t3v3r'
+);
+.fi
+.PP
+.PP
+To retrieve a record from our table:-
+.PP
+.PP
+.nf
+$user=new DB\SQL\Mapper($db,'users');
+$user->load(array('userID=?','tarzan'));
+.fi
+.PP
+.PP
+The first line instantiates a data mapper object that interacts with the \fCusers\fP table in our database\&. Behind the scene, \fBF3\fP retrieves the structure of the \fCusers\fP table and determines which field(s) are defined as primary key(s)\&. At this point, the mapper object contains no data yet (dry state) so \fC$user\fP is nothing more than a structured object - but it contains the methods it needs to perform the basic CRUD operations and some extras\&. To retrieve a record from our users table with a \fCuserID\fP field containing the string value \fCtarzan\fP, we use the \fCload() method\fP\&. This process is called 'auto-hydrating' the data mapper object\&.
+.PP
+Easy, wasn't it? \fBF3\fP understands that a SQL table already has a structural definition existing within the database engine itself\&. Unlike other frameworks, \fBF3\fP requires no extra class declarations (unless you want to extend the data mappers to fit complex objects), no redundant PHP array/object property-to-field mappings (duplication of efforts), no code generators (which require code regeneration if the database structure changes), no stupid XML/YAML files to configure your models, no superfluous commands just to retrieve a single record\&. With \fBF3\fP, a simple resizing of a \fCvarchar\fP field in MySQL does not demand a change in your application code\&. Consistent with MVC and 'separation of concerns', the database admin has as much control over the data (and the structures) as a template designer has over HTML/XML templates\&.
+.PP
+If you prefer working with NoSQL databases, the similarities in query syntax are superficial\&. In the case of the MongoDB data mapper, the equivalent code would be:-
+.PP
+.PP
+.nf
+$db=new DB\Mongo('mongodb://localhost:27017','testdb');
+$user=new DB\Mongo\Mapper($db,'users');
+$user->load(array('userID'=>'tarzan'));
+.fi
+.PP
+.PP
+With Jig, the syntax is similar to \fBF3\fP's template engine:-
+.PP
+.PP
+.nf
+$db=new DB\Jig('db/data/',DB\Jig::FORMAT_JSON);
+$user=new DB\Jig\Mapper($db,'users');
+$user->load(array('@userID=?','tarzan'));
+.fi
+.PP
+.PP
+.SS "The Smart SQL ORM"
+.PP
+The framework automatically maps the field \fCvisits\fP in our table to a data mapper property during object instantiation, i\&.e\&. `$user=new \fBDB\fP($db,'users');\fC\&. Once the object is created,\fP$user->password\fCand\fP$user->userID\fCwould map to the\fPpassword\fCand\fPuserID` fields in our table, respectively\&.
+.PP
+You can't add or delete a mapped field, or change a table's structure using the ORM\&. You must do this in MySQL, or whatever database engine you're using\&. After you make the changes in your database engine, Fat-Free will automatically synchronize the new table structure with your data mapper object when you run your application\&.
+.PP
+\fBF3\fP derives the data mapper structure directly from the database schema\&. No guesswork involved\&. It understands the differences between MySQL, SQLite, MSSQL, Sybase, and PostgreSQL database engines\&.
+.PP
+SQL identifiers should not use reserved words, and should be limited to alphanumeric characters \fCA-Z\fP, \fC0-9\fP, and the underscore symbol (\fC_\fP)\&. Column names containing spaces (or special characters) and surrounded by quotes in the data definition are not compatible with the ORM\&. They cannot be represented properly as PHP object properties\&.
+.PP
+Let's say we want to increment the user's number of visits and update the corresponding record in our users table, we can add the following code:-
+.PP
+.PP
+.nf
+$user->visits++;
+$user->save();
+.fi
+.PP
+.PP
+If we wanted to insert a record, we follow this process:-
+.PP
+.PP
+.nf
+$user=new DB\SQL\Mapper($db,'users');
+// or $user=new DB\Mongo\Mapper($db,'users');
+// or $user=new DB\Jig\Mapper($db,'users');
+$user->userID='jane';
+$user->password=md5('secret');
+$user->visits=0;
+$user->save();
+.fi
+.PP
+.PP
+We still use the same \fCsave()\fP method\&. But how does \fBF3\fP know when a record should be inserted or updated? At the time a data mapper object is auto-hydrated by a record retrieval, the framework keeps track of the record's primary keys (or \fC_id\fP, in the case of MongoDB and Jig) - so it knows which record should be updated or deleted - even when the values of the primary keys are changed\&. A programmatically-hydrated data mapper - the values of which were not retrieved from the database, but populated by the application - will not have any memory of previous values in its primary keys\&. The same applies to MongoDB and Jig, but using object \fC_id\fP as reference\&. So, when we instantiated the \fC$user\fP object above and populated its properties with values from our program - without at all retrieving a record from the user table, \fBF3\fP knows that it should insert this record\&.
+.PP
+A mapper object will not be empty after a \fCsave()\fP\&. If you wish to add a new record to your database, you must first dehydrate the mapper:-
+.PP
+.PP
+.nf
+$user->reset();
+$user->userID='cheetah';
+$user->password=md5('unknown');
+$user->save();
+.fi
+.PP
+.PP
+Calling \fCsave()\fP a second time without invoking \fCreset()\fP will simply update the record currently pointed to by the mapper\&.
+.PP
+.SS "Caveat for SQL Tables"
+.PP
+Although the issue of having primary keys in all tables in your database is argumentative, \fBF3\fP does not stop you from creating a data mapper object that communicates with a table containing no primary keys\&. The only drawback is: you can't delete or update a mapped record because there's absolutely no way for \fBF3\fP to determine which record you're referring to plus the fact that positional references are not reliable\&. Row IDs are not portable across different SQL engines and may not be returned by the PHP database driver\&.
+.PP
+To remove a mapped record from our table, invoke the \fCerase()\fP method on an auto-hydrated data mapper\&. For example:-
+.PP
+.PP
+.nf
+$user=new DB\SQL\Mapper($db,'users');
+$user->load(array('userID=? AND password=?','cheetah','ch1mp'));
+$user->erase();
+.fi
+.PP
+.PP
+Jig's query syntax would be slightly similar:-
+.PP
+.PP
+.nf
+$user=new DB\Jig\Mapper($db,'users');
+$user->load(array('@userID=? AND @password=?','cheetah','chimp'));
+$user->erase();
+.fi
+.PP
+.PP
+And the MongoDB equivalent would be:-
+.PP
+.PP
+.nf
+$user=new DB\Mongo\Mapper($db,'users');
+$user->load(array('userID'=>'cheetah','password'=>'chimp'));
+$user->erase();
+.fi
+.PP
+.PP
+.SS "The Weather Report"
+.PP
+To find out whether our data mapper was hydrated or not:-
+.PP
+.PP
+.nf
+if ($user->dry())
+    echo 'No record matching criteria';
+.fi
+.PP
+.PP
+.SS "Beyond CRUD"
+.PP
+We've covered the CRUD handlers\&. There are some extra methods that you might find useful:-
+.PP
+.PP
+.nf
+$f3->set('user',new DB\SQL\Mapper($db,'users'));
+$f3->get('user')->copyFrom('POST');
+$f3->get('user')->save();
+.fi
+.PP
+.PP
+Notice that we can also use Fat-Free variables as containers for mapper objects\&. The \fCcopyFrom()\fP method hydrates the mapper object with elements from a framework array variable, the array keys of which must have names identical to the mapper object properties, which in turn correspond to the record's field names\&. So, when a \fBWeb\fP form is submitted (assuming the HTML name attribute is set to \fCuserID\fP), the contents of that input field is transferred to `$_POST['userID']\fC, duplicated by \fBF3\fP in its\fPPOST\&.userID<tt>variable, and saved to the mapped field$user->userID` in the database\&. The process becomes very simple if they all have identically-named elements\&. Consistency in array keys, i\&.e\&. template token names, framework variable names and field names is key :)
+.PP
+On the other hand, if we wanted to retrieve a record and copy the field values to a framework variable for later use, like template rendering:-
+.PP
+.PP
+.nf
+$f3->set('user',new DB\SQL\Mapper($db,'users'));
+$f3->get('user')->load(array('userID=?','jane'));
+$f3->get('user')->copyTo('POST');
+.fi
+.PP
+.PP
+We can then assign {{ \&.userID }} to the same input field's value attribute\&. To sum up, the HTML input field will look like this:-
+.PP
+.PP
+.nf
+<input type="text" name="userID" value="{{ @POST\&.userID }}"/>
+.fi
+.PP
+.PP
+The \fCsave()\fP, \fCupdate()\fP, \fCcopyFrom()\fP data mapper methods and the parameterized variants of \fCload()\fP and \fCerase()\fP are safe from SQL injection\&.
+.PP
+.SS "Navigation and Pagination"
+.PP
+By default, a data mapper's \fCload()\fP method retrieves only the first record that matches the specified criteria\&. If you have more than one that meets the same condition as the first record loaded, you can use the \fCskip()\fP method for navigation:-
+.PP
+.PP
+.nf
+$user=new DB\SQL\Mapper($db,'users');
+$user->load('visits>3');
+// Rewritten as a parameterized query
+$user->load(array('visits>?',3));
+
+// For MongoDB users:-
+// $user=new DB\Mongo\Mapper($db,'users');
+// $user->load(array('visits'=>array('$gt'=>3)));
+
+// If you prefer Jig:-
+// $user=new DB\Jig\Mapper($db,'users');
+// $user->load('@visits>?',3);
+
+// Display the userID of the first record that matches the criteria
+echo $user->userID;
+// Go to the next record that matches the same criteria
+$user->skip(); // Same as $user->skip(1);
+// Back to the first record
+$user->skip(-1);
+// Move three records forward
+$user->skip(3);
+.fi
+.PP
+.PP
+You may use \fC$user->next()\fP as a substitute for \fC$user->skip()\fP, and \fC$user->prev()\fP if you think it gives more meaning to \fC$user->skip(-1)\fP\&.
+.PP
+Use the \fCdry()\fP method to check if you've maneuvered beyond the limits of the result set\&. \fCdry()\fP will return TRUE if you try \fCskip(-1)\fP on the first record\&. It will also return TRUE if you \fCskip(1)\fP on the last record that meets the retrieval criteria\&.
+.PP
+The \fCload()\fP method accepts a second argument: an array of options containing key-value pairs such as:-
+.PP
+.PP
+.nf
+$user->load(
+    array('visits>?',3),
+    array(
+        'order'=>'userID DESC'
+        'offset'=>5,
+        'limit'=>3
+    )
+);
+.fi
+.PP
+.PP
+If you're using MySQL, the query translates to:-
+.PP
+.PP
+.nf
+SELECT * FROM users
+WHERE visits>3
+ORDER BY userID DESC
+LIMIT 3 OFFSET 5;
+.fi
+.PP
+.PP
+This is one way of presenting data in small chunks\&. Here's another way of paginating results:-
+.PP
+.PP
+.nf
+$page=$user->paginate(2,5,array('visits>?',3));
+.fi
+.PP
+.PP
+In the above scenario, \fBF3\fP will retrieve records that match the criteria \fC'visits>3'\fP\&. It will then limit the results to 5 records (per page) starting at page offset 2 (0-based)\&. The framework will return an array consisting of the following elements:-
+.PP
+.PP
+.nf
+[subset] array of mapper objects that match the criteria
+[count] number of subsets available
+[pos] actual subset position
+.fi
+.PP
+.PP
+The actual subset position returned will be NULL if the first argument of \fCpaginate()\fP is a negative number or exceeds the number of subsets found\&.
+.PP
+.SS "Virtual Fields"
+.PP
+There are instances when you need to retrieve a computed value of a field, or a cross-referenced value from another table\&. Enter virtual fields\&. The SQL mini-ORM allows you to work on data derived from existing fields\&.
+.PP
+Suppose we have the following table defined as:-
+.PP
+.PP
+.nf
+CREATE TABLE products
+    productID VARCHAR(30),
+    description VARCHAR(255),
+    supplierID VARCHAR(30),
+    unitprice DECIMAL(10,2),
+    quantity INT,
+    PRIMARY KEY(productID)
+);
+.fi
+.PP
+.PP
+No \fCtotalprice\fP field exists, so we can tell the framework to request from the database engine the arithmetic product of the two fields:-
+.PP
+.PP
+.nf
+$item=new DB\SQL\Mapper($db,'products');
+$item->totalprice='unitprice*quantity';
+$item->load(array('productID=:pid',':pid'=>'apple'));
+echo $item->totalprice;
+.fi
+.PP
+.PP
+The above code snippet defines a virtual field called \fCtotalprice\fP which is computed by multiplying \fCunitprice\fP by the \fCquantity\fP\&. The SQL mapper saves that rule/formula, so when the time comes to retrieve the record from the database, we can use the virtual field like a regular mapped field\&.
+.PP
+You can have more complex virtual fields:-
+.PP
+.PP
+.nf
+$item->mostNumber='MAX(quantity)';
+$item->load();
+echo $item->mostNumber;
+.fi
+.PP
+.PP
+This time the framework retrieves the product with the highest quantity (notice the \fCload()\fP method does not define any criteria, so all records in the table will be processed)\&. Of course, the virtual field \fCmostNumber\fP will still give you the right figure if you wish to limit the expression to a specific group of records that match a specified criteria\&.
+.PP
+You can also derive a value from another table:-
+.PP
+.PP
+.nf
+$item->supplierName=
+    'SELECT name FROM suppliers '\&.
+    'WHERE products\&.supplierID=suppliers\&.supplierID';
+$item->load();
+echo $item->supplierName;
+.fi
+.PP
+.PP
+Every time you load a record from the products table, the ORM cross-references the \fCsupplerID\fP in the \fCproducts\fP table with the \fCsupplierID\fP in the \fCsuppliers\fP table\&.
+.PP
+To destroy a virtual field, use \fCunset($item->totalPrice);\fP\&. The \fCisset($item->totalPrice)\fP expression returns TRUE if the \fCtotalPrice\fP virtual field was defined, or FALSE if otherwise\&.
+.PP
+Remember that a virtual field must be defined prior to data retrieval\&. The ORM does not perform the actual computation, nor the derivation of results from another table\&. It is the database engine that does all the hard work\&.
+.PP
+.SS "Seek and You Shall Find"
+.PP
+If you have no need for record-by-record navigation, you can retrieve an entire batch of records in one shot:-
+.PP
+.PP
+.nf
+$frequentUsers=$user->find(array('visits>?',3),array('order'=>'userID'));
+.fi
+.PP
+.PP
+Jig mapper's query syntax has a slight resemblance:-
+.PP
+.PP
+.nf
+$frequentUsers=$user->find(array('@visits>?',3),array('order'=>'userID'));
+.fi
+.PP
+.PP
+The equivalent code using the MongoDB mapper:-
+.PP
+.PP
+.nf
+$frequentUsers=$user->find(array('visits'=>array('$gt'=>3)),array('userID'=>1));
+.fi
+.PP
+.PP
+The \fCfind()\fP method searches the \fCusers\fP table for records that match the criteria, sorts the result by \fCuserID\fP and returns the result as an array of mapper objects\&. `find('visits>3')\fCis different from\fPload('visits>3')\fC\&. The latter refers to the current\fP$user\fCobject\&.\fPfind()\fCdoes not have any effect on\fPskip()`\&.
+.PP
+\fBImportant:\fP Declaring an empty condition, NULL, or a zero-length string as the first argument of \fCfind()\fP or \fCload()\fP will retrieve all records\&. Be sure you know what you're doing - you might exceed PHP's memory_limit on large tables or collections\&.
+.PP
+The \fCfind()\fP method has the following syntax:-
+.PP
+.PP
+.nf
+find(
+    $criteria,
+    array(
+        'group'=>'foo',
+        'order'=>'foo,bar',
+        'limit'=>5,
+        'offset'=>0
+    )
+);
+.fi
+.PP
+.PP
+find() returns an array of objects\&. Each object is a mapper to a record that matches the specified criteria\&.:-
+.PP
+.PP
+.nf
+$place=new DB\SQL\Mapper($db,'places');
+$list=$place->find('state="New York"');
+foreach ($list as $obj)
+    echo $obj->city\&.', '\&.$obj->country;
+.fi
+.PP
+.PP
+If you need to convert a mapper object to an associative array, use the \fCcast()\fP method:-
+.PP
+.PP
+.nf
+$array=$place->cast();
+echo $array['city']\&.', '\&.$array['country'];
+.fi
+.PP
+.PP
+To retrieve the number of records in a table that match a certain condition, use the \fCcount()\fP method\&.
+.PP
+.PP
+.nf
+if (!$user->count(array('visits>?',10)))
+    echo 'We need a better ad campaign!';
+.fi
+.PP
+.PP
+There's also a \fCselect()\fP method that's similar to \fCfind()\fP but provides more fine-grained control over fields returned\&. It has a SQL-like syntax:-
+.PP
+.PP
+.nf
+select(
+    'foo, bar, MIN(baz) AS lowest',
+    'foo > ?',
+    array(
+        'group'=>'foo, bar',
+        'order'=>'baz ASC',
+        'limit'=>5,
+        'offset'=>3
+    )
+);
+.fi
+.PP
+.PP
+Much like the \fCfind()\fP method, \fCselect()\fP does not alter the mapper object's contents\&. It only serves as a convenience method for querying a mapped table\&. The return value of both methods is an array of mapper objects\&. Using \fCdry()\fP to determine whether a record was found by an of these methods is inappropriate\&. If no records match the \fCfind()\fP or \fCselect()\fP criteria, the return value is an empty array\&.
+.PP
+.SS "Profiling"
+.PP
+If you ever want to find out which SQL statements issued directly by your application (or indirectly thru mapper objects) are causing performance bottlenecks, you can do so with a simple:-
+.PP
+.PP
+.nf
+echo $db->log();
+.fi
+.PP
+.PP
+\fBF3\fP keeps track of all commands issued to the underlying SQL database driver, as well as the time it takes for each statement to complete - just the right information you need to tweak application performance\&.
+.PP
+.SS "Sometimes It Just Ain't Enough"
+.PP
+In most cases, you can live by the comforts given by the data mapper methods we've discussed so far\&. If you need the framework to do some heavy-duty work, you can extend the SQL mapper by declaring your own classes with custom methods - but you can't avoid getting your hands greasy on some hardcore SQL:-
+.PP
+.PP
+.nf
+class Vendor extends DB\SQL\Mapper {
+
+    // Instantiate mapper
+    function __construct(DB\SQL $db) {
+        // This is where the mapper and DB structure synchronization occurs
+        parent::__construct($db,'vendors');
+    }
+
+    // Specialized query
+    function listByCity() {
+        return $this->select(
+            'vendorID,name,city',array('order'=>'city DESC'));
+        /*
+            We could have done the the same thing with plain vanilla SQL:-
+            return $this->db->exec(
+                'SELECT vendorID,name,city FROM vendors '\&.
+                'ORDER BY city DESC;'
+            );
+        */
+    }
+
+}
+
+$vendor=new Vendor;
+$vendor->listByCity();
+.fi
+.PP
+.PP
+Extending the data mappers in this fashion is an easy way to construct your application's DB-related models\&.
+.PP
+.SS "Pros and Cons"
+.PP
+If you're handy with SQL, you'd probably say: everything in the ORM can be handled with old-school SQL queries\&. Indeed\&. We can do without the additional event listeners by using database triggers and stored procedures\&. We can accomplish relational queries with joined tables\&. The ORM is just unnecessary overhead\&. But the point is - data mappers give you the added functionality of using objects to represent database entities\&. As a developer, you can write code faster and be more productive\&. The resulting program will be cleaner, if not shorter\&. But you'll have to weigh the benefits against the compromise in speed - specially when handling large and complex data stores\&. Remember, all ORMS - no matter how thin they are - will always be just another abstraction layer\&. They still have to pass the work to the underlying SQL engines\&.
+.PP
+By design, \fBF3\fP's ORMs do not provide methods for directly connecting objects to each other, i\&.e\&. SQL joins - because this opens up a can of worms\&. It makes your application more complex than it should be, and there's the tendency of objects thru eager or lazy fetching techniques to be deadlocked and even out of sync due to object inheritance and polymorphism (impedance mismatch) with the database entities they're mapped to\&. There are indirect ways of doing it in the SQL mapper, using virtual fields - but you'll have to do this programmatically and at your own risk\&.
+.PP
+If you are tempted to apply 'pure' OOP concepts in your application to represent all your data (because 'everything is an object'), keep in mind that data almost always lives longer than the application\&. Your program may already be outdated long before the data has lost its value\&. Don't add another layer of complexity in your program by using intertwined objects and classes that deviate too much from the schema and physical structure of the data\&.
+.PP
+Before you weave multiple objects together in your application to manipulate the underlying tables in your database, think about this: creating views to represent relationships and triggers to define object behavior in the database engine are more efficient\&. Relational database engines are designed to handle views, joined tables and triggers\&. They are not dumb data stores\&. Tables joined in a view will appear as a single table, and Fat-Free can auto-map a view just as well as a regular table\&. Replicating JOINs as relational objects in PHP is slower compared to the database engine's machine code, relational algebra and optimization logic\&. Besides, joining tables repeatedly in our application is a sure sign that the database design needs to be audited, and views considered an integral part of data retrieval\&. If a table cross-references data from another table frequently, consider normalizing your structures or creating a view instead\&. Then create a mapper object to auto-map that view\&. It's faster and requires less effort\&.
+.PP
+Consider this SQL view created inside your database engine:-
+.PP
+.PP
+.nf
+CREATE VIEW combined AS
+    SELECT
+        projects\&.project_id AS project,
+        users\&.name AS name
+    FROM projects
+    LEFT OUTER JOIN users ON
+        projects\&.project_id=users\&.project_id AND
+        projects\&.user_id=users\&.user_id;
+.fi
+.PP
+.PP
+Your application code becomes simple because it does not have to maintain two mapper objects (one for the projects table and another for users) just to retrieve data from two joined tables:-
+.PP
+.PP
+.nf
+$combined=new DB\SQL\Mapper($db,'combined');
+$combined->load(array('project=?',123));
+echo $combined->name;
+.fi
+.PP
+.PP
+Tip:Use the tools as they're designed for\&. Fat-Free already has an easy-to-use SQL helper\&. Use it if you need a bigger hammer :) Try to seek a balance between convenience and performance\&. SQL will always be your fallback if you're working on complex and legacy data structures\&.
+.PP
+.SS "Plug-Ins"
+.PP
+.SS "About \fBF3\fP Plug-ins"
+.PP
+Plug-ins are nothing more than autoloaded classes that use framework built-ins to extend \fBF3\fP's features and functionality\&. If you'd like to contribute, leave a note at the Fat-Free Discussion Area hosted by Google Groups or tell us about it in the FreeNode \fC#fatfree\fP IRC channel\&. Someone else might be involved in a similar project\&. The framework community will appreciate it a lot if we unify our efforts\&.
+.PP
+.SS "CAPTCHA Images"
+.PP
+There might be instances when you want to make your forms more secure against spam bots and malicious automated scripts\&. \fBF3\fP provides a \fCcaptcha()\fP method to generate images with random text that are designed to be recognizable only by humans\&.
+.PP
+.PP
+.nf
+$img = new Image();
+$img->captcha('fonts/CoolFont\&.ttf',16,5,'SESSION\&.captcha_code');
+$img->render();
+.fi
+.PP
+.PP
+This example generates an random image based on your desired TrueType font\&. The \fCfonts/\fP folder is a subfolder within application's \fCUI\fP path\&. The second parameter indicates the font size, and the third argument defines the number of hexadecimal characters to generate\&.
+.PP
+The last argument represents an \fBF3\fP variable name\&. This is where \fBF3\fP will store the string equivalent of the CAPTCHA image\&. To make the string reload-safe, we specified a session variable:- \fCSESSION\&.captcha_code\fP which maps to `$_SESSION['captcha_code']`, which you can use later to verify whether the input element in the form submitted matches this string\&.
+.PP
+.SS "Grabbing Data from Another Site"
+.PP
+We've covered almost every feature available in the framework to run a stand-alone \fBWeb\fP server\&. For most applications, these features will serve you quite well\&. But what do you do if your application needs data from another \fBWeb\fP server on the network? \fBF3\fP has the \fBWeb\fP plugin to help you in this situation:-
+.PP
+.PP
+.nf
+$web=new Web;
+$request=$web->request('http://www\&.google\&.com/');
+// another way to do it:-
+$request=Web::instance()->request('http://www\&.google\&.com/');
+.fi
+.PP
+.PP
+This simple example sends an HTTP request to the page located at www\&.google\&.com and stores it in the \fC$request\fP PHP variable\&. The \fCrequest()\fP method returns an array containing the HTTP response such that `$request['headers']\fCand\fP$request['body']` represent the response headers and body, respectively\&. We could have saved the contents using the F3::set command, or echo'ed the output directly to our browser\&. Retrieving another HTML page on the net may not have any practical purpose\&. But it can be particularly useful in ReSTful applications, like querying a CouchDB server\&.
+.PP
+.PP
+.nf
+$host='localhost:5984';
+$web->request($host\&.'/_all_dbs'),
+$web->request($host\&.'/testdb/',array('method'=>'PUT'));
+.fi
+.PP
+.PP
+You may have noticed that you can pass an array of additional options to the \fCrequest()\fP method:-
+.PP
+.PP
+.nf
+$web->request(
+    'https://www\&.example\&.com:443?'\&.
+    http_build_query(
+        array(
+            'key1'=>'value1',
+            'key2'=>'value2'
+        )
+    ),
+    array(
+        'headers'=>array(
+            'Accept: text/html,application/xhtml+xml,application/xml',
+            'Accept-Language: en-us'
+        ),
+        'follow_location'=>FALSE,
+        'max_redirects'=>30,
+        'ignore_errors'=>TRUE
+    )
+);
+.fi
+.PP
+.PP
+If the framework variable \fCCACHE\fP is enabled, and if the remote server instructs your application to cache the response to the HTTP request, \fBF3\fP will comply with the request and retrieve the cached response each time the framework receives a similar request from your application, thus behaving like a browser\&.
+.PP
+Fat-Free will use whatever means are available on your \fBWeb\fP server for the \fCrequest()\fP method to run: PHP stream wrappers (\fCallow_url_fopen\fP), cURL module, or low-level sockets\&.
+.PP
+.SS "Handling File Downloads"
+.PP
+\fBF3\fP has a utility for sending files to an HTTP client, i\&.e\&. fulfilling download requests\&. You can use it to hide the real path to your download files\&. This adds some layer of security because users won't be able to download files if they don't know the file names and their locations\&. Here's how it's done:-
+.PP
+.PP
+.nf
+$f3->route('GET /downloads/@filename',
+    function($f3,$args) {
+        // send() method returns FALSE if file doesn't exist
+        if (!Web::instance()->send('/real/path/'\&.$args['filename']))
+            // Generate an HTTP 404
+        $f3->error(404);
+    }
+);
+.fi
+.PP
+.PP
+.SS "Remoting and Distributed Applications"
+.PP
+The \fCrequest()\fP method can also be used in complex SOAP or XML-RPC applications, if you find the need for another \fBWeb\fP server to process data on your computer's behalf - thus harnessing the power of distributing computing\&. W3Schools\&.com has an excellent tutorial on SOAP\&. On the other hand, TutorialsPoint\&.com gives a nice overview of XML-RPC\&.
+.PP
+.SS "Optimization"
+.PP
+.SS "\fBCache\fP Engine"
+.PP
+Caching static \fBWeb\fP pages - so the code in some route handlers can be skipped and templates don't have to be reprocessed - is one way of reducing your \fBWeb\fP server's work load so it can focus on other tasks\&. You can activate the framework's cache engine by providing a third argument to the \fC$f3->route()\fP method\&. Just specify the number of seconds before a cached \fBWeb\fP page expires:-
+.PP
+.PP
+.nf
+$f3->route('GET /my_page','App->method',60);
+.fi
+.PP
+.PP
+Here's how it works\&. In this example, when \fBF3\fP detects that the URL \fC/my_page\fP is accessed for the first time, it executes the route handler represented by the second argument and saves all browser output to the framework's built-in cache (server-side)\&. A similar instruction is automatically sent to the user's \fBWeb\fP browser (client-side), so that instead of sending an identical request to the server within the 60-second period, the browser can just retrieve the page locally\&. The framework uses the cache for an entirely different purpose - serving framework-cached data to other users asking for the same \fBWeb\fP page within the 60-second time frame\&. It skips execution of the route handler and serves the previously-saved page directly from disk\&. When someone tries to access the same URL after the 60-second timer has lapsed, \fBF3\fP will refresh the cache with a new copy\&.
+.PP
+\fBWeb\fP pages with static data are the most likely candidates for caching\&. Fat-Free will not cache a \fBWeb\fP page at a specified URL if the third argument in the \fC$f3->route()\fP method is zero or unspecified\&. \fBF3\fP conforms to the HTTP specifications: only GET and HEAD requests can be cached\&.
+.PP
+Here's an important point to consider when designing your application\&. Don't cache \fBWeb\fP pages unless you understand the possible unwanted side-effects of the cache at the client-side\&. Make sure that you activate caching on \fBWeb\fP pages that have nothing to do with the user's session state\&.
+.PP
+For example, you designed your site in such a way that all your \fBWeb\fP pages have the menu options: \fC'Home'\fP, \fC'About Us'\fP, and \fC'Login'\fP, displayed when a user is not logged into your application\&. You also want the menu options to change to: \fC'Home'\fP, \fC'About Us'\fP, and \fC'Logout'\fP, once the user has logged in\&. If you instructed Fat-Free to cache the contents of \fC'About Us'\fP page (which includes the menu options), it does so and also sends the same instruction to the HTTP client\&. Regardless of the user's session state, i\&.e\&. logged in or logged out, the user's browser will take a snapshot of the page at the session state it was in\&. Future requests by the user for the \fC'About Us'\fP page before the cache timeout expires will display the same menu options available at that time the page was initially saved\&. Now, a user may have already logged in, but the menu options are still the same as if no such event occurred\&. That's not the kind of behavior we want from our application\&.
+.PP
+Some pointers:-
+.PP
+.IP "\(bu" 2
+Don't cache dynamic pages\&. It's quite obvious you don't want to cache data that changes frequently\&. You can, however, activate caching on pages that contain data updated on an hourly, daily or even yearly basis\&.For security reasons, the framework restricts cache engine usage to HTTP \fCGET\fP routes only\&. It will not cache submitted forms!Don't activate the cache on \fBWeb\fP pages that at first glance look static\&. In our example, the 'About Us' content may be static, but the menu isn't\&.
+.IP "\(bu" 2
+Activate caching on pages that are available only in ONE session state\&. If you want to cache the \fC'About Us'\fP page, make sure it's available only when a user is not logged in\&.
+.IP "\(bu" 2
+If you have a RAMdisk or fast solid-state drive, configure the \fCCACHE\fP global variable so it points to that drive\&. This will make your application run like a Formula 1 race car\&.
+.PP
+.PP
+\fBNote:\fP Don't set the timeout value to a very long period until you're ready to roll out your application, i\&.e\&. the release or production state\&. Changes you make to any of your PHP scripts may not have the expected effect on the displayed output if the page exists in the framework cache and the expiration period has not lapsed\&. If you do alter a program that generates a page affected by the cache timer and you want these changes to take effect immediately, you should clear the cache by erasing the files in the cache/ directory (or whatever path the \fCCACHE\fP global variable points to)\&. \fBF3\fP will automatically refresh the cache if necessary\&. At the client-side, there's little you can do but instruct the user to clear the browser's cache or wait for the cache period to expire\&.
+.PP
+PHP needs to be set up correctly for the \fBF3\fP cache engine to work properly\&. Your operating system timezone should be synchronized with the date\&.timezone setting in the \fCphp\&.ini\fP file\&.
+.PP
+Similar to routes, Fat-Free also allows you to cache database queries\&. Speed gains can be quite significant, specially when used on complex SQL statements that involve look-up of static data or database content that rarely changes\&. Activating the database query cache so the framework doesn't have to re-execute the SQL statements every time is as simple as adding a 3rd argument to the F3::sql command - the cache timeout\&. For example:-
+.PP
+.PP
+.nf
+$db->exec('SELECT * from sizes;',NULL,86400);
+.fi
+.PP
+.PP
+If we expect the result of this database query to always be \fCSmall\fP, \fCMedium\fP, and \fCLarge\fP within a 24-hour period, we specify \fC86400\fP seconds as the 2nd argument so Fat-Free doesn't have to execute the query more than once a day\&. Instead, the framework will store the result in the cache, retrieve it from the cache every time a request comes in during the specified 24-hour time frame, and re-execute the query when the timer lapses\&.
+.PP
+The SQL data mapper also uses the cache engine to optimize synchronization of table structures with the objects that represent them\&. The default is \fC60\fP seconds\&. If you make any changes to a table's structure in your database engine, you'll have to wait for the cache timer to expire before seeing the effect in your application\&. You can change this behavior by specifying a third argument to the data mapper constructor\&. Set it to a high value if you don't expect to make any further changes to your table structure\&.
+.PP
+.PP
+.nf
+$user=new DB\SQL\Mapper($db,'users',86400);
+.fi
+.PP
+.PP
+By default, Fat-Free's cache engine is disabled\&. You can enable it and allow it to auto-detect APC, WinCache or XCache\&. If it cannot find an appropriate backend, \fBF3\fP will use the filesystem, i\&.e\&. the \fCtmp/cache/\fP folder:-
+.PP
+.PP
+.nf
+$f3->set('CACHE',TRUE);
+.fi
+.PP
+.PP
+Disabling the cache is as simple as:-
+.PP
+.PP
+.nf
+$f3->set('CACHE',FALSE);
+.fi
+.PP
+.PP
+If you wish to override the auto-detection feature, you can do so - as in the case of a Memcached back-end which \fBF3\fP also supports:-
+.PP
+.PP
+.nf
+$f3->set('CACHE','memcache=localhost:11211');
+.fi
+.PP
+.PP
+You can also use the cache engine to store your own variables\&. These variables will persist between HTTP requests and remain in cache until the engine receives instructions to delete them\&. To save a value in the cache:-
+.PP
+.PP
+.nf
+$f3->set('var','I want this value saved',90);
+.fi
+.PP
+.PP
+\fC$f3->set()\fP method's third argument instructs the framework to save the variable in the cache for a 90-second duration\&. If your application issues a `$f3->get('var')\fCwithin this period, \fBF3\fP will automatically retrieve the value from cache\&. In like manner,\fP$f3->clear('var')\fCwill purge the value from both cache and RAM\&. If you want to determine if a variable exists in cache,\fP$f3->exists('var')); returns one of two possible values: FALSE if the framework variable passed does not exist in cache, or an integer representing the time the variable was saved (Un*x time in seconds, with microsecond precision)\&.
+.PP
+.SS "Keeping Javascript and CSS on a Healthy Diet"
+.PP
+Fat-Free also has a Javascript and CSS compressor available in the \fBWeb\fP plug-in\&. It can combine all your CSS files into one stylesheet (or Javascript files into a single script) so the number of components on a \fBWeb\fP page are decreased\&. Reducing the number of HTTP requests to your \fBWeb\fP server results in faster page loading\&. First you need to prepare your HTML template so it can take advantage of this feature\&. Something like:-
+.PP
+.PP
+.nf
+<link rel="stylesheet" type="text/css"
+    href="/minify/css?files=typo\&.css,grid\&.css" />
+.fi
+.PP
+.PP
+Do the same with your Javascript files:-
+.PP
+.PP
+.nf
+<script type="text/javascript" src="/minify/js?&files=underscore\&.js">
+</script>
+.fi
+.PP
+.PP
+Of course we need to set up a route so your application can handle the necessary call to the Fat-Free CSS/Javascript compressor:-
+.PP
+.PP
+.nf
+$f3->route('GET /minify/@type',
+    function($f3,$args) {
+        $f3->set('UI',$args['type']\&.'/');
+        echo Web::instance()->minify($_GET['files']);
+    },
+    3600
+);
+.fi
+.PP
+.PP
+And that's all there is to it! \fCminify()\fP reads each file (\fCtypo\&.css\fP and \fCgrid\&.css\fP in our CSS example, \fCunderscore\&.js\fP in our Javascript example), strips off all unnecessary whitespaces and comments, combines all of the related items as a single \fBWeb\fP page component, and attaches a far-future expiry date so the user's \fBWeb\fP browser can cache the data\&. It's important that the \fCPARAMS\&.type\fP variable base points to the correct path\&. Otherwise, the URL rewriting mechanism inside the compressor won't find the CSS/Javascript files\&.
+.PP
+.SS "Client-Side Caching"
+.PP
+In our examples, the framework sends a far-future expiry date to the client's \fBWeb\fP browser so any request for the same CSS or Javascript block will come from the user's hard drive\&. On the server side, \fBF3\fP will check each request and see if the CSS or Javascript blocks have already been cached\&. The route we specified has a cache refresh period of \fC3600\fP seconds\&. Additionally, if the \fBWeb\fP browser sends an \fCIf-Modified-Since\fP request header and the framework sees the cache hasn't changed, \fBF3\fP just sends an \fCHTTP 304 Not Modified\fP response so no content is actually delivered\&. Without the \fCIf-Modified-Since\fP header, Fat-Free renders the output from the cached file if available\&. Otherwise, the relevant code is executed\&.
+.PP
+Tip: If you're not modifying your Javascript/CSS files frequently (as it would be if you're using a Javascript library like jQuery, MooTools, Dojo, etc\&.), consider adding a cache timer to the route leading to your Javascript/CSS minify handler (3rd argument of F3::route()) so Fat-Free doesn't have compress and combine these files each time such a request is received\&.
+.PP
+.SS "PHP Code Acceleration"
+.PP
+Want to make your site run even faster? Fat-Free works best with either Alternative PHP \fBCache\fP (APC), XCache, or WinCache\&. These PHP extensions boost performance of your application by optimizing your PHP scripts (including the framework code)\&.
+.PP
+.SS "Bandwidth Throttling"
+.PP
+A fast application that processes all HTTP requests and responds to them at the shortest time possible is not always a good idea - specially if your bandwidth is limited or traffic on your \fBWeb\fP site is particularly heavy\&. Serving pages ASAP also makes your application vulnerable to Denial-of-Service (DOS) attacks\&. \fBF3\fP has a bandwidth throttling feature that allows you to control how fast your \fBWeb\fP pages are served\&. You can specify how much time it should take to process a request:-
+.PP
+.PP
+.nf
+$f3->route('/throttledpage','MyApp->handler',0,128);
+.fi
+.PP
+.PP
+In this example, the framework will serve the \fBWeb\fP page at a rate of 128KiBps\&.
+.PP
+Bandwidth throttling at the application level can be particularly useful for login pages\&. Slow responses to dictionary attacks is a good way of mitigating this kind of security risk\&.
+.PP
+.SS "Unit Testing"
+.PP
+.SS "Bullet-Proof Code"
+.PP
+Robust applications are the result of comprehensive testing\&. Verifying that each part of your program conforms to the specifications and lives up to the expectations of the end-user means finding bugs and fixing them as early as possible in the application development cycle\&.
+.PP
+If you know little or nothing about unit testing methodologies, you're probably embedding pieces of code directly in your existing program to help you with debugging\&. That of course means you have to remove them once the program is running\&. Leftover code fragments, poor design and faulty implementation can creep up as bugs when you roll out your application later\&.
+.PP
+\fBF3\fP makes it easy for you to debug programs - without getting in the way of your regular thought processes\&. The framework does not require you to build complex OOP classes, heavy test structures, and obtrusive procedures\&.
+.PP
+A unit (or test fixture) can be a function/method or a class\&. Let's have a simple example:-
+.PP
+.PP
+.nf
+function hello() {
+    return 'Hello, World';
+}
+.fi
+.PP
+.PP
+Save it in a file called \fChello\&.php\fP\&. Now how do we know it really runs as expected? Let's create our test procedure:-
+.PP
+.PP
+.nf
+$f3=require('lib/base\&.php');
+
+// Set up
+$test=new Test;
+include('hello\&.php');
+
+// This is where the tests begin
+$test->expect(
+    is_callable('hello'),
+    'hello() is a function'
+);
+
+// Another test
+$hello=hello();
+$test->expect(
+    !empty($hello),
+    'Something was returned'
+);
+
+// This test should succeed
+$test->expect
+    is_string($hello),
+    'Return value is a string'
+);
+
+// This test is bound to fail
+$test->expect(
+    strlen($hello)==13,
+    'String length is 13'
+);
+
+// Display the results; not MVC but let's keep it simple
+foreach ($test->results() as $result) {
+    echo $result['text']\&.'<br />';
+    if ($result['status'])
+        echo 'Pass';
+    else
+        echo 'Fail ('\&.$result['source']\&.')';
+    echo '<br />';
+}
+.fi
+.PP
+.PP
+Save it in a file called \fC\fBtest\&.php\fP\fP\&. This way we can preserve the integrity of \fChello\&.php\fP\&.
+.PP
+Now here's the meat of our unit testing process\&.
+.PP
+\fBF3\fP's built-in \fC\fBTest\fP\fP class keeps track of the result of each \fCexpect()\fP call\&. The output of \fC$test->results()\fP is an array of arrays with the keys \fCtext\fP (mirroring argument 2 of \fCexpect()\fP), \fCstatus\fP (boolean representing the result of a test), and \fCsource\fP (file name/line number of the specific test) to aid in debugging\&.
+.PP
+Fat-Free gives you the freedom to display test results in any way you want\&. You can have the output in plain text or even a nice-looking HTML template\&. So how do we run our unit test? If you saved \fC\fBtest\&.php\fP\fP in the document root folder, you can just open your browser and specify the address \fChttp://localhost/test.php\fP\&. That's all there is to it\&.
+.PP
+.SS "Mocking HTTP Requests"
+.PP
+\fBF3\fP gives you the ability to simulate HTTP requests from within your PHP program so you can test the behavior of a particular route\&. Here's a simple mock request:-
+.PP
+.PP
+.nf
+$f3->mock('GET /test?foo=bar');
+.fi
+.PP
+.PP
+To mock a POST request and submit a simulated HTML form:-
+.PP
+.PP
+.nf
+$f3->mock('POST /test',array('foo'=>'bar'));
+.fi
+.PP
+.PP
+.SS "Expecting the Worst that can Happen"
+.PP
+Once you get the hang of testing the smallest units of your application, you can then move on to the bigger components, modules, and subsystems - checking along the way if the parts are correctly communicating with each other\&. Testing manageable chunks of code leads to more reliable programs that work as you expect, and weaves the testing process into the fabric of your development cycle\&. The question to ask yourself is:- Have I tested all possible scenarios? More often than not, those situations that have not been taken into consideration are the likely causes of bugs\&. Unit testing helps a lot in minimizing these occurrences\&. Even a few tests on each fixture can greatly reduce headaches\&. On the other hand, writing applications without unit testing at all invites trouble\&.
+.PP
+.SS "Quick Reference"
+.PP
+.SS "System Variables"
+.PP
+\fCstring AGENT\fP
+.PP
+.IP "\(bu" 2
+Auto-detected HTTP user agent, e\&.g\&. \fCMozilla/5\&.0 (Linux; Android 4\&.2\&.2; Nexus 7) AppleWebKit/537\&.31\fP\&.
+.PP
+.PP
+\fCbool AJAX\fP
+.PP
+.IP "\(bu" 2
+\fCTRUE\fP if an XML HTTP request is detected, \fCFALSE\fP otherwise\&.
+.PP
+.PP
+\fCstring AUTOLOAD\fP
+.PP
+.IP "\(bu" 2
+Search path for user-defined PHP classes that the framework will attempt to autoload at runtime\&. Accepts a pipe (\fC|\fP), comma (\fC,\fP), or semi-colon (\fC;\fP) as path separator\&.
+.PP
+.PP
+\fCstring BASE\fP
+.PP
+.IP "\(bu" 2
+Path to the \fC\fBindex\&.php\fP\fP main/front controller\&.
+.PP
+.PP
+\fCstring BODY\fP
+.PP
+.IP "\(bu" 2
+HTTP request body for ReSTful post-processing\&.
+.PP
+.PP
+\fCbool/string CACHE\fP
+.PP
+.IP "\(bu" 2
+\fBCache\fP backend\&. Unless assigned a value like \fC'memcache=localhost'\fP (and the PHP memcache module is present), \fBF3\fP auto-detects the presence of APC, WinCache and XCache and uses the first available PHP module if set to TRUE\&. If none of these PHP modules are available, a filesystem-based backend is used (default directory: \fCtmp/cache\fP)\&. The framework disables the cache engine if assigned a \fCFALSE\fP value\&.
+.PP
+.PP
+\fCbool CASELESS\fP
+.PP
+.IP "\(bu" 2
+Pattern matching of routes against incoming URIs is case-insensitive by default\&. Set to \fCFALSE\fP to make it case-sensitive\&.
+.PP
+.PP
+\fCarray COOKIE, GET, POST, REQUEST, SESSION, FILES, SERVER, ENV\fP
+.PP
+.IP "\(bu" 2
+Framework equivalents of PHP globals\&. Variables may be used throughout an application\&. However, direct use in templates is not advised due to security risks\&.
+.PP
+.PP
+\fCinteger DEBUG\fP
+.PP
+.IP "\(bu" 2
+Stack trace verbosity\&. Assign values 1 to 3 for increasing verbosity levels\&. Zero (0) suppresses the stack trace\&. This is the default value and it should be the assigned setting on a production server\&.
+.PP
+.PP
+\fCstring DNSBL\fP
+.PP
+.IP "\(bu" 2
+Comma-separated list of \fCDNS blacklist servers\fP\&. Framework generates a \fC403 Forbidden\fP error if the user's IPv4 address is listed on the specified server(s)\&.
+.PP
+.PP
+\fCarray DIACRITICS\fP
+.PP
+.IP "\(bu" 2
+Key-value pairs for foreign-to-ASCII character translations\&.
+.PP
+.PP
+\fCstring ENCODING\fP
+.PP
+.IP "\(bu" 2
+Character set used for document encoding\&. Default value is \fCUTF-8\fP\&.
+.PP
+.PP
+\fCarray ERROR\fP
+.PP
+.IP "\(bu" 2
+Information about the last HTTP error that occurred\&. \fCERROR\&.code\fP is the HTTP status code\&. \fCERROR\&.status\fP contains a brief description of the error\&. \fCERROR\&.text\fP provides more detail\&. For HTTP 500 errors, use \fCERROR\&.trace\fP to retrieve the stack trace\&.
+.PP
+.PP
+\fCbool ESCAPE\fP
+.PP
+.IP "\(bu" 2
+Used to enable/disable auto-escaping\&.
+.PP
+.PP
+\fCstring EXEMPT\fP
+.PP
+.IP "\(bu" 2
+Comma-separated list of IPv4 addresses exempt from DNSBL lookups\&.
+.PP
+.PP
+\fCstring FALLBACK\fP
+.PP
+.IP "\(bu" 2
+Language (and dictionary) to use if no translation is available\&.
+.PP
+.PP
+\fCbool HALT\fP
+.PP
+.IP "\(bu" 2
+If TRUE (default), framework stops execution after a non-fatal error is detected\&.
+.PP
+.PP
+\fCarray HEADERS\fP
+.PP
+.IP "\(bu" 2
+HTTP request headers received by the server\&.
+.PP
+.PP
+\fCbool HIGHLIGHT\fP
+.PP
+.IP "\(bu" 2
+Enable/disable syntax highlighting of stack traces\&. Default value: \fCTRUE\fP (requires \fCcode\&.css\fP stylesheet)\&.
+.PP
+.PP
+\fCstring HOST\fP
+.PP
+.IP "\(bu" 2
+Server host name\&. If `$_SERVER['SERVER_NAME']\fCis not available, return value of\fPgethostname()` is used\&.
+.PP
+.PP
+\fCstring IP\fP
+.PP
+.IP "\(bu" 2
+Remote IP address\&. The framework derives the address from headers if HTTP client is behind a proxy server\&.
+.PP
+.PP
+\fCarray JAR\fP
+.PP
+.IP "\(bu" 2
+Default cookie parameters\&.
+.PP
+.PP
+\fCstring LANGUAGE\fP
+.PP
+.IP "\(bu" 2
+Current active language\&. Value is used to load the appropriate language translation file in the folder pointed to by \fCLOCALES\fP\&. If set to \fCNULL\fP, language is auto-detected from the HTTP \fCAccept-Language\fP request header\&.
+.PP
+.PP
+\fCstring LOCALES\fP
+.PP
+.IP "\(bu" 2
+Location of the language dictionaries\&.
+.PP
+.PP
+\fCstring LOGS\fP
+.PP
+.IP "\(bu" 2
+Location of custom logs\&.
+.PP
+.PP
+\fCmixed ONERROR\fP
+.PP
+.IP "\(bu" 2
+Callback function to use as custom error handler\&.
+.PP
+.PP
+\fCstring PACKAGE\fP
+.PP
+.IP "\(bu" 2
+Framework name\&.
+.PP
+.PP
+\fCarray PARAMS\fP
+.PP
+.IP "\(bu" 2
+Captured values of tokens defined in a \fCroute()\fP pattern\&. \fCPARAMS\&.0\fP contains the captured URL relative to the \fBWeb\fP root\&.
+.PP
+.PP
+\fCstring PATTERN\fP
+.PP
+.IP "\(bu" 2
+Contains the routing pattern that matches the current request URI\&.
+.PP
+.PP
+\fCstring PLUGINS\fP
+.PP
+.IP "\(bu" 2
+Location of \fBF3\fP plugins\&. Default value is the folder where the framework code resides, i\&.e\&. the path to \fC\fBbase\&.php\fP\fP\&.
+.PP
+.PP
+\fCint PORT\fP
+.PP
+.IP "\(bu" 2
+TCP/IP listening port used by the \fBWeb\fP server\&.
+.PP
+.PP
+\fCstring PREFIX\fP
+.PP
+.IP "\(bu" 2
+String prepended to language dictionary terms\&.
+.PP
+.PP
+\fCbool QUIET\fP
+.PP
+.IP "\(bu" 2
+Toggle switch for suppressing or enabling standard output and error messages\&. Particularly useful in unit testing\&.
+.PP
+.PP
+\fCbool RAW\fP
+.PP
+.IP "\(bu" 2
+Disable automatic storage of HTTP request body into \fCBODY\fP\&. Should be TRUE when processing large data coming from \fCphp://input\fP which will not fit in memory\&. Default value: \fCFALSE\fP
+.PP
+.PP
+\fCstring REALM\fP
+.PP
+.IP "\(bu" 2
+Full canonical URL\&.
+.PP
+.PP
+\fCstring RESPONSE\fP
+.PP
+.IP "\(bu" 2
+The body of the last HTTP response\&. \fBF3\fP populates this variable regardless of the \fCQUIET\fP setting\&.
+.PP
+.PP
+\fCstring ROOT\fP
+.PP
+.IP "\(bu" 2
+Absolute path to document root folder\&.
+.PP
+.PP
+\fCarray ROUTES\fP
+.PP
+.IP "\(bu" 2
+Contains the defined application routes\&.
+.PP
+.PP
+\fCstring SCHEME\fP
+.PP
+.IP "\(bu" 2
+Server protocol, i\&.e\&. \fChttp\fP or \fChttps\fP\&.
+.PP
+.PP
+\fCstring SERIALIZER\fP
+.PP
+.IP "\(bu" 2
+Default serializer\&. Normally set to \fCphp\fP, unless PHP \fCigbinary\fP extension is auto-detected\&. Assign \fCjson\fP if desired\&.
+.PP
+.PP
+\fCstring TEMP\fP
+.PP
+.IP "\(bu" 2
+Temporary folder for cache, filesystem locks, compiled \fBF3\fP templates, etc\&. Default is the \fCtmp/\fP folder inside the \fBWeb\fP root\&. Adjust accordingly to conform to your site's security policies\&.
+.PP
+.PP
+\fCstring TZ\fP
+.PP
+.IP "\(bu" 2
+Default timezone\&. Changing this value automatically calls the underlying \fCdate_default_timezone_set()\fP function\&.
+.PP
+.PP
+\fCstring UI\fP
+.PP
+.IP "\(bu" 2
+Search path for user interface files used by the \fC\fBView\fP\fP and \fC\fBTemplate\fP\fP classes' \fCrender()\fP method\&. Default value is the \fBWeb\fP root\&. Accepts a pipe (\fC|\fP), comma (\fC,\fP), or semi-colon (\fC;\fP) as separator for multiple paths\&.
+.PP
+.PP
+\fCcallback UNLOAD\fP
+.PP
+.IP "\(bu" 2
+Executed by framework on script shutdown\&.
+.PP
+.PP
+\fCstring UPLOADS\fP
+.PP
+.IP "\(bu" 2
+Directory where file uploads are saved\&.
+.PP
+.PP
+\fCstring URI\fP
+.PP
+.IP "\(bu" 2
+Current HTTP request URI\&.
+.PP
+.PP
+\fCstring VERB\fP
+.PP
+.IP "\(bu" 2
+Current HTTP request method\&.
+.PP
+.PP
+\fCstring VERSION\fP
+.PP
+.IP "\(bu" 2
+Framework version\&.
+.PP
+.PP
+.SS "\fBTemplate\fP Directives"
+.PP
+.PP
+.nf
+@token
+.fi
+.PP
+.IP "\(bu" 2
+Replace \fC@token\fP with value of equivalent \fBF3\fP variable\&.
+.PP
+.PP
+.PP
+.nf
+{{ mixed expr }}
+.fi
+.PP
+.IP "\(bu" 2
+Evaluate\&. \fCexpr\fP may include template tokens, constants, operators (unary, arithmetic, ternary and relational), parentheses, data type converters, and functions\&. If not an attribute of a template directive, result is echoed\&.
+.PP
+.PP
+.PP
+.nf
+{{ string expr | raw }}
+.fi
+.PP
+.IP "\(bu" 2
+Render unescaped \fCexpr\fP\&. \fBF3\fP auto-escapes strings by default\&.
+.PP
+.PP
+.PP
+.nf
+{{ string expr | esc }}
+.fi
+.PP
+.IP "\(bu" 2
+Render escaped \fCexpr\fP\&. This is the default framework behavior\&. The \fC| esc\fP suffix is only necessary if \fCESCAPE\fP global variable is set to \fCFALSE\fP\&.
+.PP
+.PP
+.PP
+.nf
+{{ string expr, arg1, \&.\&.\&., argN | format }}
+.fi
+.PP
+.IP "\(bu" 2
+Render an ICU-formatted \fCexpr\fP and pass the comma-separated arguments, where \fCarg1, \&.\&.\&., argn\fP is one of:- \fC'date'\fP, \fC'time'\fP, \fC'number, integer'\fP, \fC'number, currency'\fP, or \fC'number, percent'\fP\&.
+.PP
+.PP
+.PP
+.nf
+<include
+    [ if="{{ bool condition }}" ]
+    href="{{ string subtemplate }}"
+/>
+.fi
+.PP
+.IP "\(bu" 2
+Get contents of \fCsubtemplate\fP and insert at current position in template if optional condition is \fCTRUE\fP\&.
+.PP
+.PP
+.PP
+.nf
+<exclude>text-block</exclude>
+.fi
+.PP
+.IP "\(bu" 2
+Remove \fCtext-block\fP at runtime\&. Used for embedding comments in templates\&.
+.PP
+.PP
+.PP
+.nf
+<ignore>text-block</ignore>
+.fi
+.PP
+.IP "\(bu" 2
+Display \fCtext-block\fP as-is, without interpretation/modification by the template engine\&.
+.PP
+.PP
+.PP
+.nf
+<check if="{{ bool condition }}">
+    <true>true-block</true>
+    <false>false-block</false>
+</check>
+.fi
+.PP
+.IP "\(bu" 2
+Evaluate condition\&. If \fCTRUE\fP, then \fCtrue-block\fP is rendered\&. Otherwise, \fCfalse-block\fP is used\&.
+.PP
+.PP
+.PP
+.nf
+<loop
+    from="{{ statement }}"
+    to="{{ bool expr }}"
+    [ step="{{ statement }}" ]>
+    text-block
+</loop>
+.fi
+.PP
+.IP "\(bu" 2
+Evaluate \fCfrom\fP statement once\&. Check if the expression in the \fCto\fP attribute is \fCTRUE\fP, render \fCtext-block\fP and evaluate \fCstep\fP statement\&. Repeat iteration until \fCto\fP expression is \fCFALSE\fP\&.
+.PP
+.PP
+.PP
+.nf
+<repeat
+    group="{{ array @group|expr }}"
+    [ key="{{ scalar @key }}" ]
+    value="{{ mixed @value }}
+    [ counter="{{ scalar @key }}" ]>
+    text-block
+</repeat>
+.fi
+.PP
+.IP "\(bu" 2
+Repeat \fCtext-block\fP as many times as there are elements in the array variable \fC@group\fP or the expression \fCexpr\fP\&. \fC@key\fP and \fC@value\fP function in the same manner as the key-value pair in the equivalent PHP \fCforeach()\fP statement\&. Variable represented by \fCkey\fP in \fCcounter\fP attribute increments by \fC1\fP with every iteration\&.
+.PP
+.PP
+.PP
+.nf
+<switch expr="{{ scalar expr }}">
+    <case value="{{ scalar @value|expr }}" break="{{ bool TRUE|FALSE }}">
+        text-block
+    </case>
+    \&.
+    \&.
+    \&.
+</switch>
+.fi
+.PP
+.IP "\(bu" 2
+Equivalent of the PHP switch-case jump table structure\&.
+.PP
+.PP
+.PP
+.nf
+{* text-block *}
+.fi
+.PP
+.IP "\(bu" 2
+Alias for \fC<exclude>\fP\&.
+.PP
+.PP
+.SS "API Documentation"
+.PP
+The most up-to-date documentation is located at \fChttp://fatfreeframework\&.com/\fP\&. It contains examples of usage of the various framework components\&.
+.PP
+.SS "Support and Licensing"
+.PP
+Technical support is available at the official discussion forum: \fC\fChttps://groups\&.google\&.com/forum/#!forum/f3-framework\fP\fP\&. If you need live support, you can talk to the development team and other members of the \fBF3\fP community via IRC\&. We're on the FreeNode \fC#fatfree\fP channel (\fCchat\&.freenode\&.net\fP)\&. Visit \fC\fChttp://webchat\&.freenode\&.net/\fP\fP to join the conversation\&. You can also download the \fCFirefox Chatzilla\fP add-on or \fCPidgin\fP if you don't have an IRC client so you can participate in the live chat\&.
+.PP
+.SS "Nightly Builds"
+.PP
+\fBF3\fP uses Git for version control\&. To clone the code repository on GitHub:-
+.PP
+.PP
+.nf
+git clone git://github\&.com/bcosca/fatfree\&.git
+.fi
+.PP
+.PP
+If all you want is a zipball, grab it \fC\fBhere\fP\fP\&.
+.PP
+To file a bug report, visit \fC\fChttps://github\&.com/bcosca/fatfree/issues\fP\fP\&.
+.PP
+.SS "Fair Licensing"
+.PP
+\fBFat-Free Framework is free and released as open source software covered by the terms of the \fCGNU Public License\fP (GPL v3)\&.\fP You may not use the software, documentation, and samples except in compliance with the license\&. If the terms and conditions of this license are too restrictive for your use, alternative licensing is available for a very reasonable fee\&.
+.PP
+If you feel that this software is one great weapon to have in your programming arsenal, it saves you a lot of time and money, use it for commercial gain or in your business organization, please consider making a donation to the project\&. A significant amount of time, effort, and money has been spent on this project\&. Your donations help keep this project alive and the development team motivated\&. Donors and sponsors get priority support (24-hour response time on business days)\&.
+.PP
+.SS "Credits"
+.PP
+The Fat-Free Framework is community-driven software\&. It can't be what it is today without the help and support from the following people and organizations:
+.PP
+.IP "\(bu" 2
+GitHub
+.IP "\(bu" 2
+Square Lines, LLC
+.IP "\(bu" 2
+Mirosystems
+.IP "\(bu" 2
+Stehlik & Company
+.IP "\(bu" 2
+Talis Group, Ltd\&.
+.IP "\(bu" 2
+Tecnilógica
+.IP "\(bu" 2
+G Holdings, LLC
+.IP "\(bu" 2
+S2 Development, Ltd\&.
+.IP "\(bu" 2
+Store Machine
+.IP "\(bu" 2
+PHP Experts, Inc\&.
+.IP "\(bu" 2
+Meins und Vogel GmbH
+.IP "\(bu" 2
+Online Prepaid Services
+.IP "\(bu" 2
+Christian Knuth
+.IP "\(bu" 2
+Sascha Ohms
+.IP "\(bu" 2
+Lars Brandi Jensen
+.IP "\(bu" 2
+Jermaine Maree
+.IP "\(bu" 2
+Eyðun Lamhauge
+.IP "\(bu" 2
+Sergey Zaretsky
+.IP "\(bu" 2
+Daniel Kloke
+.IP "\(bu" 2
+Brian Nelson
+.IP "\(bu" 2
+Roberts Lapins
+.IP "\(bu" 2
+Boris Gurevich
+.IP "\(bu" 2
+Jose Maria Garrido Diaz
+.IP "\(bu" 2
+Dawn Comfort
+.IP "\(bu" 2
+Johan Viberg
+.IP "\(bu" 2
+Povilas Musteikis
+.IP "\(bu" 2
+Andrew Snook
+.IP "\(bu" 2
+Jafar Amjad
+.IP "\(bu" 2
+Taylor McCall
+.IP "\(bu" 2
+Raymond Kirkland
+.IP "\(bu" 2
+Yuriy Gerassimenko
+.IP "\(bu" 2
+William Stam
+.IP "\(bu" 2
+Sam George
+.IP "\(bu" 2
+Steve Wasiura
+.IP "\(bu" 2
+Andreas Ljunggren
+.IP "\(bu" 2
+Sashank Tadepalli
+.IP "\(bu" 2
+Chad Bishop
+.IP "\(bu" 2
+Bradley Slavik
+.IP "\(bu" 2
+Lee Blue
+.IP "\(bu" 2
+Alexander Shatilo
+.IP "\(bu" 2
+Justin Noel
+.IP "\(bu" 2
+Ivan Kovac
+.IP "\(bu" 2
+Tony's Internet Solutions
+.IP "\(bu" 2
+Charles Stigler
+.IP "\(bu" 2
+Attila van der Velde
+.IP "\(bu" 2
+Indoblo Commerce Ltd\&.
+.IP "\(bu" 2
+Jens Níemeyer
+.IP "\(bu" 2
+Raghu Veer Dendukuri
+.IP "\(bu" 2
+NovelLead B\&.V\&.
+.IP "\(bu" 2
+Emir Alp
+.IP "\(bu" 2
+Dominic Schwarz
+.IP "\(bu" 2
+Sven Zahrend
+.IP "\(bu" 2
+LucidStorm
+.IP "\(bu" 2
+Nevatech
+.IP "\(bu" 2
+Matt Wielgos
+.IP "\(bu" 2
+Maximilian Summe
+.IP "\(bu" 2
+Caspar Frey
+.IP "\(bu" 2
+FocusHeart
+.IP "\(bu" 2
+Philip Lawrence
+.IP "\(bu" 2
+Peter Beverwyk
+.IP "\(bu" 2
+Judith Grass
+.IP "\(bu" 2
+Randal Hintz
+.IP "\(bu" 2
+Franz Josef
+.IP "\(bu" 2
+Biswajit Nayak
+.IP "\(bu" 2
+R Mohan
+.IP "\(bu" 2
+Michael Messner
+.IP "\(bu" 2
+Florent Racineux
+.IP "\(bu" 2
+Jason Borseth
+.IP "\(bu" 2
+Dmitrij Chernov
+.IP "\(bu" 2
+Marek Toman
+.IP "\(bu" 2
+Simone Cociancich
+.IP "\(bu" 2
+Alan Holding
+.IP "\(bu" 2
+Philipp Hirsch
+.IP "\(bu" 2
+Aurélien Botermans
+.IP "\(bu" 2
+Christian Treptow
+.IP "\(bu" 2
+Кубарев Дмитрий (Dmitry Kubarev)
+.IP "\(bu" 2
+Alexandru Catalin Trandafir
+.IP "\(bu" 2
+Leigh Harrison
+.IP "\(bu" 2
+Дмитриев Иван (Ivan Dmitriev)
+.IP "\(bu" 2
+IT_GAP
+.IP "\(bu" 2
+Sergeev Andrey
+.IP "\(bu" 2
+Steven J Mixon
+.IP "\(bu" 2
+Roland Fath
+.IP "\(bu" 2
+Justin Parker
+.IP "\(bu" 2
+Costas Menico
+.IP "\(bu" 2
+Mathieu-Philippe Bourgeois
+.IP "\(bu" 2
+Ryan McKillop
+.IP "\(bu" 2
+Chris Clarke
+.IP "\(bu" 2
+Ngan Ting On
+.IP "\(bu" 2
+Eli Argon
+.IP "\(bu" 2
+Seregin Andrew
+.IP "\(bu" 2
+Marek Toman
+.IP "\(bu" 2
+Diji Enterprises
+.IP "\(bu" 2
+uonick
+.IP "\(bu" 2
+Kamil Kiblis
+.IP "\(bu" 2
+Mars Yau
+.IP "\(bu" 2
+Martin Latinov
+.IP "\(bu" 2
+Malikov Evgene
+.IP "\(bu" 2
+Andres Espinoza Arce
+.IP "\(bu" 2
+Matthew Williamson
+.IP "\(bu" 2
+Andrew Brookes
+.IP "\(bu" 2
+Steve Cove
+.IP "\(bu" 2
+Steven Witten
+.IP "\(bu" 2
+Silvan Seeholzer
+.PP
+.PP
+Special thanks to the selfless others who expressed their desire to remain anonymous, yet share their time, contribute code, send donations, promote the framework to a wider audience, as well as provide encouragement and regular financial assistance\&. Their generosity is \fBF3\fP's prime motivation\&.
+.PP
+\fC\fP.PP
+.PP
+.SS "Legal notice"
+.PP
+By making a donation to this project you signify that you acknowledged, understood, accepted, and agreed to the terms and conditions contained in this notice\&. Your donation to the Fat-Free Framework project is voluntary and is not a fee for any services, goods, or advantages, and making a donation to the project does not entitle you to any services, goods, or advantages\&. We have the right to use the money you donate to the Fat-Free Framework project in any lawful way and for any lawful purpose we see fit and we are not obligated to disclose the way and purpose to any party unless required by applicable law\&. Although Fat-Free Framework is free software, to our best knowledge this project does not have any tax-exempt status\&. The Fat-Free Framework project is neither a registered non-profit corporation nor a registered charity in any country\&. Your donation may or may not be tax-deductible; please consult this with your tax advisor\&. We will not publish/disclose your name and e-mail address without your consent, unless required by applicable law\&. Your donation is non-refundable\&.
+.PP
+\fBCopyright (c) 2009-2014 F3::Factory/Bong Cosca <bong&#46;cosca&#64;yahoo&#46;com>\fP
+.PP
+\fC\fP 

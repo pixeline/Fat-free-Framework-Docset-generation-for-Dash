@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_c_l_i_1_1_w_s" kind="class" language="PHP" prot="public">
+    <compoundname>CLI::WS</compoundname>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1aa9141b93fff959a11eb401b7100b7a90" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <initializer>=0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="36" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a03a9c4aa0f0905b7512a268997cbe41f" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Binary</definition>
+        <argsstring></argsstring>
+        <name>Binary</name>
+        <initializer>=0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="37" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a12592aa7eb9f1570fc962867a7fcc904" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Close</definition>
+        <argsstring></argsstring>
+        <name>Close</name>
+        <initializer>=0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="38" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1ad953baab1d22f9595927e18f6ac8ec16" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Ping</definition>
+        <argsstring></argsstring>
+        <name>Ping</name>
+        <initializer>=0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="39" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a969c5d07e26af01d3523ec69379a4df5" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Pong</definition>
+        <argsstring></argsstring>
+        <name>Pong</name>
+        <initializer>=0x0a</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="40" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1af8603b6923a1a089b57cb849bc062148" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const OpCode</definition>
+        <argsstring></argsstring>
+        <name>OpCode</name>
+        <initializer>=0x0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="41" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1afa14d696444a689a5be47c64ce568983" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Finale</definition>
+        <argsstring></argsstring>
+        <name>Finale</name>
+        <initializer>=0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="42" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a62a38e46cf476443cf933907fe86e684" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <initializer>=0x7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="47" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a0f8417d2e128a6f19f2b5e0a0a883de0" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Magic</definition>
+        <argsstring></argsstring>
+        <name>Magic</name>
+        <initializer>=&apos;258EAFA5-E914-47DA-95CA-C5AB0DC85B11&apos;</initializer>
+        <briefdescription>
+<para>UUID magic string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1adbc81c45b48c6cdfffe9fc4752007493" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <initializer>=65536</initializer>
+        <briefdescription>
+<para>Max packet size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="32" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1aa0f7bf6b5a60518284ef88fa33e264f2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ctx</definition>
+        <argsstring></argsstring>
+        <name>$ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="52" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a165566db3c2de8a5e20d0957ed606e46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$wait</definition>
+        <argsstring></argsstring>
+        <name>$wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="53" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a4faf536a5ff25a28adb9891716556dc6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$sockets</definition>
+        <argsstring></argsstring>
+        <name>$sockets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="54" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1af8624bfcd6ccf58a6906baf72ec078df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$agents</definition>
+        <argsstring></argsstring>
+        <name>$agents</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="55" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a1bcec9bbd34255927faaf155bf3a940a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$events</definition>
+        <argsstring></argsstring>
+        <name>$events</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="56" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_l_i_1_1_w_s_1a80e1c53e5ae106ed41bc69db8cdcdf78" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$addr</definition>
+        <argsstring></argsstring>
+        <name>$addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="51" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a201f40e4b8683b5e569b4c1e8add9fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>alloc</definition>
+        <argsstring>($socket)</argsstring>
+        <name>alloc</name>
+        <param>
+          <declname>$socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate stream socket <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="63" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="63" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1aa3a3bd26af1b767091f521a6c9041e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>close</definition>
+        <argsstring>($socket)</argsstring>
+        <name>close</name>
+        <param>
+          <declname>$socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close stream socket <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="137" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a6b8891e0c2b12c863512071111b9aa07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>free</definition>
+        <argsstring>($socket)</argsstring>
+        <name>free</name>
+        <param>
+          <declname>$socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free stream socket <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="147" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a845d775219b4327eb7cb626ffb1c2af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>read</definition>
+        <argsstring>($socket)</argsstring>
+        <name>read</name>
+        <param>
+          <declname>$socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read from stream socket <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="158" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="158" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1ac95ce2fb30c44bae1927b0107756f7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>write</definition>
+        <argsstring>($socket, $str)</argsstring>
+        <name>write</name>
+        <param>
+          <declname>$socket</declname>
+        </param>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write to stream socket <simplesect kind="return"><para>int|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="175" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="175" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a5c3b4aef24eacefe766d9e34fd5791de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents</definition>
+        <argsstring>($uri=NULL)</argsstring>
+        <name>agents</name>
+        <param>
+          <declname>$uri</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return socket agents <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="193" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="193" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1ade509b07f1df45730d31589b81a26efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>events</definition>
+        <argsstring>()</argsstring>
+        <name>events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return event handlers <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="206" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="206" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a65a51fe8cfc1c6b4d04178b209b50e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>on</definition>
+        <argsstring>($event, $func)</argsstring>
+        <name>on</name>
+        <param>
+          <declname>$event</declname>
+        </param>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind function to event handler <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="216" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a2e5652a68528b58bda9e63311cd473bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>kill</definition>
+        <argsstring>($signal)</argsstring>
+        <name>kill</name>
+        <param>
+          <declname>$signal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate server <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$signal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="226" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1afb0fafe7e02a3ae1993c01c19fad2bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the server process <simplesect kind="return"><para>object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="234" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="234" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_l_i_1_1_w_s_1a19dbb10de3a82395f1c941e3f37fe8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>($addr, $ctx=NULL, $wait=60)</argsstring>
+        <name>__construct</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <param>
+          <declname>$ctx</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$wait</declname>
+          <defval>60</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate object <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="345" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="345" bodyend="350"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RFC6455 WebSocket server. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli/ws.php" bodystart="26" bodyend="352"/>
+    <listofallmembers>
+      <member refid="class_c_l_i_1_1_w_s_1a80e1c53e5ae106ed41bc69db8cdcdf78" prot="protected" virt="non-virtual"><scope>CLI::WS</scope><name>$addr</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1af8624bfcd6ccf58a6906baf72ec078df" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>$agents</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1aa0f7bf6b5a60518284ef88fa33e264f2" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>$ctx</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a1bcec9bbd34255927faaf155bf3a940a" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>$events</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a4faf536a5ff25a28adb9891716556dc6" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>$sockets</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a165566db3c2de8a5e20d0957ed606e46" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>$wait</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a19dbb10de3a82395f1c941e3f37fe8c7" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>__construct</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a5c3b4aef24eacefe766d9e34fd5791de" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>agents</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a201f40e4b8683b5e569b4c1e8add9fcd" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>alloc</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a03a9c4aa0f0905b7512a268997cbe41f" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Binary</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1aa3a3bd26af1b767091f521a6c9041e56" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>close</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a12592aa7eb9f1570fc962867a7fcc904" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Close</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1ade509b07f1df45730d31589b81a26efb" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>events</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1afa14d696444a689a5be47c64ce568983" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Finale</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a6b8891e0c2b12c863512071111b9aa07" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>free</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a2e5652a68528b58bda9e63311cd473bd" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>kill</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a62a38e46cf476443cf933907fe86e684" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Length</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a0f8417d2e128a6f19f2b5e0a0a883de0" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Magic</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a65a51fe8cfc1c6b4d04178b209b50e23" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>on</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1af8603b6923a1a089b57cb849bc062148" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>OpCode</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1adbc81c45b48c6cdfffe9fc4752007493" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Packet</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1ad953baab1d22f9595927e18f6ac8ec16" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Ping</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a969c5d07e26af01d3523ec69379a4df5" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Pong</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1a845d775219b4327eb7cb626ffb1c2af3" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>read</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1afb0fafe7e02a3ae1993c01c19fad2bae" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>run</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1aa9141b93fff959a11eb401b7100b7a90" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>Text</name></member>
+      <member refid="class_c_l_i_1_1_w_s_1ac95ce2fb30c44bae1927b0107756f7e3" prot="public" virt="non-virtual"><scope>CLI::WS</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_web_1_1_google_1_1_static_map" kind="class" language="PHP" prot="public">
+    <compoundname>Web::Google::StaticMap</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_web_1_1_google_1_1_static_map_1a132a64893723969cf7aef4818415a546" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const URL_Static</definition>
+        <argsstring></argsstring>
+        <name>URL_Static</name>
+        <initializer>=&apos;http://maps.googleapis.com/maps/api/staticmap&apos;</initializer>
+        <briefdescription>
+<para>API URL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_web_1_1_google_1_1_static_map_1af59a5f7cd609e592c41dc3643efd3c98" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>=array()</initializer>
+        <briefdescription>
+<para>Query arguments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="34" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_1_1_google_1_1_static_map_1a975d2c46a134129eb727fadcadf48adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__call</definition>
+        <argsstring>($func, array $args)</argsstring>
+        <name>__call</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify API key-value pair via magic call <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="42" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_1_1_google_1_1_static_map_1a5bf63e4ac70cfd9d97e3f2eab936ec8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate map <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="51" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" bodystart="51" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_web_1_1_google" kindref="compound">Google</ref> Static Maps API v2 plug-in. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" bodystart="26" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_web_1_1_google_1_1_static_map_1af59a5f7cd609e592c41dc3643efd3c98" prot="protected" virt="non-virtual"><scope>Web::Google::StaticMap</scope><name>$query</name></member>
+      <member refid="class_web_1_1_google_1_1_static_map_1a975d2c46a134129eb727fadcadf48adf" prot="public" virt="non-virtual"><scope>Web::Google::StaticMap</scope><name>__call</name></member>
+      <member refid="class_web_1_1_google_1_1_static_map_1a5bf63e4ac70cfd9d97e3f2eab936ec8b" prot="public" virt="non-virtual"><scope>Web::Google::StaticMap</scope><name>dump</name></member>
+      <member refid="class_web_1_1_google_1_1_static_map_1a132a64893723969cf7aef4818415a546" prot="public" virt="non-virtual"><scope>Web::Google::StaticMap</scope><name>URL_Static</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

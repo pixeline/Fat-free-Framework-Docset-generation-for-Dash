@@ -1,0 +1,146 @@
+.TH "Bcrypt" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Bcrypt \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBPrefab\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhash\fP ($pw, $salt=NULL, $cost=self::COST)"
+.br
+.ti -1c
+.RI "\fBneeds_rehash\fP ($\fBhash\fP, $cost=self::COST)"
+.br
+.ti -1c
+.RI "\fBverify\fP ($pw, $\fBhash\fP)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "const \fBCOST\fP =10"
+.br
+.RI "Default cost\&. "
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBE_CostArg\fP ='Invalid cost parameter'"
+.br
+.ti -1c
+.RI "const \fBE_SaltArg\fP ='Salt must be at least 22 alphanumeric characters'"
+.br
+.in -1c
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Lightweight password hashing library
+.PP
+Copyright (c) 2009-2016 F3::Factory/Bong Cosca, All rights reserved\&.
+.PP
+This file is part of the Fat-Free Framework (http://fatfreeframework.com)\&.
+.PP
+This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or later\&.
+.PP
+Fat-Free Framework is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&. See the GNU General Public License for more details\&.
+.PP
+You should have received a copy of the GNU General Public License along with Fat-Free Framework\&. If not, see http://www.gnu.org/licenses/\&.
+.PP
+\fBDeprecated\fP
+.RS 4
+use http://php.net/manual/en/ref.password.php instead (PHP 5\&.5+ only) 
+.RE
+.PP
+
+.PP
+Definition at line 25 of file bcrypt\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "hash ( $pw,  $salt = \fCNULL\fP,  $cost = \fCself::COST\fP)"
+Generate bcrypt hash of string 
+.PP
+\fBReturns:\fP
+.RS 4
+string|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$pw\fP string 
+.br
+\fI$salt\fP string 
+.br
+\fI$cost\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file bcrypt\&.php\&.
+.SS "needs_rehash ( $hash,  $cost = \fCself::COST\fP)"
+Check if password is still strong enough 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$hash\fP string 
+.br
+\fI$cost\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file bcrypt\&.php\&.
+.SS "verify ( $pw,  $hash)"
+Verify password against hash using timing attack resistant approach 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$pw\fP string 
+.br
+\fI$hash\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 86 of file bcrypt\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "const COST =10"
+
+.PP
+Default cost\&. 
+.PP
+Definition at line 35 of file bcrypt\&.php\&.
+.SS "const E_CostArg ='Invalid cost parameter'"
+
+.PP
+Definition at line 29 of file bcrypt\&.php\&.
+.SS "const E_SaltArg ='Salt must be at least 22 alphanumeric characters'"
+
+.PP
+Definition at line 30 of file bcrypt\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

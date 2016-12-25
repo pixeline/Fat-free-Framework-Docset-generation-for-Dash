@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_audit" kind="class" language="PHP" prot="public">
+    <compoundname>Audit</compoundname>
+    <basecompoundref refid="class_prefab" prot="public" virt="non-virtual">Prefab</basecompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_audit_1a0a52494b8ebe7bc548e0ff67a81f717c" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const UA_Mobile</definition>
+        <argsstring></argsstring>
+        <name>UA_Mobile</name>
+        <initializer>=&apos;android|blackberry|phone|ipod|palm|windows\s+ce&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="28" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_audit_1af48a17a5642de795ab0da730d87c6109" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const UA_Desktop</definition>
+        <argsstring></argsstring>
+        <name>UA_Desktop</name>
+        <initializer>=&apos;bsd|linux|os\s+[x9]|solaris|windows&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="29" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_audit_1a6c072917477cd06e254dda1a977406e6" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const UA_Bot</definition>
+        <argsstring></argsstring>
+        <name>UA_Bot</name>
+        <initializer>=&apos;bot|crawl|slurp|spider&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_audit_1aef8b9a57041dec7db0ff956bba1d8b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>url</definition>
+        <argsstring>($str)</argsstring>
+        <name>url</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if string is a valid URL <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="38" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a369b2fd023996c185845f4993d03f530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>email</definition>
+        <argsstring>($str, $mx=TRUE)</argsstring>
+        <name>email</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <param>
+          <declname>$mx</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if string is a valid e-mail address; Check DNS MX records if specified <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$mx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="49" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a2c914582b13324bf624b1cd1763f258e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ipv4</definition>
+        <argsstring>($addr)</argsstring>
+        <name>ipv4</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if string is a valid IPV4 address <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="60" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a74a69adbf8a934eee039f323c864a508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ipv6</definition>
+        <argsstring>($addr)</argsstring>
+        <name>ipv6</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if string is a valid IPV6 address <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="69" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a9bb5536f5e8cfe33672340a407daa387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isprivate</definition>
+        <argsstring>($addr)</argsstring>
+        <name>isprivate</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if IP address is within private range <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="78" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a352a97e07f1d2ebb7dcc009da6c67825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isreserved</definition>
+        <argsstring>($addr)</argsstring>
+        <name>isreserved</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if IP address is within reserved range <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="88" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a421f0166ffee8171ee3948970abcecad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ispublic</definition>
+        <argsstring>($addr)</argsstring>
+        <name>ispublic</name>
+        <param>
+          <declname>$addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if IP address is neither private nor reserved <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="98" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1ac6c1cda9920c8236cd00d10bffb2890f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isdesktop</definition>
+        <argsstring>($agent=NULL)</argsstring>
+        <name>isdesktop</name>
+        <param>
+          <declname>$agent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if user agent is a desktop browser <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$agent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="109" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1afbca2bf25d7295857c0e7b161ab21beb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ismobile</definition>
+        <argsstring>($agent=NULL)</argsstring>
+        <name>ismobile</name>
+        <param>
+          <declname>$agent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if user agent is a mobile device <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$agent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="121" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a7d73389ff426668e83b171fd662018ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>isbot</definition>
+        <argsstring>($agent=NULL)</argsstring>
+        <name>isbot</name>
+        <param>
+          <declname>$agent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if user agent is a <ref refid="class_web" kindref="compound">Web</ref> bot <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$agent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="132" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a80595e89a7b191abab586fcd73e54c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mod10</definition>
+        <argsstring>($id)</argsstring>
+        <name>mod10</name>
+        <param>
+          <declname>$id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if specified ID has a valid (Luhn) Mod-10 check digit <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="143" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1a631df11fda2fb8e663e24f804c978367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>card</definition>
+        <argsstring>($id)</argsstring>
+        <name>card</name>
+        <param>
+          <declname>$id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return credit card type if number is valid <simplesect kind="return"><para>string|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="158" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="158" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audit_1ac1c0abeb7a7ac6bf923e6e0abdfe336e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>entropy</definition>
+        <argsstring>($str)</argsstring>
+        <name>entropy</name>
+        <param>
+          <declname>$str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return entropy estimate of a password (NIST 800-63) <simplesect kind="return"><para>int|float </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="183" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="183" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data validator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+      <node id="2">
+        <label>Audit</label>
+        <link refid="class_audit"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Prefab</label>
+        <link refid="class_prefab"/>
+      </node>
+      <node id="4">
+        <label>Audit</label>
+        <link refid="class_audit"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" line="24" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/audit.php" bodystart="24" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_audit_1a631df11fda2fb8e663e24f804c978367" prot="public" virt="non-virtual"><scope>Audit</scope><name>card</name></member>
+      <member refid="class_audit_1a369b2fd023996c185845f4993d03f530" prot="public" virt="non-virtual"><scope>Audit</scope><name>email</name></member>
+      <member refid="class_audit_1ac1c0abeb7a7ac6bf923e6e0abdfe336e" prot="public" virt="non-virtual"><scope>Audit</scope><name>entropy</name></member>
+      <member refid="class_prefab_1a0deb004950b8dc4f51836316fd19c111" prot="public" virt="non-virtual"><scope>Audit</scope><name>instance</name></member>
+      <member refid="class_audit_1a2c914582b13324bf624b1cd1763f258e" prot="public" virt="non-virtual"><scope>Audit</scope><name>ipv4</name></member>
+      <member refid="class_audit_1a74a69adbf8a934eee039f323c864a508" prot="public" virt="non-virtual"><scope>Audit</scope><name>ipv6</name></member>
+      <member refid="class_audit_1a7d73389ff426668e83b171fd662018ad" prot="public" virt="non-virtual"><scope>Audit</scope><name>isbot</name></member>
+      <member refid="class_audit_1ac6c1cda9920c8236cd00d10bffb2890f" prot="public" virt="non-virtual"><scope>Audit</scope><name>isdesktop</name></member>
+      <member refid="class_audit_1afbca2bf25d7295857c0e7b161ab21beb" prot="public" virt="non-virtual"><scope>Audit</scope><name>ismobile</name></member>
+      <member refid="class_audit_1a9bb5536f5e8cfe33672340a407daa387" prot="public" virt="non-virtual"><scope>Audit</scope><name>isprivate</name></member>
+      <member refid="class_audit_1a421f0166ffee8171ee3948970abcecad" prot="public" virt="non-virtual"><scope>Audit</scope><name>ispublic</name></member>
+      <member refid="class_audit_1a352a97e07f1d2ebb7dcc009da6c67825" prot="public" virt="non-virtual"><scope>Audit</scope><name>isreserved</name></member>
+      <member refid="class_audit_1a80595e89a7b191abab586fcd73e54c6a" prot="public" virt="non-virtual"><scope>Audit</scope><name>mod10</name></member>
+      <member refid="class_audit_1a6c072917477cd06e254dda1a977406e6" prot="public" virt="non-virtual"><scope>Audit</scope><name>UA_Bot</name></member>
+      <member refid="class_audit_1af48a17a5642de795ab0da730d87c6109" prot="public" virt="non-virtual"><scope>Audit</scope><name>UA_Desktop</name></member>
+      <member refid="class_audit_1a0a52494b8ebe7bc548e0ff67a81f717c" prot="public" virt="non-virtual"><scope>Audit</scope><name>UA_Mobile</name></member>
+      <member refid="class_audit_1aef8b9a57041dec7db0ff956bba1d8b3f" prot="public" virt="non-virtual"><scope>Audit</scope><name>url</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

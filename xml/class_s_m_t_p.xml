@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_s_m_t_p" kind="class" language="PHP" prot="public">
+    <compoundname>SMTP</compoundname>
+    <basecompoundref refid="class_magic" prot="public" virt="non-virtual">Magic</basecompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_s_m_t_p_1a3ea1a09993798da7eba3b05e89fca4c2" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Header</definition>
+        <argsstring></argsstring>
+        <name>E_Header</name>
+        <initializer>=&apos;%s: header is required&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="28" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1ae837eb485f6bf62b8bbe8e9007c04cb2" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Blank</definition>
+        <argsstring></argsstring>
+        <name>E_Blank</name>
+        <initializer>=&apos;Message must not be blank&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="29" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1aedc0129d8cb1011801aee1950c279caf" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Attach</definition>
+        <argsstring></argsstring>
+        <name>E_Attach</name>
+        <initializer>=&apos;Attachment %s not found&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_m_t_p_1aa2f80297e973639eba0f2f8619fe783b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$attachments</definition>
+        <argsstring></argsstring>
+        <name>$attachments</name>
+        <briefdescription>
+<para>E-mail attachments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="37" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a711797613cb863ca0756df789c396bf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$host</definition>
+        <argsstring></argsstring>
+        <name>$host</name>
+        <briefdescription>
+<para><ref refid="class_s_m_t_p" kindref="compound">SMTP</ref> host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="39" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1aa0787efab4b22e8a212882f3409d4c77" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$port</definition>
+        <argsstring></argsstring>
+        <name>$port</name>
+        <briefdescription>
+<para><ref refid="class_s_m_t_p" kindref="compound">SMTP</ref> port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="41" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a1665950e3e3b63a02fc5a48706ac81c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$scheme</definition>
+        <argsstring></argsstring>
+        <name>$scheme</name>
+        <briefdescription>
+<para>TLS/SSL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="43" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a598ca4e71b15a1313ec95f0df1027ca5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+<para>User ID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="45" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a4a84bb9d73addd9e90f2f34c36035df4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$pw</definition>
+        <argsstring></argsstring>
+        <name>$pw</name>
+        <briefdescription>
+<para>Password. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="47" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a33a9dcf5eaeebf833f2390060f8caf5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$socket</definition>
+        <argsstring></argsstring>
+        <name>$socket</name>
+        <briefdescription>
+<para>TCP/IP socket. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="49" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m_t_p_1a9a2cf15a653aee8be437f7ae474cd494" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$log</definition>
+        <argsstring></argsstring>
+        <name>$log</name>
+        <briefdescription>
+<para>Server-client conversation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="51" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_m_t_p_1a52500036ee807241b8b4b7e2367c49ef" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$headers</definition>
+        <argsstring></argsstring>
+        <name>$headers</name>
+        <briefdescription>
+<para>Message properties. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="35" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_m_t_p_1afee77a9b8498c6a0875b75ae7313e545" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fixheader</definition>
+        <argsstring>($key)</argsstring>
+        <name>fixheader</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fix header <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="58" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1ab57e2499b18f17f0cf67e12d546ad225" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dialog</definition>
+        <argsstring>($cmd=NULL, $log=TRUE, $mock=FALSE)</argsstring>
+        <name>dialog</name>
+        <param>
+          <declname>$cmd</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$log</declname>
+          <defval>TRUE</defval>
+        </param>
+        <param>
+          <declname>$mock</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send <ref refid="class_s_m_t_p" kindref="compound">SMTP</ref> command and record server response <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$mock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="123" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="123" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_m_t_p_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>exists</definition>
+        <argsstring>($key)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if header exists <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="68" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1ac8d8012023e560c81f55a629022cb65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind value to e-mail header <simplesect kind="return"><para>string </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="79" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1ac3695923790b06917410e205068b8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; get</definition>
+        <argsstring>($key)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return value of e-mail header <simplesect kind="return"><para>string|NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="89" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1a10a949ef75de6c82c98ac555f371ba83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring>($key)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove header <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="103" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1a5e06d9b7f0033278f40a41d081efbe71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>log</definition>
+        <argsstring>()</argsstring>
+        <name>log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return client-server conversation history <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="112" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1acddb7c5e0234289640206f7ee89c14e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>attach</definition>
+        <argsstring>($file, $alias=NULL, $cid=NULL)</argsstring>
+        <name>attach</name>
+        <param>
+          <declname>$file</declname>
+        </param>
+        <param>
+          <declname>$alias</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$cid</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add e-mail attachment <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$cid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="168" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="168" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1acf11a2bd1ca8c23866ccadfbe1e0954d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send</definition>
+        <argsstring>($message, $log=TRUE, $mock=FALSE)</argsstring>
+        <name>send</name>
+        <param>
+          <declname>$message</declname>
+        </param>
+        <param>
+          <declname>$log</declname>
+          <defval>TRUE</defval>
+        </param>
+        <param>
+          <declname>$mock</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmit message <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$mock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="183" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="183" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m_t_p_1ad7de317dd2066f6724c0a560b6791543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>( $host=&apos;localhost&apos;, $port=25, $scheme=NULL, $user=NULL, $pw=NULL)</argsstring>
+        <name>__construct</name>
+        <param>
+          <declname>$host</declname>
+          <defval>&apos;localhost&apos;</defval>
+        </param>
+        <param>
+          <declname>$port</declname>
+          <defval>25</defval>
+        </param>
+        <param>
+          <declname>$scheme</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$user</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$pw</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$scheme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$pw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="338" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="338" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_s_m_t_p" kindref="compound">SMTP</ref> plug-in. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="189">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="187">
+        <label>SMTP</label>
+        <link refid="class_s_m_t_p"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="192">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="190">
+        <label>SMTP</label>
+        <link refid="class_s_m_t_p"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" line="24" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/smtp.php" bodystart="24" bodyend="353"/>
+    <listofallmembers>
+      <member refid="class_s_m_t_p_1aa2f80297e973639eba0f2f8619fe783b" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$attachments</name></member>
+      <member refid="class_s_m_t_p_1a52500036ee807241b8b4b7e2367c49ef" prot="protected" virt="non-virtual"><scope>SMTP</scope><name>$headers</name></member>
+      <member refid="class_s_m_t_p_1a711797613cb863ca0756df789c396bf2" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$host</name></member>
+      <member refid="class_s_m_t_p_1a9a2cf15a653aee8be437f7ae474cd494" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$log</name></member>
+      <member refid="class_s_m_t_p_1aa0787efab4b22e8a212882f3409d4c77" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$port</name></member>
+      <member refid="class_s_m_t_p_1a4a84bb9d73addd9e90f2f34c36035df4" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$pw</name></member>
+      <member refid="class_s_m_t_p_1a1665950e3e3b63a02fc5a48706ac81c4" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$scheme</name></member>
+      <member refid="class_s_m_t_p_1a33a9dcf5eaeebf833f2390060f8caf5e" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$socket</name></member>
+      <member refid="class_s_m_t_p_1a598ca4e71b15a1313ec95f0df1027ca5" prot="public" virt="non-virtual"><scope>SMTP</scope><name>$user</name></member>
+      <member refid="class_s_m_t_p_1ad7de317dd2066f6724c0a560b6791543" prot="public" virt="non-virtual"><scope>SMTP</scope><name>__construct</name></member>
+      <member refid="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>SMTP</scope><name>__get</name></member>
+      <member refid="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>SMTP</scope><name>__isset</name></member>
+      <member refid="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>SMTP</scope><name>__set</name></member>
+      <member refid="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>SMTP</scope><name>__unset</name></member>
+      <member refid="class_s_m_t_p_1acddb7c5e0234289640206f7ee89c14e5" prot="public" virt="non-virtual"><scope>SMTP</scope><name>attach</name></member>
+      <member refid="class_s_m_t_p_1a10a949ef75de6c82c98ac555f371ba83" prot="public" virt="non-virtual"><scope>SMTP</scope><name>clear</name></member>
+      <member refid="class_s_m_t_p_1ab57e2499b18f17f0cf67e12d546ad225" prot="protected" virt="non-virtual"><scope>SMTP</scope><name>dialog</name></member>
+      <member refid="class_s_m_t_p_1aedc0129d8cb1011801aee1950c279caf" prot="public" virt="non-virtual"><scope>SMTP</scope><name>E_Attach</name></member>
+      <member refid="class_s_m_t_p_1ae837eb485f6bf62b8bbe8e9007c04cb2" prot="public" virt="non-virtual"><scope>SMTP</scope><name>E_Blank</name></member>
+      <member refid="class_s_m_t_p_1a3ea1a09993798da7eba3b05e89fca4c2" prot="public" virt="non-virtual"><scope>SMTP</scope><name>E_Header</name></member>
+      <member refid="class_s_m_t_p_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" virt="non-virtual"><scope>SMTP</scope><name>exists</name></member>
+      <member refid="class_s_m_t_p_1afee77a9b8498c6a0875b75ae7313e545" prot="protected" virt="non-virtual"><scope>SMTP</scope><name>fixheader</name></member>
+      <member refid="class_s_m_t_p_1ac3695923790b06917410e205068b8376" prot="public" virt="non-virtual"><scope>SMTP</scope><name>get</name></member>
+      <member refid="class_s_m_t_p_1a5e06d9b7f0033278f40a41d081efbe71" prot="public" virt="non-virtual"><scope>SMTP</scope><name>log</name></member>
+      <member refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>SMTP</scope><name>offsetexists</name></member>
+      <member refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>SMTP</scope><name>offsetget</name></member>
+      <member refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>SMTP</scope><name>offsetset</name></member>
+      <member refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>SMTP</scope><name>offsetunset</name></member>
+      <member refid="class_s_m_t_p_1acf11a2bd1ca8c23866ccadfbe1e0954d" prot="public" virt="non-virtual"><scope>SMTP</scope><name>send</name></member>
+      <member refid="class_s_m_t_p_1ac8d8012023e560c81f55a629022cb65a" prot="public" virt="non-virtual"><scope>SMTP</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_magic" kind="class" language="PHP" prot="public">
+    <compoundname>Magic</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ArrayAccess</basecompoundref>
+    <derivedcompoundref refid="class_basket" prot="public" virt="non-virtual">Basket</derivedcompoundref>
+    <derivedcompoundref refid="class_d_b_1_1_cursor" prot="public" virt="non-virtual">Cursor</derivedcompoundref>
+    <derivedcompoundref refid="class_s_m_t_p" prot="public" virt="non-virtual">SMTP</derivedcompoundref>
+    <derivedcompoundref refid="class_web_1_1_o_auth2" prot="public" virt="non-virtual">OAuth2</derivedcompoundref>
+    <derivedcompoundref refid="class_web_1_1_open_i_d" prot="public" virt="non-virtual">OpenID</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>exists</definition>
+        <argsstring>($key)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if key is not empty <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1ac8d8012023e560c81f55a629022cb65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind value to key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mixed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1ac3695923790b06917410e205068b8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; get</definition>
+        <argsstring>($key)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve contents of key <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a10a949ef75de6c82c98ac555f371ba83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring>($key)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unset key <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetexists</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetexists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for checking property value <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="60" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetset</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>offsetset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for assigning property value <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="71" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; offsetget</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetget</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for retrieving property value <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="81" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>offsetunset</definition>
+        <argsstring>($key)</argsstring>
+        <name>offsetunset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method for removing property value <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="94" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__isset</definition>
+        <argsstring>($key)</argsstring>
+        <name>__isset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" kindref="member">offsetexists()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="106" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__set</definition>
+        <argsstring>($key, $val)</argsstring>
+        <name>__set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" kindref="member">offsetset()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="116" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&amp;</type>
+        <definition>&amp; __get</definition>
+        <argsstring>($key)</argsstring>
+        <name>__get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" kindref="member">offsetget()</ref> <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="125" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__unset</definition>
+        <argsstring>($key)</argsstring>
+        <name>__unset</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alias for <ref refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" kindref="member">offsetunset()</ref> <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="135" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="135" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PHP magic wrapper. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="55">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="57">
+        <label>Cursor</label>
+        <link refid="class_d_b_1_1_cursor"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Mapper</label>
+        <link refid="class_d_b_1_1_jig_1_1_mapper"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>OpenID</label>
+        <link refid="class_web_1_1_open_i_d"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>OAuth2</label>
+        <link refid="class_web_1_1_o_auth2"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Basket</label>
+        <link refid="class_basket"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>SMTP</label>
+        <link refid="class_s_m_t_p"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Session</label>
+        <link refid="class_d_b_1_1_jig_1_1_session"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="64">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="63">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" line="24" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/magic.php" bodystart="24" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>Magic</scope><name>__get</name></member>
+      <member refid="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>Magic</scope><name>__isset</name></member>
+      <member refid="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>Magic</scope><name>__set</name></member>
+      <member refid="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>Magic</scope><name>__unset</name></member>
+      <member refid="class_magic_1a10a949ef75de6c82c98ac555f371ba83" prot="public" virt="non-virtual"><scope>Magic</scope><name>clear</name></member>
+      <member refid="class_magic_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" virt="non-virtual"><scope>Magic</scope><name>exists</name></member>
+      <member refid="class_magic_1ac3695923790b06917410e205068b8376" prot="public" virt="non-virtual"><scope>Magic</scope><name>get</name></member>
+      <member refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>Magic</scope><name>offsetexists</name></member>
+      <member refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>Magic</scope><name>offsetget</name></member>
+      <member refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>Magic</scope><name>offsetset</name></member>
+      <member refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>Magic</scope><name>offsetunset</name></member>
+      <member refid="class_magic_1ac8d8012023e560c81f55a629022cb65a" prot="public" virt="non-virtual"><scope>Magic</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

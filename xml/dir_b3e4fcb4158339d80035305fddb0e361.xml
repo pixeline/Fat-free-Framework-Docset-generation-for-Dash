@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_b3e4fcb4158339d80035305fddb0e361" kind="dir">
+    <compoundname>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib</compoundname>
+    <innerdir refid="dir_b6e03d39b49e7ec301ebb2f7811f7b20">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli</innerdir>
+    <innerdir refid="dir_1bd6479e4c4da27152541d31610633af">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db</innerdir>
+    <innerdir refid="dir_43795de25acbeea48100b0ecd0360360">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web</innerdir>
+    <innerfile refid="audit_8php">audit.php</innerfile>
+    <innerfile refid="auth_8php">auth.php</innerfile>
+    <innerfile refid="base_8php">base.php</innerfile>
+    <innerfile refid="basket_8php">basket.php</innerfile>
+    <innerfile refid="bcrypt_8php">bcrypt.php</innerfile>
+    <innerfile refid="f3_8php">f3.php</innerfile>
+    <innerfile refid="image_8php">image.php</innerfile>
+    <innerfile refid="log_8php">log.php</innerfile>
+    <innerfile refid="magic_8php">magic.php</innerfile>
+    <innerfile refid="markdown_8php">markdown.php</innerfile>
+    <innerfile refid="matrix_8php">matrix.php</innerfile>
+    <innerfile refid="session_8php">session.php</innerfile>
+    <innerfile refid="smtp_8php">smtp.php</innerfile>
+    <innerfile refid="template_8php">template.php</innerfile>
+    <innerfile refid="test_8php">test.php</innerfile>
+    <innerfile refid="utf_8php">utf.php</innerfile>
+    <innerfile refid="web_8php">web.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/"/>
+  </compounddef>
+</doxygen>

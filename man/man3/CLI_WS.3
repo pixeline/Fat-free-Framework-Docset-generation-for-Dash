@@ -1,0 +1,377 @@
+.TH "WS" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WS \- RFC6455 WebSocket server\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBalloc\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBclose\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBfree\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBread\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBwrite\fP ($socket, $str)"
+.br
+.ti -1c
+.RI "\fBagents\fP ($uri=NULL)"
+.br
+.ti -1c
+.RI "\fBevents\fP ()"
+.br
+.ti -1c
+.RI "\fBon\fP ($event, $func)"
+.br
+.ti -1c
+.RI "\fBkill\fP ($signal)"
+.br
+.ti -1c
+.RI "\fBrun\fP ()"
+.br
+.ti -1c
+.RI "\fB__construct\fP ($addr, $ctx=NULL, $wait=60)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "const \fBMagic\fP ='258EAFA5\-E914\-47DA\-95CA\-C5AB0DC85B11'"
+.br
+.RI "UUID magic string\&. "
+.ti -1c
+.RI "const \fBPacket\fP =65536"
+.br
+.RI "Max packet size\&. "
+.ti -1c
+.RI "\fB$ctx\fP"
+.br
+.ti -1c
+.RI "\fB$wait\fP"
+.br
+.ti -1c
+.RI "\fB$sockets\fP"
+.br
+.ti -1c
+.RI "\fB$agents\fP =[]"
+.br
+.ti -1c
+.RI "\fB$events\fP =[]"
+.br
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBText\fP =0x01"
+.br
+.ti -1c
+.RI "const \fBBinary\fP =0x02"
+.br
+.ti -1c
+.RI "const \fBClose\fP =0x08"
+.br
+.ti -1c
+.RI "const \fBPing\fP =0x09"
+.br
+.ti -1c
+.RI "const \fBPong\fP =0x0a"
+.br
+.ti -1c
+.RI "const \fBOpCode\fP =0x0f"
+.br
+.ti -1c
+.RI "const \fBFinale\fP =0x80"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBLength\fP =0x7f"
+.br
+.in -1c
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$addr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+RFC6455 WebSocket server\&. 
+.PP
+Definition at line 26 of file ws\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ( $addr,  $ctx = \fCNULL\fP,  $wait = \fC60\fP)"
+Instantiate object 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$addr\fP string 
+.br
+\fI$ctx\fP resource 
+.br
+\fI$wait\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 345 of file ws\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "agents ( $uri = \fCNULL\fP)"
+Return socket agents 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$uri\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 193 of file ws\&.php\&.
+.SS "alloc ( $socket)"
+Allocate stream socket 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$socket\fP resource 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file ws\&.php\&.
+.SS "close ( $socket)"
+Close stream socket 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$socket\fP resource 
+.RE
+.PP
+
+.PP
+Definition at line 137 of file ws\&.php\&.
+.SS "events ()"
+Return event handlers 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file ws\&.php\&.
+.SS "free ( $socket)"
+Free stream socket 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$socket\fP resource 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file ws\&.php\&.
+.SS "kill ( $signal)"
+Terminate server 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$signal\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 226 of file ws\&.php\&.
+.SS "on ( $event,  $func)"
+Bind function to event handler 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$event\fP string 
+.br
+\fI$func\fP callable 
+.RE
+.PP
+
+.PP
+Definition at line 216 of file ws\&.php\&.
+.SS "read ( $socket)"
+Read from stream socket 
+.PP
+\fBReturns:\fP
+.RS 4
+string|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$socket\fP resource 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file ws\&.php\&.
+.SS "run ()"
+Execute the server process 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 234 of file ws\&.php\&.
+.SS "write ( $socket,  $str)"
+Write to stream socket 
+.PP
+\fBReturns:\fP
+.RS 4
+int|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$socket\fP resource 
+.br
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 175 of file ws\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$addr\fC [protected]\fP"
+
+.PP
+Definition at line 51 of file ws\&.php\&.
+.SS "$\fBagents\fP =[]"
+
+.PP
+Definition at line 55 of file ws\&.php\&.
+.SS "$ctx"
+
+.PP
+Definition at line 51 of file ws\&.php\&.
+.SS "$\fBevents\fP =[]"
+
+.PP
+Definition at line 56 of file ws\&.php\&.
+.SS "$sockets"
+
+.PP
+Definition at line 51 of file ws\&.php\&.
+.SS "$wait"
+
+.PP
+Definition at line 51 of file ws\&.php\&.
+.SS "const Binary =0x02"
+
+.PP
+Definition at line 37 of file ws\&.php\&.
+.SS "const Close =0x08"
+
+.PP
+Definition at line 38 of file ws\&.php\&.
+.SS "const Finale =0x80"
+
+.PP
+Definition at line 42 of file ws\&.php\&.
+.SS "const Length =0x7f"
+
+.PP
+Definition at line 47 of file ws\&.php\&.
+.SS "const \fBMagic\fP ='258EAFA5\-E914\-47DA\-95CA\-C5AB0DC85B11'"
+
+.PP
+UUID magic string\&. 
+.PP
+Definition at line 30 of file ws\&.php\&.
+.SS "const OpCode =0x0f"
+
+.PP
+Definition at line 41 of file ws\&.php\&.
+.SS "const Packet =65536"
+
+.PP
+Max packet size\&. 
+.PP
+Definition at line 32 of file ws\&.php\&.
+.SS "const Ping =0x09"
+
+.PP
+Definition at line 39 of file ws\&.php\&.
+.SS "const Pong =0x0a"
+
+.PP
+Definition at line 40 of file ws\&.php\&.
+.SS "const Text =0x01"
+
+.PP
+Definition at line 36 of file ws\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

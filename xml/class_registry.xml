@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_registry" kind="class" language="PHP" prot="public">
+    <compoundname>Registry</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_registry_1ae8876a14058f368335baccf35af4a22b" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>$table</definition>
+        <argsstring></argsstring>
+        <name>$table</name>
+        <briefdescription>
+<para>Object catalog. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3216" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_registry_1a1a924eadddd0dc6fd3f6604a2352d950" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static exists</definition>
+        <argsstring>($key)</argsstring>
+        <name>exists</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if object exists in catalog <simplesect kind="return"><para>bool </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3223" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3223" bodyend="3225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registry_1a8e135dfaf92afaa049c3f0bfe3437820" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static set</definition>
+        <argsstring>($key, $obj)</argsstring>
+        <name>set</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <param>
+          <declname>$obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add object to catalog <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3233" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3233" bodyend="3235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registry_1a15e2679f2a8f6fa4d60757f4d65413ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static get</definition>
+        <argsstring>($key)</argsstring>
+        <name>get</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve object from catalog <simplesect kind="return"><para>object </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3242" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3242" bodyend="3244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registry_1acc8237f9189f8ad2a9d854895561dbc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static clear</definition>
+        <argsstring>($key)</argsstring>
+        <name>clear</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete object from catalog <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3251" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3251" bodyend="3254"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_registry_1ad0cb87b388bc74d63dc884accdca8713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__clone</definition>
+        <argsstring>()</argsstring>
+        <name>__clone</name>
+        <briefdescription>
+<para>Prohibit cloning. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3257" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3257" bodyend="3258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_registry_1a095c5d389db211932136b53f25f39685" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+<para>Prohibit instantiation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3261" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3261" bodyend="3262"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container for singular object instances. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" line="3212" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/base.php" bodystart="3212" bodyend="3264"/>
+    <listofallmembers>
+      <member refid="class_registry_1ae8876a14058f368335baccf35af4a22b" prot="private" virt="non-virtual"><scope>Registry</scope><name>$table</name></member>
+      <member refid="class_registry_1ad0cb87b388bc74d63dc884accdca8713" prot="private" virt="non-virtual"><scope>Registry</scope><name>__clone</name></member>
+      <member refid="class_registry_1a095c5d389db211932136b53f25f39685" prot="private" virt="non-virtual"><scope>Registry</scope><name>__construct</name></member>
+      <member refid="class_registry_1acc8237f9189f8ad2a9d854895561dbc2" prot="public" virt="non-virtual"><scope>Registry</scope><name>clear</name></member>
+      <member refid="class_registry_1a1a924eadddd0dc6fd3f6604a2352d950" prot="public" virt="non-virtual"><scope>Registry</scope><name>exists</name></member>
+      <member refid="class_registry_1a15e2679f2a8f6fa4d60757f4d65413ac" prot="public" virt="non-virtual"><scope>Registry</scope><name>get</name></member>
+      <member refid="class_registry_1a8e135dfaf92afaa049c3f0bfe3437820" prot="public" virt="non-virtual"><scope>Registry</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

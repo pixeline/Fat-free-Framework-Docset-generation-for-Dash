@@ -1,0 +1,1096 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_d_b_1_1_cursor" kind="class" language="PHP" prot="public">
+    <compoundname>DB::Cursor</compoundname>
+    <basecompoundref refid="class_magic" prot="public" virt="non-virtual">Magic</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IteratorAggregate</basecompoundref>
+    <derivedcompoundref refid="class_d_b_1_1_jig_1_1_mapper" prot="public" virt="non-virtual">Mapper</derivedcompoundref>
+    <derivedcompoundref refid="class_d_b_1_1_mongo_1_1_mapper" prot="public" virt="non-virtual">Mapper</derivedcompoundref>
+    <derivedcompoundref refid="class_d_b_1_1_s_q_l_1_1_mapper" prot="public" virt="non-virtual">Mapper</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="class_d_b_1_1_cursor_1aa2e3f553fd1f1c2053bc084118c10396" prot="public" static="no" mutable="no">
+        <type>const</type>
+        <definition>const E_Field</definition>
+        <argsstring></argsstring>
+        <name>E_Field</name>
+        <initializer>=&apos;Undefined field %s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="30" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_b_1_1_cursor_1a18682bea3799d50bb3a0cc3d049dca07" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ptr</definition>
+        <argsstring></argsstring>
+        <name>$ptr</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+<para>Current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="37" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_b_1_1_cursor_1ae4c540bb943eedf48dbc7d06b2994a05" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$trigger</definition>
+        <argsstring></argsstring>
+        <name>$trigger</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+<para>Event listeners. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="39" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_d_b_1_1_cursor_1af59a5f7cd609e592c41dc3643efd3c98" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+<para>Query results. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="35" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a38948c2fb1711f49b72f123cbd91e611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dbtype</definition>
+        <argsstring>()</argsstring>
+        <name>dbtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return database type <simplesect kind="return"><para>string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a9dfc1601eaf8348bed6ba5622f725971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fields</definition>
+        <argsstring>()</argsstring>
+        <name>fields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return field names <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1aa33294a722f17e6e4946223bb73f13ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cast</definition>
+        <argsstring>($obj=NULL)</argsstring>
+        <name>cast</name>
+        <param>
+          <declname>$obj</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return fields of mapper object as an associative array <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a45e70f55799839fc0286bc94000924a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>find</definition>
+        <argsstring>($filter=NULL, array $options=NULL, $ttl=0)</argsstring>
+        <name>find</name>
+        <param>
+          <declname>$filter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$options</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return records (array of mapper objects) that match criteria <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1ab1f3a3bd85dca49dceaea57f2fe21abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>count</definition>
+        <argsstring>($filter=NULL, $ttl=0)</argsstring>
+        <name>count</name>
+        <param>
+          <declname>$filter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count records that match criteria <simplesect kind="return"><para>int </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a473241246338cfccc4709ba896749019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>insert</definition>
+        <argsstring>()</argsstring>
+        <name>insert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert new record <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a842e4774e3b3601a005b995c02f7e883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update current record <simplesect kind="return"><para>array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1adffe904ab38af888d9b033647ec6d935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>copyfrom</definition>
+        <argsstring>($var, $func=NULL)</argsstring>
+        <name>copyfrom</name>
+        <param>
+          <declname>$var</declname>
+        </param>
+        <param>
+          <declname>$func</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hydrate mapper object using hive array variable <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array|string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a4bcf54f913758fb093c35ea81fc29615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>copyto</definition>
+        <argsstring>($key)</argsstring>
+        <name>copyto</name>
+        <param>
+          <declname>$key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Populate hive array variable with mapper fields <simplesect kind="return"><para>NULL </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a7f835c25df4cb49d02328644722656da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getiterator</definition>
+        <argsstring>()</argsstring>
+        <name>getiterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get cursor&apos;s equivalent external iterator Causes a fatal error in PHP 5.3.5 if uncommented return ArrayIterator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1acc3a900450447c51540aaa9dec5959a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dry</definition>
+        <argsstring>()</argsstring>
+        <name>dry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return TRUE if current cursor position is not mapped to any record <simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="116" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1abf73a1aa82ad1233b41388c0a4711c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>findone</definition>
+        <argsstring>($filter=NULL, array $options=NULL, $ttl=0)</argsstring>
+        <name>findone</name>
+        <param>
+          <declname>$filter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$options</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return first record (mapper object) that matches criteria <simplesect kind="return"><para>static|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="127" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="127" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a51889c022407cdc6cc565afa5ffe2715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>paginate</definition>
+        <argsstring>( $pos=0, $size=10, $filter=NULL, array $options=NULL, $ttl=0)</argsstring>
+        <name>paginate</name>
+        <param>
+          <declname>$pos</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <declname>$size</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <declname>$filter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$options</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return array containing subset of records matching criteria, total number of records in superset, specified limit, number of subsets available, and actual subset position <simplesect kind="return"><para>array </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="146" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="146" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a4db66c122e6274a3d653eff639e8476f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>load</definition>
+        <argsstring>($filter=NULL, array $options=NULL, $ttl=0)</argsstring>
+        <name>load</name>
+        <param>
+          <declname>$filter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>array</type>
+          <declname>$options</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <declname>$ttl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map to first record that matches criteria <simplesect kind="return"><para>array|FALSE </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string|array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="173" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a3f07a4aa73e71d525744db933bc2aff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loaded</definition>
+        <argsstring>()</argsstring>
+        <name>loaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the count of records loaded <simplesect kind="return"><para>int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="183" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1ac73eef9ff76ea330c0dab36ca448b90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>first</definition>
+        <argsstring>()</argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map to first record in cursor <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="191" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1ac90cadb327363232bb2d83a4f8ebd613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>last</definition>
+        <argsstring>()</argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map to last record in cursor <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="199" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1aad399d205074eaeed711d5e0157b3c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>skip</definition>
+        <argsstring>($ofs=1)</argsstring>
+        <name>skip</name>
+        <param>
+          <declname>$ofs</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map to nth record relative to current cursor position <simplesect kind="return"><para>mixed </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$ofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="208" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1acea62048bfee7b3cd80ed446c86fb78a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map next record <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="218" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a190535b88008d474b610585a5d9eb84c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>prev</definition>
+        <argsstring>()</argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map previous record <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="226" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1abb9f0d6adf1eb9b3b55712056861a247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>valid</definition>
+        <argsstring>()</argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether current iterator position is valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="233" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1afc8a3c62679cf00ade9f15fb2a6d6132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save mapped record <simplesect kind="return"><para>mixed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="241" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a933f3fa1037c8b797bdd237d811edf82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>erase</definition>
+        <argsstring>()</argsstring>
+        <name>erase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete current record <simplesect kind="return"><para>int|bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="249" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a7615e052068ed5e2c78a87f9b562f98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>onload</definition>
+        <argsstring>($func)</argsstring>
+        <name>onload</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define onload trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="260" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1ae34d64fef3b7e4de2eede65ca67751d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>beforeinsert</definition>
+        <argsstring>($func)</argsstring>
+        <name>beforeinsert</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define beforeinsert trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="269" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a192a31bc101b9aafb4e1300883d33dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>afterinsert</definition>
+        <argsstring>($func)</argsstring>
+        <name>afterinsert</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define afterinsert trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="278" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1ab3ebd70359a4d0916e07bc3523099fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>oninsert</definition>
+        <argsstring>($func)</argsstring>
+        <name>oninsert</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define oninsert trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="287" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="287" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a9f11326bbf4cdec47ac4f1d143f1dfba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>beforeupdate</definition>
+        <argsstring>($func)</argsstring>
+        <name>beforeupdate</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define beforeupdate trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="296" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="296" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a2b621278d4f2ed751338a1d1bfb60e70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>afterupdate</definition>
+        <argsstring>($func)</argsstring>
+        <name>afterupdate</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define afterupdate trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="305" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a6af536a479e72aff418c5965eff20320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>onupdate</definition>
+        <argsstring>($func)</argsstring>
+        <name>onupdate</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define onupdate trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="314" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="314" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a9d837ab7aea1a740986d5f6c0258b395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>beforesave</definition>
+        <argsstring>($func)</argsstring>
+        <name>beforesave</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define beforesave trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="323" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="323" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a4b19070ae7f1fc2edeee8e0252f8ebb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aftersave</definition>
+        <argsstring>($func)</argsstring>
+        <name>aftersave</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define aftersave trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="334" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="334" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a507f285ea3bb622446f79e07e838e147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>onsave</definition>
+        <argsstring>($func)</argsstring>
+        <name>onsave</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define onsave trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="345" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="345" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a50acd223a47511be7b2e92dd1d504268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>beforeerase</definition>
+        <argsstring>($func)</argsstring>
+        <name>beforeerase</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define beforeerase trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="354" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1aa8c748ed4bf2cba7c84ce360e00dbe2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aftererase</definition>
+        <argsstring>($func)</argsstring>
+        <name>aftererase</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define aftererase trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="363" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="363" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1aebef85c8e2c1ece8cb36a60dc332595f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>onerase</definition>
+        <argsstring>($func)</argsstring>
+        <name>onerase</name>
+        <param>
+          <declname>$func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define onerase trigger <simplesect kind="return"><para>callback </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="372" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="372" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_b_1_1_cursor_1a4a20559544fdf4dcb457e258dc976cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset cursor <simplesect kind="return"><para>NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="380" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="380" bodyend="383"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple cursor implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="28">
+        <label>Cursor</label>
+        <link refid="class_d_b_1_1_cursor"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>IteratorAggregate</label>
+      </node>
+      <node id="32">
+        <label>Mapper</label>
+        <link refid="class_d_b_1_1_jig_1_1_mapper"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Session</label>
+        <link refid="class_d_b_1_1_jig_1_1_session"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>ArrayAccess</label>
+      </node>
+      <node id="34">
+        <label>Cursor</label>
+        <link refid="class_d_b_1_1_cursor"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>IteratorAggregate</label>
+      </node>
+      <node id="35">
+        <label>Magic</label>
+        <link refid="class_magic"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" line="26" column="1" bodyfile="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/cursor.php" bodystart="26" bodyend="385"/>
+    <listofallmembers>
+      <member refid="class_d_b_1_1_cursor_1a18682bea3799d50bb3a0cc3d049dca07" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>$ptr</name></member>
+      <member refid="class_d_b_1_1_cursor_1af59a5f7cd609e592c41dc3643efd3c98" prot="protected" virt="non-virtual"><scope>DB::Cursor</scope><name>$query</name></member>
+      <member refid="class_d_b_1_1_cursor_1ae4c540bb943eedf48dbc7d06b2994a05" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>$trigger</name></member>
+      <member refid="class_magic_1ae23a2c24bd42a7be642cdb71b58dbc5a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>__get</name></member>
+      <member refid="class_magic_1ae858fed7cd2822fbceac154138b68baa" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>__isset</name></member>
+      <member refid="class_magic_1ae5e0d9ea041c1957ef04189b0b29657c" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>__set</name></member>
+      <member refid="class_magic_1a41af7dd29c879b4c30978876ebdf4ba7" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>__unset</name></member>
+      <member refid="class_d_b_1_1_cursor_1aa8c748ed4bf2cba7c84ce360e00dbe2a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>aftererase</name></member>
+      <member refid="class_d_b_1_1_cursor_1a192a31bc101b9aafb4e1300883d33dc6" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>afterinsert</name></member>
+      <member refid="class_d_b_1_1_cursor_1a4b19070ae7f1fc2edeee8e0252f8ebb2" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>aftersave</name></member>
+      <member refid="class_d_b_1_1_cursor_1a2b621278d4f2ed751338a1d1bfb60e70" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>afterupdate</name></member>
+      <member refid="class_d_b_1_1_cursor_1a50acd223a47511be7b2e92dd1d504268" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>beforeerase</name></member>
+      <member refid="class_d_b_1_1_cursor_1ae34d64fef3b7e4de2eede65ca67751d7" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>beforeinsert</name></member>
+      <member refid="class_d_b_1_1_cursor_1a9d837ab7aea1a740986d5f6c0258b395" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>beforesave</name></member>
+      <member refid="class_d_b_1_1_cursor_1a9f11326bbf4cdec47ac4f1d143f1dfba" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>beforeupdate</name></member>
+      <member refid="class_d_b_1_1_cursor_1aa33294a722f17e6e4946223bb73f13ab" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>cast</name></member>
+      <member refid="class_magic_1a10a949ef75de6c82c98ac555f371ba83" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>clear</name></member>
+      <member refid="class_d_b_1_1_cursor_1adffe904ab38af888d9b033647ec6d935" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>copyfrom</name></member>
+      <member refid="class_d_b_1_1_cursor_1a4bcf54f913758fb093c35ea81fc29615" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>copyto</name></member>
+      <member refid="class_d_b_1_1_cursor_1ab1f3a3bd85dca49dceaea57f2fe21abf" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>count</name></member>
+      <member refid="class_d_b_1_1_cursor_1a38948c2fb1711f49b72f123cbd91e611" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>dbtype</name></member>
+      <member refid="class_d_b_1_1_cursor_1acc3a900450447c51540aaa9dec5959a4" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>dry</name></member>
+      <member refid="class_d_b_1_1_cursor_1aa2e3f553fd1f1c2053bc084118c10396" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>E_Field</name></member>
+      <member refid="class_d_b_1_1_cursor_1a933f3fa1037c8b797bdd237d811edf82" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>erase</name></member>
+      <member refid="class_magic_1ace1ae5be37bf26c172cc7ea4e1a65e26" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>exists</name></member>
+      <member refid="class_d_b_1_1_cursor_1a9dfc1601eaf8348bed6ba5622f725971" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>fields</name></member>
+      <member refid="class_d_b_1_1_cursor_1a45e70f55799839fc0286bc94000924a7" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>find</name></member>
+      <member refid="class_d_b_1_1_cursor_1abf73a1aa82ad1233b41388c0a4711c86" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>findone</name></member>
+      <member refid="class_d_b_1_1_cursor_1ac73eef9ff76ea330c0dab36ca448b90d" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>first</name></member>
+      <member refid="class_magic_1ac3695923790b06917410e205068b8376" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>get</name></member>
+      <member refid="class_d_b_1_1_cursor_1a7f835c25df4cb49d02328644722656da" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>getiterator</name></member>
+      <member refid="class_d_b_1_1_cursor_1a473241246338cfccc4709ba896749019" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>insert</name></member>
+      <member refid="class_d_b_1_1_cursor_1ac90cadb327363232bb2d83a4f8ebd613" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>last</name></member>
+      <member refid="class_d_b_1_1_cursor_1a4db66c122e6274a3d653eff639e8476f" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>load</name></member>
+      <member refid="class_d_b_1_1_cursor_1a3f07a4aa73e71d525744db933bc2aff4" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>loaded</name></member>
+      <member refid="class_d_b_1_1_cursor_1acea62048bfee7b3cd80ed446c86fb78a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>next</name></member>
+      <member refid="class_magic_1a16da5af940f99a0df550a7f7c7c5d4e4" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>offsetexists</name></member>
+      <member refid="class_magic_1a4736f7355697c49bcd06b643b4077e8a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>offsetget</name></member>
+      <member refid="class_magic_1a67693a9cff0abdfbbd353c36c00fb8d3" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>offsetset</name></member>
+      <member refid="class_magic_1a414cd1cb3c09fc06e5e83502f6309dde" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>offsetunset</name></member>
+      <member refid="class_d_b_1_1_cursor_1aebef85c8e2c1ece8cb36a60dc332595f" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>onerase</name></member>
+      <member refid="class_d_b_1_1_cursor_1ab3ebd70359a4d0916e07bc3523099fff" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>oninsert</name></member>
+      <member refid="class_d_b_1_1_cursor_1a7615e052068ed5e2c78a87f9b562f98e" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>onload</name></member>
+      <member refid="class_d_b_1_1_cursor_1a507f285ea3bb622446f79e07e838e147" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>onsave</name></member>
+      <member refid="class_d_b_1_1_cursor_1a6af536a479e72aff418c5965eff20320" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>onupdate</name></member>
+      <member refid="class_d_b_1_1_cursor_1a51889c022407cdc6cc565afa5ffe2715" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>paginate</name></member>
+      <member refid="class_d_b_1_1_cursor_1a190535b88008d474b610585a5d9eb84c" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>prev</name></member>
+      <member refid="class_d_b_1_1_cursor_1a4a20559544fdf4dcb457e258dc976cf8" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>reset</name></member>
+      <member refid="class_d_b_1_1_cursor_1afc8a3c62679cf00ade9f15fb2a6d6132" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>save</name></member>
+      <member refid="class_magic_1ac8d8012023e560c81f55a629022cb65a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>set</name></member>
+      <member refid="class_d_b_1_1_cursor_1aad399d205074eaeed711d5e0157b3c0a" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>skip</name></member>
+      <member refid="class_d_b_1_1_cursor_1a842e4774e3b3601a005b995c02f7e883" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>update</name></member>
+      <member refid="class_d_b_1_1_cursor_1abb9f0d6adf1eb9b3b55712056861a247" prot="public" virt="non-virtual"><scope>DB::Cursor</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

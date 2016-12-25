@@ -1,0 +1,478 @@
+.TH "Mapper" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Mapper \- MongoDB mapper\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCursor\fP\&.
+.PP
+Inherited by \fBSession\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdbtype\fP ()"
+.br
+.ti -1c
+.RI "\fBexists\fP ($key)"
+.br
+.ti -1c
+.RI "\fBset\fP ($key, $val)"
+.br
+.ti -1c
+.RI "& \fBget\fP ($key)"
+.br
+.ti -1c
+.RI "\fBclear\fP ($key)"
+.br
+.ti -1c
+.RI "\fBcast\fP ($obj=NULL)"
+.br
+.ti -1c
+.RI "\fBselect\fP ($\fBfields\fP=NULL, $filter=NULL, array $options=NULL, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBfind\fP ($filter=NULL, array $options=NULL, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBcount\fP ($filter=NULL, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBskip\fP ($ofs=1)"
+.br
+.ti -1c
+.RI "\fBinsert\fP ()"
+.br
+.ti -1c
+.RI "\fBupdate\fP ()"
+.br
+.ti -1c
+.RI "\fBerase\fP ($filter=NULL)"
+.br
+.ti -1c
+.RI "\fBreset\fP ()"
+.br
+.ti -1c
+.RI "\fBcopyfrom\fP ($var, $func=NULL)"
+.br
+.ti -1c
+.RI "\fBcopyto\fP ($key)"
+.br
+.ti -1c
+.RI "\fBfields\fP ()"
+.br
+.ti -1c
+.RI "\fBcursor\fP ()"
+.br
+.ti -1c
+.RI "\fBgetiterator\fP ()"
+.br
+.ti -1c
+.RI "\fB__construct\fP (\\\fBDB\\Mongo\fP $db, $collection, $\fBfields\fP=NULL)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$collection\fP"
+.br
+.RI "\fBMongo\fP collection\&. "
+.ti -1c
+.RI "\fB$document\fP =[]"
+.br
+.RI "\fBMongo\fP document\&. "
+.ti -1c
+.RI "\fB$cursor\fP"
+.br
+.RI "\fBMongo\fP cursor\&. "
+.ti -1c
+.RI "\fB$fields\fP"
+.br
+.RI "Defined fields\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfactory\fP ($row)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$db\fP"
+.br
+.RI "MongoDB wrapper\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+MongoDB mapper\&. 
+.PP
+Definition at line 26 of file mapper\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct (\\\fBDB\\Mongo\fP $db,  $collection,  $fields = \fCNULL\fP)"
+Instantiate class 
+.PP
+\fBReturns:\fP
+.RS 4
+void 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$db\fP object 
+.br
+\fI$collection\fP string 
+.br
+\fI$fields\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 358 of file mapper\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "cast ( $obj = \fCNULL\fP)"
+Return fields of mapper object as an associative array 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$obj\fP object 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file mapper\&.php\&.
+.SS "clear ( $key)"
+Delete field 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file mapper\&.php\&.
+.SS "copyfrom ( $var,  $func = \fCNULL\fP)"
+Hydrate mapper object using hive array variable 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$var\fP array|string 
+.br
+\fI$func\fP callback 
+.RE
+.PP
+
+.PP
+Definition at line 307 of file mapper\&.php\&.
+.SS "copyto ( $key)"
+Populate hive array variable with mapper fields 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 321 of file mapper\&.php\&.
+.SS "count ( $filter = \fCNULL\fP,  $ttl = \fC0\fP)"
+Count records that match criteria 
+.PP
+\fBReturns:\fP
+.RS 4
+int 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$filter\fP array 
+.br
+\fI$ttl\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 205 of file mapper\&.php\&.
+.SS "cursor ()"
+Return the cursor from last query 
+.PP
+\fBReturns:\fP
+.RS 4
+object|NULL 
+.RE
+.PP
+
+.PP
+Definition at line 339 of file mapper\&.php\&.
+.SS "dbtype ()"
+Return database type 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file mapper\&.php\&.
+.SS "erase ( $filter = \fCNULL\fP)"
+Delete current record 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$filter\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 275 of file mapper\&.php\&.
+.SS "exists ( $key)"
+Return TRUE if field is defined 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file mapper\&.php\&.
+.SS "factory ( $row)\fC [protected]\fP"
+Convert array to mapper object 
+.PP
+\fBReturns:\fP
+.RS 4
+static 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$row\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file mapper\&.php\&.
+.SS "fields ()"
+Return field names 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+
+.PP
+Definition at line 331 of file mapper\&.php\&.
+.SS "find ( $filter = \fCNULL\fP, array $options = \fCNULL\fP,  $ttl = \fC0\fP)"
+Return records that match criteria 
+.PP
+\fBReturns:\fP
+.RS 4
+static[] 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$filter\fP array 
+.br
+\fI$options\fP array 
+.br
+\fI$ttl\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 187 of file mapper\&.php\&.
+.SS "& get ( $key)"
+Retrieve value of field 
+.PP
+\fBReturns:\fP
+.RS 4
+scalar|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file mapper\&.php\&.
+.SS "getiterator ()"
+Retrieve external iterator for fields 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 347 of file mapper\&.php\&.
+.SS "insert ()"
+Insert new record 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+
+.PP
+Definition at line 236 of file mapper\&.php\&.
+.SS "reset ()"
+Reset cursor 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+
+.PP
+Definition at line 296 of file mapper\&.php\&.
+.SS "select ( $fields = \fCNULL\fP,  $filter = \fCNULL\fP, array $options = \fCNULL\fP,  $ttl = \fC0\fP)"
+Build query and execute 
+.PP
+\fBReturns:\fP
+.RS 4
+static[] 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$fields\fP string 
+.br
+\fI$filter\fP array 
+.br
+\fI$options\fP array 
+.br
+\fI$ttl\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file mapper\&.php\&.
+.SS "set ( $key,  $val)"
+Assign value to field 
+.PP
+\fBReturns:\fP
+.RS 4
+scalar|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.br
+\fI$val\fP scalar 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file mapper\&.php\&.
+.SS "skip ( $ofs = \fC1\fP)"
+Return record at specified offset using criteria of previous \fBload()\fP call and make it active 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$ofs\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 225 of file mapper\&.php\&.
+.SS "update ()"
+Update current record 
+.PP
+\fBReturns:\fP
+.RS 4
+array 
+.RE
+.PP
+
+.PP
+Definition at line 256 of file mapper\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$collection"
+
+.PP
+\fBMongo\fP collection\&. 
+.PP
+Definition at line 30 of file mapper\&.php\&.
+.SS "$\fBcursor\fP"
+
+.PP
+\fBMongo\fP cursor\&. 
+.PP
+Definition at line 34 of file mapper\&.php\&.
+.SS "$db\fC [protected]\fP"
+
+.PP
+MongoDB wrapper\&. 
+.PP
+Definition at line 30 of file mapper\&.php\&.
+.SS "$document =[]"
+
+.PP
+\fBMongo\fP document\&. 
+.PP
+Definition at line 34 of file mapper\&.php\&.
+.SS "$\fBfields\fP"
+
+.PP
+Defined fields\&. 
+.PP
+Definition at line 34 of file mapper\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

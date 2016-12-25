@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespace_web" kind="namespace" language="PHP">
+    <compoundname>Web</compoundname>
+    <innerclass refid="class_web_1_1_geo" prot="public">Web::Geo</innerclass>
+    <innerclass refid="class_web_1_1_o_auth2" prot="public">Web::OAuth2</innerclass>
+    <innerclass refid="class_web_1_1_open_i_d" prot="public">Web::OpenID</innerclass>
+    <innerclass refid="class_web_1_1_pingback" prot="public">Web::Pingback</innerclass>
+    <innernamespace refid="namespace_web_1_1_google">Web::Google</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/geo.php" line="23" column="1"/>
+  </compounddef>
+</doxygen>

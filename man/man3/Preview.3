@@ -1,0 +1,173 @@
+.TH "Preview" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Preview \- Lightweight template engine\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBView\fP\&.
+.PP
+Inherited by \fBTemplate\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBtoken\fP ($str)"
+.br
+.ti -1c
+.RI "\fBfilter\fP ($key=NULL, $func=NULL)"
+.br
+.ti -1c
+.RI "\fBresolve\fP ($str, array $hive=NULL)"
+.br
+.ti -1c
+.RI "\fBrender\fP ($file, $mime=NULL, array $hive=NULL, $ttl=0)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$filter\fP"
+.br
+.RI "token filter "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbuild\fP ($node)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$mime\fP"
+.br
+.RI "MIME type\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Lightweight template engine\&. 
+.PP
+Definition at line 2706 of file base\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "build ( $node)\fC [protected]\fP"
+Assemble markup 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$node\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 2758 of file base\&.php\&.
+.SS "filter ( $key = \fCNULL\fP,  $func = \fCNULL\fP)"
+Register or get (a specific one or all) token filters 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP 
+.br
+\fI$func\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+array|closure|string 
+.RE
+.PP
+
+.PP
+Definition at line 2745 of file base\&.php\&.
+.SS "render ( $file,  $mime = \fCNULL\fP, array $hive = \fCNULL\fP,  $ttl = \fC0\fP)"
+Render template 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$file\fP string 
+.br
+\fI$mime\fP string 
+.br
+\fI$hive\fP array 
+.br
+\fI$ttl\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 2804 of file base\&.php\&.
+.SS "resolve ( $str, array $hive = \fCNULL\fP)"
+Render template string 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.br
+\fI$hive\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 2787 of file base\&.php\&.
+.SS "token ( $str)"
+Convert token to variable 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 2724 of file base\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$\fBfilter\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=[
+            'esc'=>'$this->esc'
+.fi
+.PP
+token filter 
+.PP
+Definition at line 2712 of file base\&.php\&.
+.SS "$mime\fC [protected]\fP"
+
+.PP
+MIME type\&. 
+.PP
+Definition at line 2710 of file base\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

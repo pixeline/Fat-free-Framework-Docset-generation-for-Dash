@@ -1,0 +1,169 @@
+.TH "View" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+View \- \fBView\fP handler\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBPrefab\fP\&.
+.PP
+Inherited by \fBPreview\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBesc\fP ($arg)"
+.br
+.ti -1c
+.RI "\fBraw\fP ($arg)"
+.br
+.ti -1c
+.RI "\fBrender\fP ($file, $mime='text/html', array $hive=NULL, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBafterrender\fP ($func)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$trigger\fP"
+.br
+.RI "post-rendering handler "
+.ti -1c
+.RI "\fB$level\fP =0"
+.br
+.RI "Nesting level\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsandbox\fP (array $hive=NULL)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$view\fP"
+.br
+.RI "\fBTemplate\fP file\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBView\fP handler\&. 
+.PP
+Definition at line 2596 of file base\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "afterrender ( $func)"
+post rendering handler 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$func\fP callback 
+.RE
+.PP
+
+.PP
+Definition at line 2699 of file base\&.php\&.
+.SS "esc ( $arg)"
+Encode characters to equivalent HTML entities 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$arg\fP mixed 
+.RE
+.PP
+
+.PP
+Definition at line 2611 of file base\&.php\&.
+.SS "raw ( $arg)"
+Decode HTML entities to equivalent characters 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$arg\fP mixed 
+.RE
+.PP
+
+.PP
+Definition at line 2625 of file base\&.php\&.
+.SS "render ( $file,  $mime = \fC'text/html'\fP, array $hive = \fCNULL\fP,  $ttl = \fC0\fP)"
+Render template 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$file\fP string 
+.br
+\fI$mime\fP string 
+.br
+\fI$hive\fP array 
+.br
+\fI$ttl\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 2670 of file base\&.php\&.
+.SS "sandbox (array $hive = \fCNULL\fP)\fC [protected]\fP"
+Create sandbox for template execution 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$hive\fP array 
+.RE
+.PP
+
+.PP
+Definition at line 2639 of file base\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$level =0"
+
+.PP
+Nesting level\&. 
+.PP
+Definition at line 2604 of file base\&.php\&.
+.SS "$trigger"
+
+.PP
+post-rendering handler 
+.PP
+Definition at line 2600 of file base\&.php\&.
+.SS "$view\fC [protected]\fP"
+
+.PP
+\fBTemplate\fP file\&. 
+.PP
+Definition at line 2600 of file base\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

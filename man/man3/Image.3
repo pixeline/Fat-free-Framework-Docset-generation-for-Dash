@@ -1,0 +1,695 @@
+.TH "Image" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Image \- \fBImage\fP manipulation tools\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBrgb\fP ($color)"
+.br
+.ti -1c
+.RI "\fBinvert\fP ()"
+.br
+.ti -1c
+.RI "\fBbrightness\fP ($level)"
+.br
+.ti -1c
+.RI "\fBcontrast\fP ($level)"
+.br
+.ti -1c
+.RI "\fBgrayscale\fP ()"
+.br
+.ti -1c
+.RI "\fBsmooth\fP ($level)"
+.br
+.ti -1c
+.RI "\fBemboss\fP ()"
+.br
+.ti -1c
+.RI "\fBsepia\fP ()"
+.br
+.ti -1c
+.RI "\fBpixelate\fP ($size)"
+.br
+.ti -1c
+.RI "\fBblur\fP ($selective=FALSE)"
+.br
+.ti -1c
+.RI "\fBsketch\fP ()"
+.br
+.ti -1c
+.RI "\fBhflip\fP ()"
+.br
+.ti -1c
+.RI "\fBvflip\fP ()"
+.br
+.ti -1c
+.RI "\fBcrop\fP ($x1, $y1, $x2, $y2)"
+.br
+.ti -1c
+.RI "\fBresize\fP ($\fBwidth\fP=NULL, $\fBheight\fP=NULL, $\fBcrop\fP=TRUE, $enlarge=TRUE)"
+.br
+.ti -1c
+.RI "\fBrotate\fP ($angle)"
+.br
+.ti -1c
+.RI "\fBoverlay\fP (\fBImage\fP $img, $align=NULL, $alpha=100)"
+.br
+.ti -1c
+.RI "\fBidenticon\fP ($str, $size=64, $blocks=4)"
+.br
+.ti -1c
+.RI "\fBcaptcha\fP ($font, $size=24, $len=5, $key=NULL, $path='', $fg=0xFFFFFF, $bg=0x000000)"
+.br
+.ti -1c
+.RI "\fBwidth\fP ()"
+.br
+.ti -1c
+.RI "\fBheight\fP ()"
+.br
+.ti -1c
+.RI "\fBrender\fP ()"
+.br
+.ti -1c
+.RI "\fBdump\fP ()"
+.br
+.ti -1c
+.RI "\fBdata\fP ()"
+.br
+.ti -1c
+.RI "\fBsave\fP ()"
+.br
+.ti -1c
+.RI "\fBrestore\fP ($state=1)"
+.br
+.ti -1c
+.RI "\fBundo\fP ()"
+.br
+.ti -1c
+.RI "\fBload\fP ($str)"
+.br
+.ti -1c
+.RI "\fB__construct\fP ($file=NULL, $flag=FALSE, $path=NULL)"
+.br
+.ti -1c
+.RI "\fB__destruct\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$data\fP"
+.br
+.RI "\fBImage\fP resource\&. "
+.ti -1c
+.RI "\fB$flag\fP =FALSE"
+.br
+.RI "Enable/disable history\&. "
+.ti -1c
+.RI "\fB$count\fP =0"
+.br
+.RI "Filter count\&. "
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBE_Color\fP ='Invalid color specified: %s'"
+.br
+.ti -1c
+.RI "const \fBE_File\fP ='File not found'"
+.br
+.ti -1c
+.RI "const \fBE_Font\fP ='CAPTCHA font not found'"
+.br
+.ti -1c
+.RI "const \fBE_TTF\fP ='No TrueType support in GD module'"
+.br
+.ti -1c
+.RI "const \fBE_Length\fP ='Invalid CAPTCHA length: %s'"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBPOS_Left\fP =1"
+.br
+.ti -1c
+.RI "const \fBPOS_Center\fP =2"
+.br
+.ti -1c
+.RI "const \fBPOS_Right\fP =4"
+.br
+.ti -1c
+.RI "const \fBPOS_Top\fP =8"
+.br
+.ti -1c
+.RI "const \fBPOS_Middle\fP =16"
+.br
+.ti -1c
+.RI "const \fBPOS_Bottom\fP =32"
+.br
+.in -1c
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$file\fP"
+.br
+.RI "Source filename\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBImage\fP manipulation tools\&. 
+.PP
+Definition at line 24 of file image\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ( $file = \fCNULL\fP,  $flag = \fCFALSE\fP,  $path = \fCNULL\fP)"
+Instantiate image 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$file\fP string 
+.br
+\fI$flag\fP bool 
+.br
+\fI$path\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 585 of file image\&.php\&.
+.SS "__destruct ()"
+Wrap-up 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+
+.PP
+Definition at line 604 of file image\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "blur ( $selective = \fCFALSE\fP)"
+Blur the image using Gaussian filter 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$selective\fP bool 
+.RE
+.PP
+
+.PP
+Definition at line 156 of file image\&.php\&.
+.SS "brightness ( $level)"
+Adjust brightness (range:-255 to 255) 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 88 of file image\&.php\&.
+.SS "captcha ( $font,  $size = \fC24\fP,  $len = \fC5\fP,  $key = \fCNULL\fP,  $path = \fC''\fP,  $fg = \fC0xFFFFFF\fP,  $bg = \fC0x000000\fP)"
+Generate CAPTCHA image 
+.PP
+\fBReturns:\fP
+.RS 4
+object|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$font\fP string 
+.br
+\fI$size\fP int 
+.br
+\fI$len\fP int 
+.br
+\fI$key\fP string 
+.br
+\fI$path\fP string 
+.br
+\fI$fg\fP int 
+.br
+\fI$bg\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 401 of file image\&.php\&.
+.SS "contrast ( $level)"
+Adjust contrast (range:-100 to 100) 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file image\&.php\&.
+.SS "crop ( $x1,  $y1,  $x2,  $y2)"
+Crop the image 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$x1\fP int 
+.br
+\fI$y1\fP int 
+.br
+\fI$x2\fP int 
+.br
+\fI$y2\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 211 of file image\&.php\&.
+.SS "data ()"
+Return image resource 
+.PP
+\fBReturns:\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.PP
+Definition at line 510 of file image\&.php\&.
+.SS "dump ()"
+Return image as a string 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 495 of file image\&.php\&.
+.SS "emboss ()"
+Emboss the image 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file image\&.php\&.
+.SS "grayscale ()"
+Convert to grayscale 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 107 of file image\&.php\&.
+.SS "height ()"
+Return image height 
+.PP
+\fBReturns:\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line 470 of file image\&.php\&.
+.SS "hflip ()"
+Flip on horizontal axis 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 175 of file image\&.php\&.
+.SS "identicon ( $str,  $size = \fC64\fP,  $blocks = \fC4\fP)"
+Generate identicon 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.br
+\fI$size\fP int 
+.br
+\fI$blocks\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 344 of file image\&.php\&.
+.SS "invert ()"
+Invert image 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file image\&.php\&.
+.SS "load ( $str)"
+Load string 
+.PP
+\fBReturns:\fP
+.RS 4
+object|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 571 of file image\&.php\&.
+.SS "overlay (\fBImage\fP $img,  $align = \fCNULL\fP,  $alpha = \fC100\fP)"
+Apply an image overlay 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$img\fP object 
+.br
+\fI$align\fP int|array 
+.br
+\fI$alpha\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 296 of file image\&.php\&.
+.SS "pixelate ( $size)"
+Pixelate the image 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$size\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file image\&.php\&.
+.SS "render ()"
+Send image to HTTP client 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+
+.PP
+Definition at line 478 of file image\&.php\&.
+.SS "resize ( $width = \fCNULL\fP,  $height = \fCNULL\fP,  $crop = \fCTRUE\fP,  $enlarge = \fCTRUE\fP)"
+Resize image (Maintain aspect ratio); Crop relative to center if flag is enabled; Enlargement allowed if flag is enabled 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$width\fP int 
+.br
+\fI$height\fP int 
+.br
+\fI$crop\fP bool 
+.br
+\fI$enlarge\fP bool 
+.RE
+.PP
+
+.PP
+Definition at line 231 of file image\&.php\&.
+.SS "restore ( $state = \fC1\fP)"
+Revert to specified state 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$state\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 536 of file image\&.php\&.
+.SS "rgb ( $color)"
+Convert RGB hex triad to array 
+.PP
+\fBReturns:\fP
+.RS 4
+array|FALSE 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$color\fP int|string 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file image\&.php\&.
+.SS "rotate ( $angle)"
+Rotate image 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$angle\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 282 of file image\&.php\&.
+.SS "save ()"
+Save current state 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 518 of file image\&.php\&.
+.SS "sepia ()"
+Apply sepia effect 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file image\&.php\&.
+.SS "sketch ()"
+Apply sketch effect 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 166 of file image\&.php\&.
+.SS "smooth ( $level)"
+Adjust smoothness 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file image\&.php\&.
+.SS "undo ()"
+Undo most recently applied filter 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 557 of file image\&.php\&.
+.SS "vflip ()"
+Flip on vertical axis 
+.PP
+\fBReturns:\fP
+.RS 4
+object 
+.RE
+.PP
+
+.PP
+Definition at line 191 of file image\&.php\&.
+.SS "width ()"
+Return image width 
+.PP
+\fBReturns:\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line 462 of file image\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$count =0"
+
+.PP
+Filter count\&. 
+.PP
+Definition at line 53 of file image\&.php\&.
+.SS "$\fBdata\fP"
+
+.PP
+\fBImage\fP resource\&. 
+.PP
+Definition at line 47 of file image\&.php\&.
+.SS "$file\fC [protected]\fP"
+
+.PP
+Source filename\&. 
+.PP
+Definition at line 47 of file image\&.php\&.
+.SS "$flag =FALSE"
+
+.PP
+Enable/disable history\&. 
+.PP
+Definition at line 51 of file image\&.php\&.
+.SS "const E_Color ='Invalid color specified: %s'"
+
+.PP
+Definition at line 28 of file image\&.php\&.
+.SS "const E_File ='File not found'"
+
+.PP
+Definition at line 29 of file image\&.php\&.
+.SS "const E_Font ='CAPTCHA font not found'"
+
+.PP
+Definition at line 30 of file image\&.php\&.
+.SS "const E_Length ='Invalid CAPTCHA length: %s'"
+
+.PP
+Definition at line 32 of file image\&.php\&.
+.SS "const E_TTF ='No TrueType support in GD module'"
+
+.PP
+Definition at line 31 of file image\&.php\&.
+.SS "const POS_Bottom =32"
+
+.PP
+Definition at line 42 of file image\&.php\&.
+.SS "const POS_Center =2"
+
+.PP
+Definition at line 38 of file image\&.php\&.
+.SS "const POS_Left =1"
+
+.PP
+Definition at line 37 of file image\&.php\&.
+.SS "const POS_Middle =16"
+
+.PP
+Definition at line 41 of file image\&.php\&.
+.SS "const POS_Right =4"
+
+.PP
+Definition at line 39 of file image\&.php\&.
+.SS "const POS_Top =8"
+
+.PP
+Definition at line 40 of file image\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

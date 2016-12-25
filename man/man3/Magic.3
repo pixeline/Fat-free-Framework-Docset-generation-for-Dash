@@ -1,0 +1,254 @@
+.TH "Magic" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Magic \- PHP magic wrapper\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits ArrayAccess\&.
+.PP
+Inherited by \fBBasket\fP, \fBCursor\fP, \fBSMTP\fP, \fBOAuth2\fP, and \fBOpenID\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBexists\fP ($key)"
+.br
+.ti -1c
+.RI "\fBset\fP ($key, $val)"
+.br
+.ti -1c
+.RI "& \fBget\fP ($key)"
+.br
+.ti -1c
+.RI "\fBclear\fP ($key)"
+.br
+.ti -1c
+.RI "\fBoffsetexists\fP ($key)"
+.br
+.ti -1c
+.RI "\fBoffsetset\fP ($key, $val)"
+.br
+.ti -1c
+.RI "& \fBoffsetget\fP ($key)"
+.br
+.ti -1c
+.RI "\fBoffsetunset\fP ($key)"
+.br
+.ti -1c
+.RI "\fB__isset\fP ($key)"
+.br
+.ti -1c
+.RI "\fB__set\fP ($key, $val)"
+.br
+.ti -1c
+.RI "& \fB__get\fP ($key)"
+.br
+.ti -1c
+.RI "\fB__unset\fP ($key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+PHP magic wrapper\&. 
+.PP
+Definition at line 24 of file magic\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "& __get ( $key)"
+Alias for \fBoffsetget()\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 125 of file magic\&.php\&.
+.SS "__isset ( $key)"
+Alias for \fBoffsetexists()\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file magic\&.php\&.
+.SS "__set ( $key,  $val)"
+Alias for \fBoffsetset()\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.br
+\fI$val\fP scalar 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file magic\&.php\&.
+.SS "__unset ( $key)"
+Alias for \fBoffsetunset()\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file magic\&.php\&.
+.SS "clear ( $key)\fC [abstract]\fP"
+Unset key 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.SS "exists ( $key)\fC [abstract]\fP"
+Return TRUE if key is not empty 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.SS "& get ( $key)\fC [abstract]\fP"
+Retrieve contents of key 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.SS "offsetexists ( $key)"
+Convenience method for checking property value 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file magic\&.php\&.
+.SS "& offsetget ( $key)"
+Convenience method for retrieving property value 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file magic\&.php\&.
+.SS "offsetset ( $key,  $val)"
+Convenience method for assigning property value 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.br
+\fI$val\fP scalar 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file magic\&.php\&.
+.SS "offsetunset ( $key)"
+Convenience method for removing property value 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file magic\&.php\&.
+.SS "set ( $key,  $val)\fC [abstract]\fP"
+Bind value to key 
+.PP
+\fBReturns:\fP
+.RS 4
+mixed 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.br
+\fI$val\fP mixed 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.

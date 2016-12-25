@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespace_web_1_1_google" kind="namespace" language="PHP">
+    <compoundname>Web::Google</compoundname>
+    <innerclass refid="class_web_1_1_google_1_1_static_map" prot="public">Web::Google::StaticMap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google/staticmap.php" line="23" column="1"/>
+  </compounddef>
+</doxygen>

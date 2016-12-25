@@ -1,0 +1,363 @@
+.TH "SMTP" 3 "Sun Dec 25 2016" "Version 3.6" "Fat-Free Framework" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SMTP \- \fBSMTP\fP plug-in\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBMagic\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBexists\fP ($key)"
+.br
+.ti -1c
+.RI "\fBset\fP ($key, $val)"
+.br
+.ti -1c
+.RI "& \fBget\fP ($key)"
+.br
+.ti -1c
+.RI "\fBclear\fP ($key)"
+.br
+.ti -1c
+.RI "\fBlog\fP ()"
+.br
+.ti -1c
+.RI "\fBattach\fP ($file, $alias=NULL, $cid=NULL)"
+.br
+.ti -1c
+.RI "\fBsend\fP ($message, $\fBlog\fP=TRUE, $mock=FALSE)"
+.br
+.ti -1c
+.RI "\fB__construct\fP ( $host='localhost', $port=25, $scheme=NULL, $user=NULL, $pw=NULL)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$attachments\fP"
+.br
+.RI "E-mail attachments\&. "
+.ti -1c
+.RI "\fB$host\fP"
+.br
+.RI "\fBSMTP\fP host\&. "
+.ti -1c
+.RI "\fB$port\fP"
+.br
+.RI "\fBSMTP\fP port\&. "
+.ti -1c
+.RI "\fB$scheme\fP"
+.br
+.RI "TLS/SSL\&. "
+.ti -1c
+.RI "\fB$user\fP"
+.br
+.RI "User ID\&. "
+.ti -1c
+.RI "\fB$pw\fP"
+.br
+.RI "Password\&. "
+.ti -1c
+.RI "\fB$socket\fP"
+.br
+.RI "TCP/IP socket\&. "
+.ti -1c
+.RI "\fB$log\fP"
+.br
+.RI "Server-client conversation\&. "
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "const \fBE_Header\fP ='%s: header is required'"
+.br
+.ti -1c
+.RI "const \fBE_Blank\fP ='Message must not be blank'"
+.br
+.ti -1c
+.RI "const \fBE_Attach\fP ='Attachment %s not found'"
+.br
+.in -1c
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfixheader\fP ($key)"
+.br
+.ti -1c
+.RI "\fBdialog\fP ($cmd=NULL, $\fBlog\fP=TRUE, $mock=FALSE)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$headers\fP"
+.br
+.RI "Message properties\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSMTP\fP plug-in\&. 
+.PP
+Definition at line 24 of file smtp\&.php\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ( $host = \fC'localhost'\fP,  $port = \fC25\fP,  $scheme = \fCNULL\fP,  $user = \fCNULL\fP,  $pw = \fCNULL\fP)"
+Instantiate class 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$host\fP string 
+.br
+\fI$port\fP int 
+.br
+\fI$scheme\fP string 
+.br
+\fI$user\fP string 
+.br
+\fI$pw\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 338 of file smtp\&.php\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "attach ( $file,  $alias = \fCNULL\fP,  $cid = \fCNULL\fP)"
+Add e-mail attachment 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$file\fP string 
+.br
+\fI$alias\fP string 
+.br
+\fI$cid\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 168 of file smtp\&.php\&.
+.SS "clear ( $key)"
+Remove header 
+.PP
+\fBReturns:\fP
+.RS 4
+NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file smtp\&.php\&.
+.SS "dialog ( $cmd = \fCNULL\fP,  $log = \fCTRUE\fP,  $mock = \fCFALSE\fP)\fC [protected]\fP"
+Send \fBSMTP\fP command and record server response 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$cmd\fP string 
+.br
+\fI$log\fP bool 
+.br
+\fI$mock\fP bool 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file smtp\&.php\&.
+.SS "exists ( $key)"
+Return TRUE if header exists 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file smtp\&.php\&.
+.SS "fixheader ( $key)\fC [protected]\fP"
+Fix header 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file smtp\&.php\&.
+.SS "& get ( $key)"
+Return value of e-mail header 
+.PP
+\fBReturns:\fP
+.RS 4
+string|NULL 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file smtp\&.php\&.
+.SS "log ()"
+Return client-server conversation history 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file smtp\&.php\&.
+.SS "send ( $message,  $log = \fCTRUE\fP,  $mock = \fCFALSE\fP)"
+Transmit message 
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$message\fP string 
+.br
+\fI$log\fP bool 
+.br
+\fI$mock\fP bool 
+.RE
+.PP
+
+.PP
+Definition at line 183 of file smtp\&.php\&.
+.SS "set ( $key,  $val)"
+Bind value to e-mail header 
+.PP
+\fBReturns:\fP
+.RS 4
+string 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$key\fP string 
+.br
+\fI$val\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 79 of file smtp\&.php\&.
+.SH "Field Documentation"
+.PP 
+.SS "$attachments"
+
+.PP
+E-mail attachments\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$headers\fC [protected]\fP"
+
+.PP
+Message properties\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$host"
+
+.PP
+\fBSMTP\fP host\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$\fBlog\fP"
+
+.PP
+Server-client conversation\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$port"
+
+.PP
+\fBSMTP\fP port\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$pw"
+
+.PP
+Password\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$scheme"
+
+.PP
+TLS/SSL\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$socket"
+
+.PP
+TCP/IP socket\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "$user"
+
+.PP
+User ID\&. 
+.PP
+Definition at line 35 of file smtp\&.php\&.
+.SS "const E_Attach ='Attachment %s not found'"
+
+.PP
+Definition at line 30 of file smtp\&.php\&.
+.SS "const E_Blank ='Message must not be blank'"
+
+.PP
+Definition at line 29 of file smtp\&.php\&.
+.SS "const E_Header ='%s: header is required'"
+
+.PP
+Definition at line 28 of file smtp\&.php\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fat-Free Framework from the source code\&.
