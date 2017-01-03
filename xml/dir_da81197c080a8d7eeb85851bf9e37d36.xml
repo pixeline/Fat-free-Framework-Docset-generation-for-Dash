@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_da81197c080a8d7eeb85851bf9e37d36" kind="dir">
+    <compoundname>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig</compoundname>
+    <innerfile refid="jig_2mapper_8php">mapper.php</innerfile>
+    <innerfile refid="db_2jig_2session_8php">session.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig/"/>
+  </compounddef>
+</doxygen>

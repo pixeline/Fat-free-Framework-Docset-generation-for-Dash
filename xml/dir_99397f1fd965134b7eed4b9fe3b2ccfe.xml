@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_99397f1fd965134b7eed4b9fe3b2ccfe" kind="dir">
+    <compoundname>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db</compoundname>
+    <innerdir refid="dir_da81197c080a8d7eeb85851bf9e37d36">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig</innerdir>
+    <innerdir refid="dir_91974621ae1ef1fcaeb1b9cfa668bfdf">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/mongo</innerdir>
+    <innerdir refid="dir_60acb8b091a850a045546ef961f2f036">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/sql</innerdir>
+    <innerfile refid="cursor_8php">cursor.php</innerfile>
+    <innerfile refid="jig_8php">jig.php</innerfile>
+    <innerfile refid="mongo_8php">mongo.php</innerfile>
+    <innerfile refid="sql_8php">sql.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_835e694047518d43a2c4bcb4499498de" kind="dir">
+    <compoundname>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web</compoundname>
+    <innerdir refid="dir_3c908926c18e6c133c1b7158f2b94d0e">/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google</innerdir>
+    <innerfile refid="geo_8php">geo.php</innerfile>
+    <innerfile refid="oauth2_8php">oauth2.php</innerfile>
+    <innerfile refid="openid_8php">openid.php</innerfile>
+    <innerfile refid="pingback_8php">pingback.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,8 @@
 <?php
-
+/*
+	Note to self: should read this readme https://github.com/Kapeli/Dash-User-Contributions
+	
+*/
 $lang = 'en';
 $ver  = '3.6';
 
@@ -90,11 +93,9 @@ foreach (array("appendixes.assertions", "appendixes.annotations", "incomplete-an
 		$name = $td->firstChild->nodeValue;
 		if (!preg_match("#^([a-z_]+ )?([a-z0-9_]+\()#i", $name, $m)) continue;
 
-
 		$name = isset($m[2]) ? $m[2] : $m[1];
 		$anchor = preg_replace("#[^a-z]#i", "", $name);
 		$href = $file .".html#" . $anchor;
-
 
 		$search[] = '<td align="left"><code class="literal">' . $m[0];
 		$replace[] = '<td align="left"><code class="literal" style="white-space: normal" id="' . $anchor . '">' . $m[0];

@@ -1242,32 +1242,30 @@
   </compound>
   <compound refid="deprecated" kind="page"><name>deprecated</name>
   </compound>
-  <compound refid="dir_105487f71b325a788b347b549102ec7a" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca</name>
+  <compound refid="dir_7f5e6e1d75f51a3f142e3c5e22a4f1f6" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca</name>
   </compound>
-  <compound refid="dir_b6e03d39b49e7ec301ebb2f7811f7b20" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli</name>
+  <compound refid="dir_b1c4cb11d8b43ee99072d3c247d5f5c6" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/cli</name>
   </compound>
-  <compound refid="dir_1bd6479e4c4da27152541d31610633af" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db</name>
+  <compound refid="dir_99397f1fd965134b7eed4b9fe3b2ccfe" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db</name>
   </compound>
-  <compound refid="dir_fe613b0511491d15c92e6737b43daf4c" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree</name>
+  <compound refid="dir_d0c6e39b4c7f2055afaaffb16f533702" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree</name>
   </compound>
-  <compound refid="dir_7115a444ed192f772431201aab445006" kind="dir"><name>/Users/aplennevaux/GITHUB</name>
+  <compound refid="dir_3c908926c18e6c133c1b7158f2b94d0e" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google</name>
   </compound>
-  <compound refid="dir_a51dcdc445519b87aaf2ba30c2109218" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web/google</name>
+  <compound refid="dir_da81197c080a8d7eeb85851bf9e37d36" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig</name>
   </compound>
-  <compound refid="dir_f20f5f218b5c817ad115c8a92ac120be" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/jig</name>
+  <compound refid="dir_84501c881ce5760a3231f0a176c93d92" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib</name>
   </compound>
-  <compound refid="dir_b3e4fcb4158339d80035305fddb0e361" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib</name>
+  <compound refid="dir_91974621ae1ef1fcaeb1b9cfa668bfdf" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/mongo</name>
   </compound>
-  <compound refid="dir_cce2a9e1f28cc8175e420476a68c3695" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/mongo</name>
+  <compound refid="dir_60acb8b091a850a045546ef961f2f036" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/sql</name>
   </compound>
-  <compound refid="dir_5c5d430b692712719e211e1ee09cb807" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/db/sql</name>
+  <compound refid="dir_92802f207d92198b044e0274f992e803" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src</name>
   </compound>
-  <compound refid="dir_7e910fa00e0c0e5704d0ca36b3b68a7f" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src</name>
+  <compound refid="dir_948941873e3c51b6a030fa75a2e3a2f2" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor</name>
   </compound>
-  <compound refid="dir_575f2d37284534df60934121591365d0" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor</name>
+  <compound refid="dir_34f9efcbe275e1eae72bb71ece996bfd" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website</name>
   </compound>
-  <compound refid="dir_921e6214ccbf308873db1da53f5f462c" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website</name>
-  </compound>
-  <compound refid="dir_43795de25acbeea48100b0ecd0360360" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web</name>
+  <compound refid="dir_835e694047518d43a2c4bcb4499498de" kind="dir"><name>/Users/aplennevaux/GITHUB/Visionary-website/src/vendor/bcosca/fatfree/lib/web</name>
   </compound>
 </doxygenindex>
